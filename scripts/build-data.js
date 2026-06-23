@@ -25,7 +25,7 @@ const ROOT = path.join(__dirname, '..');
 const CACHED_RAW = path.join(ROOT, 'data', '.raw', 'ne_50m_admin_0_countries.geojson');
 const SOURCE_URL =
   'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson';
-const OUT_FILE = path.join(ROOT, 'data', 'countries.geojson');
+const OUT_FILE = path.join(ROOT, 'public', 'countries.geojson');
 
 // Never guessable: Antarctica plus de-facto states that overlap or aren't
 // widely recognised, keeping the playable list to UN-style sovereign nations.

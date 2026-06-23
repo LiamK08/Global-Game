@@ -1,0 +1,43 @@
+name: Deploy static site to GitHub Pages
+
+# Publishes the contents of public/ (a fully client-side build of the game) to
+# the gh-pages branch. Enable it once under Settings → Pages → "Deploy from a
+# branch" → gh-pages → /(root). The site then lives at
+# https://<user>.github.io/<repo>/.
+
+on:
+  push:
+    branches: [main, 'claude/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish public/ to the gh-pages branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ ! -f public/index.html ]; then
+            echo "No public/index.html on this branch; nothing to deploy."
+            exit 0
+          fi
+          work="$(mktemp -d)"
+          cp -r public/. "$work/"
+          touch "$work/.nojekyll"   # serve files as-is (no Jekyll processing)
+          cd "$work"
+          git init -q
+          git checkout -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Deploy ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:gh-pages

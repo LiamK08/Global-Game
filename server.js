@@ -16,7 +16,7 @@ import { GameStore } from './lib/game.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = __dirname;
-const DATA_FILE = path.join(ROOT, 'data', 'countries.geojson');
+const DATA_FILE = path.join(ROOT, 'public', 'countries.geojson');
 
 /**
  * Build the Express app.
@@ -40,16 +40,12 @@ export function createApp(opts = {}) {
       setHeaders(res, filePath) {
         if (filePath.includes(`${path.sep}vendor${path.sep}`)) {
           res.setHeader('Cache-Control', 'public, max-age=604800, immutable');
+        } else if (filePath.endsWith('.geojson')) {
+          res.setHeader('Cache-Control', 'public, max-age=86400');
         }
       },
     })
   );
-
-  // The country geometry, served once and cached by the browser.
-  app.get('/countries.geojson', (_req, res) => {
-    res.setHeader('Cache-Control', 'public, max-age=86400');
-    res.sendFile(DATA_FILE);
-  });
 
   // --- API ---
   const api = express.Router();

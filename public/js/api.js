@@ -25,21 +25,21 @@ async function request(method, url, body) {
 }
 
 /** Fetch the list of guessable country names for autocomplete. */
-export function fetchCountryNames() {
-  return request('GET', '/api/countries').then((d) => d.names);
+export function getNames() {
+  return request('GET', 'api/countries').then((d) => d.names);
 }
 
 /** Start a new game; resolves to { gameId, status, guessCount }. */
 export function createGame() {
-  return request('POST', '/api/games');
+  return request('POST', 'api/games');
 }
 
 /** Submit a guess; resolves to the scored result. */
 export function submitGuess(gameId, guess) {
-  return request('POST', `/api/games/${gameId}/guesses`, { guess });
+  return request('POST', `api/games/${gameId}/guesses`, { guess });
 }
 
 /** Give up the current game; resolves with the revealed answer. */
 export function giveUp(gameId) {
-  return request('POST', `/api/games/${gameId}/giveup`);
+  return request('POST', `api/games/${gameId}/giveup`);
 }

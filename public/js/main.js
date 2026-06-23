@@ -3,7 +3,8 @@
 import { GlobeView } from './globe.js';
 import { Autocomplete } from './autocomplete.js';
 import { heatColor, rampGradient } from './colors.js';
-import { fetchCountryNames, createGame, submitGuess, giveUp } from './api.js';
+import * as api from './api.js';
+import { LocalBackend } from './engine.js';
 import { loadStats, recordWin, recordGiveUp, resetStats, summarize } from './stats.js';
 
 const $ = (sel) => document.querySelector(sel);
@@ -48,7 +49,25 @@ const game = {
   closest: null, // best guess so far
   globe: null,
   ac: null, // autocomplete instance
+  backend: null, // server API or local in-browser engine
 };
+
+/**
+ * Pick a backend: use the server API when it's reachable (anti-cheat, hidden
+ * target), otherwise fall back to the in-browser engine so the page works as a
+ * fully static site (e.g. GitHub Pages).
+ */
+async function selectBackend(geojson) {
+  try {
+    const res = await fetch('api/health', { cache: 'no-store' });
+    if (res.ok) {
+      return { getNames: api.getNames, createGame: api.createGame, submitGuess: api.submitGuess, giveUp: api.giveUp };
+    }
+  } catch {
+    /* no server — fall through to local engine */
+  }
+  return new LocalBackend(geojson);
+}
 
 // ---------------------------------------------------------------- bootstrap
 
@@ -61,20 +80,21 @@ async function init() {
 
   let geojson;
   try {
-    const res = await fetch('/countries.geojson');
+    const res = await fetch('countries.geojson');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     geojson = await res.json();
   } catch (err) {
-    return fatal('Could not load map data. Is the server running?');
+    return fatal('Could not load map data. Please reload the page.');
   }
 
   if (typeof window.Globe !== 'function') {
     return fatal('Could not load the globe library.');
   }
   game.globe = new GlobeView(els.globe, geojson, currentTheme());
+  game.backend = await selectBackend(geojson);
 
   try {
-    const names = await fetchCountryNames();
+    const names = await game.backend.getNames();
     game.ac = new Autocomplete({ input: els.input, list: $('#ac-list'), names, onSubmit: () => els.form.requestSubmit() });
   } catch {
     /* autocomplete is a nice-to-have; typing still works without it */
@@ -98,7 +118,7 @@ function fatal(msg) {
 
 async function startNewGame() {
   try {
-    const { gameId } = await createGame();
+    const { gameId } = await game.backend.createGame();
     game.id = gameId;
   } catch {
     return fatal('Could not start a new game. Please retry.');
@@ -127,7 +147,7 @@ async function handleGuess(rawValue) {
   els.message.textContent = '';
   let result;
   try {
-    result = await submitGuess(gid, raw);
+    result = await game.backend.submitGuess(gid, raw);
   } catch (err) {
     if (game.id !== gid) return; // stale response — ignore
     if (err.code === 'unknown_country') showMessage(`"${raw}" isn't a country I know.`);
@@ -225,7 +245,7 @@ async function handleGiveUp() {
   const gid = game.id;
   let result;
   try {
-    result = await giveUp(gid);
+    result = await game.backend.giveUp(gid);
   } catch {
     showMessage('Could not give up — try again.');
     return;

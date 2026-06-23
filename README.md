@@ -25,12 +25,22 @@ then play again. Forever.
 - ✅ **Tested** — 33 unit/integration tests covering distance maths, country resolution,
   game logic and the HTTP API.
 
-## Quick start
+## Play online (no install)
+
+The front-end runs **fully client-side**, so it's published as a static site via
+GitHub Pages — just open it in a browser, nothing to install:
+
+**▶ https://liamk08.github.io/Global-Game/**
+
+(When served by the Node backend it uses the server to keep the target hidden;
+on a static host it falls back to an equivalent in-browser engine automatically.)
+
+## Quick start (local server)
 
 Requires **Node.js 18+**.
 
 ```bash
-npm install      # install the server dependency (express)
+npm install      # express + compression
 npm start        # serve at http://localhost:3000
 ```
 
@@ -39,7 +49,7 @@ Then open <http://localhost:3000>. Set a custom port with `PORT=8080 npm start`.
 ```bash
 npm test               # run the test suite
 npm run dev            # start with --watch for development
-node scripts/build-data.js   # rebuild data/countries.geojson from Natural Earth
+node scripts/build-data.js   # rebuild public/countries.geojson from Natural Earth
 
 # Refresh the vendored globe.gl bundle (only needed to bump its version):
 npm install --no-save globe.gl && npm run build:vendor
@@ -94,19 +104,22 @@ A guess result looks like:
 ```
 server.js              Express app: static hosting + game API
 lib/
-  geo.js               Haversine, proximity, name normalisation, centroids
   countries.js         Loads the dataset, builds the name→country resolver
-  game.js              In-memory game store + guess scoring
-  aliases.js           Display-name overrides and alternative spellings
+  game.js              In-memory game store + guess scoring (server)
+  geo.js, aliases.js   Thin re-exports of the shared modules in public/js
 scripts/
-  build-data.js        Build data/countries.geojson from Natural Earth
+  build-data.js        Build public/countries.geojson from Natural Earth
   copy-vendor.js       Vendor the globe.gl bundle into public/vendor
-public/                Front-end (vanilla ES modules, no build step)
+public/                Front-end + static site (vanilla ES modules, no build step)
   index.html, styles.css
-  js/                  globe, autocomplete, colours, api, stats, controller
+  countries.geojson    Slimmed country polygons + anchor points (committed)
+  js/
+    main.js            Controller; globe.js, autocomplete.js, colors.js, stats.js
+    api.js             Server backend client; engine.js  In-browser backend
+    geo.js, aliases.js Shared pure logic (also used by the server via lib/ shims)
   vendor/globe.gl.min.js   Self-contained globe.gl + three.js bundle
-data/countries.geojson Slimmed country polygons + anchor points (committed)
-test/                  node:test suites
+.github/workflows/     ci.yml (tests) + pages.yml (deploy static site)
+test/                  node:test suites (geo, countries, game, engine, api)
 ```
 
 ## Country data & attribution
