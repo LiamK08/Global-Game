@@ -58,6 +58,8 @@ const game = {
  * fully static site (e.g. GitHub Pages).
  */
 async function selectBackend(geojson) {
+  // Standalone/offline single-file build: data is inlined, always play locally.
+  if (window.__GEO__) return new LocalBackend(geojson);
   try {
     const res = await fetch('api/health', { cache: 'no-store' });
     if (res.ok) {
@@ -78,13 +80,15 @@ async function init() {
 
   wireUi();
 
-  let geojson;
-  try {
-    const res = await fetch('countries.geojson');
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    geojson = await res.json();
-  } catch (err) {
-    return fatal('Could not load map data. Please reload the page.');
+  let geojson = window.__GEO__ || null;
+  if (!geojson) {
+    try {
+      const res = await fetch('countries.geojson');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      geojson = await res.json();
+    } catch (err) {
+      return fatal('Could not load map data. Please reload the page.');
+    }
   }
 
   if (typeof window.Globe !== 'function') {

@@ -35,6 +35,19 @@ GitHub Pages — just open it in a browser, nothing to install:
 (When served by the Node backend it uses the server to keep the target hidden;
 on a static host it falls back to an equivalent in-browser engine automatically.)
 
+### Single offline file
+
+For a no-network, no-install copy (handy when a host or domain is blocked), build
+one self-contained HTML file and just open it in a browser:
+
+```bash
+npm install --no-save esbuild
+npm run build:standalone      # writes dist/globe-guesser.html
+```
+
+`dist/globe-guesser.html` inlines the globe library, the map data and all the
+game code, so it runs entirely offline from a `file://` page — nothing else needed.
+
 ## Quick start (local server)
 
 Requires **Node.js 18+**.

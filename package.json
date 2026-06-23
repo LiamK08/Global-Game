@@ -11,7 +11,8 @@
     "start": "node server.js",
     "dev": "node --watch server.js",
     "test": "node --test",
-    "build:vendor": "node scripts/copy-vendor.js"
+    "build:vendor": "node scripts/copy-vendor.js",
+    "build:standalone": "node scripts/build-standalone.js"
   },
   "keywords": [
     "geography",
