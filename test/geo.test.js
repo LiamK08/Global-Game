@@ -6,8 +6,16 @@ import {
   normalizeName,
   slugify,
   geometryCentroid,
+  bearingTo,
   MAX_DISTANCE_KM,
 } from '../lib/geo.js';
+
+test('bearingTo: cardinal directions are correct', () => {
+  assert.ok(Math.abs(bearingTo({ lat: 0, lng: 0 }, { lat: 10, lng: 0 }) - 0) < 0.5); // N
+  assert.ok(Math.abs(bearingTo({ lat: 0, lng: 0 }, { lat: 0, lng: 10 }) - 90) < 0.5); // E
+  assert.ok(Math.abs(bearingTo({ lat: 10, lng: 0 }, { lat: 0, lng: 0 }) - 180) < 0.5); // S
+  assert.ok(Math.abs(bearingTo({ lat: 0, lng: 0 }, { lat: 0, lng: -10 }) - 270) < 0.5); // W
+});
 
 test('haversineKm: same point is zero', () => {
   assert.equal(haversineKm({ lat: 10, lng: 20 }, { lat: 10, lng: 20 }), 0);

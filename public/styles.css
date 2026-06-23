@@ -328,6 +328,18 @@ body {
   color: var(--text-dim);
   font-variant-numeric: tabular-nums;
 }
+.guess-arrow {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-strong);
+  font-size: 0.9rem;
+  line-height: 1;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
 
 @keyframes pop {
   from {

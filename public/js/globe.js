@@ -49,9 +49,17 @@ export class GlobeView {
       .polygonStrokeColor(() => this.colors.stroke)
       .polygonAltitude((f) => this.altitude(f))
       .polygonLabel((f) => this.label(f))
-      .polygonsTransitionDuration(420);
+      .polygonsTransitionDuration(0); // no per-update geometry tween — much lighter
 
     this.world = world;
+
+    // Performance: cap the render resolution so the globe stays smooth on
+    // low-end / high-DPI machines (the DOM UI is unaffected and stays crisp).
+    try {
+      world.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 1));
+    } catch {
+      /* renderer not ready; ignore */
+    }
     try {
       world.globeMaterial().color.set(this.colors.ocean);
     } catch {
@@ -88,15 +96,11 @@ export class GlobeView {
     return 'rgba(0, 0, 0, 0.18)';
   }
 
-  /** Hover tooltip: country name, plus proximity once it has been guessed. */
+  /** Hover tooltip: only countries you've guessed reveal their name + proximity. */
   label(feat) {
-    const p = feat.properties;
-    const g = this.state.get(p.id);
-    const name = escapeHtml(p.name);
-    if (g) {
-      return `<div class="globe-tip"><b>${name}</b><span>${Math.round(g.proximity * 100)}%</span></div>`;
-    }
-    return `<div class="globe-tip">${name}</div>`;
+    const g = this.state.get(feat.properties.id);
+    if (!g) return ''; // un-guessed countries stay anonymous
+    return `<div class="globe-tip"><b>${escapeHtml(feat.properties.name)}</b><span>${Math.round(g.proximity * 100)}%</span></div>`;
   }
 
   altitude(feat) {

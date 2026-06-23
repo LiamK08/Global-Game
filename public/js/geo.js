@@ -27,6 +27,20 @@ export function haversineKm(a, b) {
 }
 
 /**
+ * Initial great-circle bearing from point `from` to point `to`, in degrees
+ * clockwise from north (0 = N, 90 = E, 180 = S, 270 = W). Used to draw an arrow
+ * from a guess toward the mystery country.
+ */
+export function bearingTo(from, to) {
+  const lat1 = toRad(from.lat);
+  const lat2 = toRad(to.lat);
+  const dLng = toRad(to.lng - from.lng);
+  const y = Math.sin(dLng) * Math.cos(lat2);
+  const x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(dLng);
+  return ((Math.atan2(y, x) * 180) / Math.PI + 360) % 360;
+}
+
+/**
  * Convert a great-circle distance to a proximity score in [0, 1].
  * 1 means the same location (distance 0); 0 means antipodal.
  */

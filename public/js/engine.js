@@ -3,7 +3,7 @@
 // (e.g. on GitHub Pages). It builds the country index from the loaded GeoJSON
 // and scores guesses by haversine proximity, exactly like lib/game.js does.
 
-import { haversineKm, proximityFromDistance, normalizeName } from './geo.js';
+import { haversineKm, proximityFromDistance, normalizeName, bearingTo } from './geo.js';
 import { ALIASES } from './aliases.js';
 
 export class LocalBackend {
@@ -34,11 +34,26 @@ export class LocalBackend {
     this.names = this.guessable.map((c) => c.name).sort((a, b) => a.localeCompare(b));
     this.games = new Map();
     this._seq = 0;
+    this.bag = []; // shuffled queue of upcoming targets (no repeats until exhausted)
+    this.lastTargetId = null;
   }
 
   resolve(raw) {
     if (!raw) return null;
     return this.lookup.get(normalizeName(raw)) || null;
+  }
+
+  /** Next random target, guaranteed not to repeat until every country is used. */
+  nextTargetId() {
+    if (this.bag.length === 0) {
+      this.bag = shuffle(this.guessable.map((c) => c.id), this.random);
+      // Avoid an immediate repeat across the bag boundary.
+      if (this.bag.length > 1 && this.bag[this.bag.length - 1] === this.lastTargetId) {
+        [this.bag[0], this.bag[this.bag.length - 1]] = [this.bag[this.bag.length - 1], this.bag[0]];
+      }
+    }
+    this.lastTargetId = this.bag.pop();
+    return this.lastTargetId;
   }
 
   /** Backend interface (async to match the HTTP client). */
@@ -48,11 +63,7 @@ export class LocalBackend {
 
   async createGame({ targetId } = {}) {
     const id = `local-${++this._seq}`;
-    const pool = this.guessable;
-    const chosen =
-      targetId && this.byId.has(targetId)
-        ? targetId
-        : pool[Math.min(Math.floor(this.random() * pool.length), pool.length - 1)].id;
+    const chosen = targetId && this.byId.has(targetId) ? targetId : this.nextTargetId();
     this.games.set(id, { id, targetId: chosen, status: 'playing', guesses: [], closestId: null });
     return { gameId: id, status: 'playing', guessCount: 0 };
   }
@@ -69,8 +80,11 @@ export class LocalBackend {
     if (existing) return { ok: true, duplicate: true, guess: existing, ...this.#summary(game) };
 
     const target = this.byId.get(game.targetId);
-    const distanceKm = haversineKm({ lat: country.lat, lng: country.lng }, { lat: target.lat, lng: target.lng });
-    const proximity = country.id === target.id ? 1 : proximityFromDistance(distanceKm);
+    const correct = country.id === target.id;
+    const from = { lat: country.lat, lng: country.lng };
+    const to = { lat: target.lat, lng: target.lng };
+    const distanceKm = haversineKm(from, to);
+    const proximity = correct ? 1 : proximityFromDistance(distanceKm);
     const guess = {
       id: country.id,
       name: country.name,
@@ -80,7 +94,8 @@ export class LocalBackend {
       distanceKm: Math.round(distanceKm),
       proximity,
       proximityPercent: Math.round(proximity * 100),
-      correct: country.id === target.id,
+      bearing: correct ? null : Math.round(bearingTo(from, to)),
+      correct,
     };
     game.guesses.push(guess);
 
@@ -119,4 +134,14 @@ function err(code, status, message) {
   e.code = code;
   e.status = status;
   return e;
+}
+
+/** Fisher–Yates shuffle using an injectable RNG. */
+function shuffle(arr, random) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }

@@ -210,7 +210,20 @@ function renderGuessList() {
     pct.className = 'guess-pct';
     pct.textContent = `${g.proximityPercent}%`;
 
-    li.append(swatch, name, pct);
+    // Arrow pointing from this guess toward the mystery country (north = up).
+    const arrow = document.createElement('span');
+    arrow.className = 'guess-arrow';
+    if (g.correct) {
+      arrow.textContent = '🎯';
+      arrow.title = 'You found it!';
+    } else {
+      arrow.innerHTML = '<svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M8 1L14 14L8 10.5L2 14Z" fill="currentColor"/></svg>';
+      arrow.style.transform = `rotate(${g.bearing}deg)`;
+      arrow.title = 'Direction to the mystery country';
+      arrow.setAttribute('aria-label', `Direction to target: ${g.bearing}°`);
+    }
+
+    li.append(arrow, swatch, name, pct);
     li.addEventListener('click', () => game.globe.flyTo(g));
     els.list.appendChild(li);
   }

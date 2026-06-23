@@ -89,6 +89,24 @@ test('giveUp reveals the answer and ends the game', () => {
   assert.equal(game.status, 'gaveup');
 });
 
+test('a wrong guess carries a bearing toward the target; the win has none', () => {
+  const store = newStore();
+  const game = store.createGame({ targetId: 'FRA' });
+  const g = store.guess(game, 'Brazil').guess;
+  assert.equal(typeof g.bearing, 'number');
+  assert.ok(g.bearing >= 0 && g.bearing < 360);
+  assert.equal(store.guess(game, 'France').guess.bearing, null);
+});
+
+test('targets never repeat until the whole pool has been used', () => {
+  const store = newStore();
+  const n = index.guessable.length;
+  const seen = [];
+  for (let i = 0; i < n; i++) seen.push(store.createGame().targetId);
+  assert.equal(new Set(seen).size, n);
+  assert.notEqual(store.createGame().targetId, seen[seen.length - 1]);
+});
+
 test('every guessable target produces valid proximities for sampled guesses', () => {
   const store = newStore();
   const samples = ['France', 'Brazil', 'Japan', 'Egypt', 'Australia', 'Canada'];

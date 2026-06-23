@@ -68,6 +68,29 @@ test('engine: giveUp reveals the answer', async () => {
   assert.equal(res.answer.name, 'Japan');
 });
 
+test('engine: a wrong guess carries a bearing toward the target; the win has none', async () => {
+  const e = make();
+  const { gameId } = await e.createGame({ targetId: 'FRA' });
+  const res = await e.submitGuess(gameId, 'Brazil');
+  assert.equal(typeof res.guess.bearing, 'number');
+  assert.ok(res.guess.bearing >= 0 && res.guess.bearing < 360);
+  const win = await e.submitGuess(gameId, 'France');
+  assert.equal(win.guess.bearing, null);
+});
+
+test('engine: targets never repeat until the whole pool has been used', async () => {
+  const e = make();
+  const n = e.guessable.length;
+  const seen = [];
+  for (let i = 0; i < n; i++) {
+    const { gameId } = await e.createGame();
+    seen.push(e.games.get(gameId).targetId);
+  }
+  assert.equal(new Set(seen).size, n, 'all targets unique within one cycle');
+  const { gameId } = await e.createGame();
+  assert.notEqual(e.games.get(gameId).targetId, seen[seen.length - 1], 'no repeat across the cycle boundary');
+});
+
 test('engine: random target selection stays within the guessable pool', async () => {
   const e = new LocalBackend(geojson, { random: () => 0.999999 });
   const { gameId } = await e.createGame();

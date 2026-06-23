@@ -69,6 +69,92 @@ function displayName(admin) {
   return DISPLAY_OVERRIDES[admin] || admin;
 }
 
+/** Absolute planar area of a ring (shoelace), in deg². Good enough for ranking. */
+function ringArea(ring) {
+  let a = 0;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    a += ring[j][0] * ring[i][1] - ring[i][0] * ring[j][1];
+  }
+  return Math.abs(a / 2);
+}
+
+// Sub-polygons smaller than this (deg²) are dropped — UNLESS it is the country's
+// largest piece, so every country always keeps at least its main landmass.
+const MIN_ISLAND_AREA = 0.02; // ~250 km² near the equator
+
+/** Drop tiny islands from a MultiPolygon to cut triangle and draw-call count. */
+function dropTinyIslands(geometry) {
+  if (!geometry || geometry.type !== 'MultiPolygon') return geometry;
+  const polys = geometry.coordinates;
+  if (polys.length <= 1) return geometry;
+  const areas = polys.map((poly) => ringArea(poly[0] || []));
+  const maxArea = Math.max(...areas);
+  const kept = polys.filter((_, i) => areas[i] >= MIN_ISLAND_AREA || areas[i] === maxArea);
+  return kept.length === polys.length ? geometry : { type: 'MultiPolygon', coordinates: kept };
+}
+
+/** Topology-aware simplification via mapshaper (no border gaps). Falls back to
+ *  the input unchanged if mapshaper isn't installed. */
+async function simplifyCollection(fc) {
+  let mapshaper;
+  try {
+    const mod = await import('mapshaper');
+    mapshaper = mod.default || mod;
+  } catch {
+    console.warn('mapshaper not installed — skipping simplification (npm i --no-save mapshaper).');
+    return fc;
+  }
+  const cmd = '-i input.geojson -simplify 15% keep-shapes -o output.geojson precision=0.01 format=geojson';
+  const result = await new Promise((resolve, reject) => {
+    mapshaper.applyCommands(cmd, { 'input.geojson': JSON.stringify(fc) }, (err, output) =>
+      err ? reject(err) : resolve(output)
+    );
+  });
+  return JSON.parse(result['output.geojson']);
+}
+
+function countPoints(fc) {
+  let pts = 0;
+  for (const f of fc.features) {
+    const g = f.geometry;
+    if (!g) continue;
+    const mp = g.type === 'Polygon' ? [g.coordinates] : g.coordinates;
+    for (const poly of mp) for (const ring of poly) pts += ring.length;
+  }
+  return pts;
+}
+
+/** Signed planar area of a ring (sign indicates winding direction). */
+function signedRingArea(ring) {
+  let a = 0;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    a += ring[j][0] * ring[i][1] - ring[i][0] * ring[j][1];
+  }
+  return a / 2;
+}
+
+/**
+ * three-globe fills polygons based on ring winding, so it must match the source
+ * (Natural Earth): exterior rings clockwise (negative area), holes
+ * counter-clockwise. mapshaper rewinds to RFC 7946 (the opposite), which would
+ * make countries fill the whole sphere — this restores the correct winding.
+ */
+function ensureWinding(fc) {
+  for (const f of fc.features) {
+    const g = f.geometry;
+    if (!g) continue;
+    const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : [];
+    for (const poly of polys) {
+      poly.forEach((ring, i) => {
+        const wantClockwise = i === 0; // exterior CW, holes CCW
+        const isClockwise = signedRingArea(ring) < 0;
+        if (isClockwise !== wantClockwise) ring.reverse();
+      });
+    }
+  }
+  return fc;
+}
+
 async function main() {
   const source = await loadSource(process.argv[2]);
   if (!source || source.type !== 'FeatureCollection') {
@@ -112,17 +198,22 @@ async function main() {
         lat: Number(lat.toFixed(4)),
         lng: Number(lng.toFixed(4)),
       },
-      geometry: feat.geometry,
+      geometry: dropTinyIslands(feat.geometry),
     });
   }
 
-  const out = { type: 'FeatureCollection', features };
+  const collection = { type: 'FeatureCollection', features };
+  const before = countPoints(collection);
+  const out = ensureWinding(await simplifyCollection(collection));
+  const after = countPoints(out);
+
   fs.writeFileSync(OUT_FILE, JSON.stringify(out));
   const bytes = fs.statSync(OUT_FILE).size;
   console.log(
-    `Wrote ${features.length} features (${guessableCount} guessable) -> ` +
+    `Wrote ${out.features.length} features (${guessableCount} guessable) -> ` +
       `${path.relative(ROOT, OUT_FILE)} (${(bytes / 1024 / 1024).toFixed(2)} MB)`
   );
+  console.log(`Geometry points: ${before.toLocaleString()} -> ${after.toLocaleString()} (lighter = smoother globe)`);
 }
 
 main().catch((err) => {
