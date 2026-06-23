@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Guess the mystery country. Every guess is coloured by how close it is. Unlimited play on an interactive 3D globe." />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Globe Guesser — Unlimited Country Game</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8D%3C/text%3E%3C/svg%3E" />
+    <!-- Apply the saved theme before first paint to avoid a flash. -->
+    <script>
+      try {
+        var t = localStorage.getItem('globe-guesser:theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 3D globe canvas mounts here -->
+    <div id="globe" aria-hidden="true"></div>
+
+    <!-- Top bar -->
+    <header class="topbar">
+      <h1 class="brand"><span class="brand-emoji" aria-hidden="true">🌍</span> Globe&nbsp;Guesser</h1>
+      <nav class="actions" aria-label="Game actions">
+        <button id="btn-new" class="icon-btn" type="button" title="New game" aria-label="New game">🔄</button>
+        <button id="btn-stats" class="icon-btn" type="button" title="Statistics" aria-label="Statistics">📊</button>
+        <button id="btn-help" class="icon-btn" type="button" title="How to play" aria-label="How to play">❓</button>
+        <button id="btn-theme" class="icon-btn" type="button" title="Toggle theme" aria-label="Toggle light/dark theme">🌓</button>
+      </nav>
+    </header>
+
+    <!-- Guess input + status -->
+    <section class="play" aria-label="Make a guess">
+      <p id="status" class="status" role="status" aria-live="polite">Guess the mystery country!</p>
+      <form id="guess-form" class="guess-form" autocomplete="off">
+        <div class="ac" id="ac">
+          <input
+            id="guess-input"
+            class="guess-input"
+            type="text"
+            name="guess"
+            placeholder="Type a country…"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+            aria-label="Country guess"
+            aria-autocomplete="list"
+            aria-controls="ac-list"
+            aria-expanded="false"
+          />
+          <ul id="ac-list" class="ac-list" role="listbox" aria-label="Country suggestions"></ul>
+        </div>
+        <button id="guess-btn" class="guess-btn" type="submit">Guess</button>
+      </form>
+      <p id="message" class="message" role="alert" aria-live="assertive"></p>
+    </section>
+
+    <!-- Guesses list (sorted closest-first) -->
+    <aside id="guesses-panel" class="guesses-panel" aria-label="Your guesses" hidden>
+      <div class="guesses-head">
+        <span id="guesses-count">0 guesses</span>
+        <button id="btn-giveup" class="text-btn" type="button">Give up</button>
+      </div>
+      <ol id="guesses-list" class="guesses-list"></ol>
+    </aside>
+
+    <!-- Proximity bar -->
+    <footer class="proximity" aria-label="Closest guess proximity">
+      <div class="proximity-inner">
+        <span class="prox-label prox-cold">Cold</span>
+        <div class="prox-track" id="prox-track">
+          <div class="prox-marker" id="prox-marker" hidden>
+            <span class="prox-flag" id="prox-flag">—</span>
+          </div>
+        </div>
+        <span class="prox-label prox-hot">Hot</span>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal-root" class="modal-root" hidden>
+      <div class="modal-backdrop" data-close></div>
+
+      <!-- Win -->
+      <div id="modal-win" class="modal" role="dialog" aria-modal="true" aria-labelledby="win-title" hidden>
+        <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+        <h2 id="win-title" class="modal-title">🎉 You got it!</h2>
+        <p class="win-answer">The mystery country was <strong id="win-country">—</strong>.</p>
+        <p class="win-line" id="win-line">Solved in 0 guesses.</p>
+        <div class="win-actions">
+          <button id="win-share" class="btn" type="button">Share result</button>
+          <button id="win-new" class="btn btn-primary" type="button">New game</button>
+        </div>
+      </div>
+
+      <!-- Give up -->
+      <div id="modal-lose" class="modal" role="dialog" aria-modal="true" aria-labelledby="lose-title" hidden>
+        <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+        <h2 id="lose-title" class="modal-title">The country was…</h2>
+        <p class="win-answer"><strong id="lose-country">—</strong></p>
+        <p class="win-line" id="lose-line">Better luck next time!</p>
+        <div class="win-actions">
+          <button id="lose-new" class="btn btn-primary" type="button">New game</button>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div id="modal-stats" class="modal" role="dialog" aria-modal="true" aria-labelledby="stats-title" hidden>
+        <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+        <h2 id="stats-title" class="modal-title">Statistics</h2>
+        <div class="stats-grid" id="stats-grid"></div>
+        <p class="stats-note">Stats are stored only in this browser.</p>
+        <div class="win-actions">
+          <button id="stats-reset" class="btn" type="button">Reset stats</button>
+        </div>
+      </div>
+
+      <!-- Help -->
+      <div id="modal-help" class="modal" role="dialog" aria-modal="true" aria-labelledby="help-title" hidden>
+        <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+        <h2 id="help-title" class="modal-title">How to play</h2>
+        <div class="help-body">
+          <p>A secret <strong>mystery country</strong> is chosen at random.</p>
+          <ul>
+            <li>Type any country and press <strong>Guess</strong>. The globe spins to it.</li>
+            <li>Each guess is <strong>coloured by distance</strong> to the target — pale when far, deep red when close.</li>
+            <li>The <strong>bar at the bottom</strong> shows how close your nearest guess is.</li>
+            <li>Find the country in as few guesses as possible. Then play again — it's <strong>unlimited</strong>!</li>
+          </ul>
+          <div class="help-scale">
+            <span>Far</span>
+            <div class="help-gradient" id="help-gradient"></div>
+            <span>Close</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Self-contained globe.gl bundle (three.js included) -->
+    <script src="vendor/globe.gl.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
