@@ -16,6 +16,7 @@ then play again. Forever.
   great‑circle distance to the target.
 - ✈️ **Auto fly‑to** — the globe smoothly rotates to centre on each country you guess.
 - 🌡️ **Closest‑guess bar** along the bottom, with a marker for your best guess so far.
+- 🏷️ **Hover any country** for its name (and its proximity once guessed).
 - 🔤 **Forgiving input** with keyboard‑navigable autocomplete and lots of aliases
   (`USA`, `UK`, `DRC`, `Côte d'Ivoire`, `Czech Republic`, …).
 - 📊 **Local stats** (played, win %, average guesses, best, streak) and 🌓 light/dark themes.
@@ -38,8 +39,10 @@ Then open <http://localhost:3000>. Set a custom port with `PORT=8080 npm start`.
 ```bash
 npm test               # run the test suite
 npm run dev            # start with --watch for development
-npm run build:vendor   # re-copy the globe.gl bundle from node_modules
 node scripts/build-data.js   # rebuild data/countries.geojson from Natural Earth
+
+# Refresh the vendored globe.gl bundle (only needed to bump its version):
+npm install --no-save globe.gl && npm run build:vendor
 ```
 
 ## How it works

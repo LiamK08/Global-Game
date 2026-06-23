@@ -47,6 +47,7 @@ const game = {
   guesses: [], // { id, name, proximity, proximityPercent, correct, lat, lng, continent }
   closest: null, // best guess so far
   globe: null,
+  ac: null, // autocomplete instance
 };
 
 // ---------------------------------------------------------------- bootstrap
@@ -54,12 +55,14 @@ const game = {
 async function init() {
   applyTheme(localStorage.getItem(THEME_KEY) || 'dark');
   els.helpGradient.style.background = rampGradient();
+  setStatus('Loading the globe…');
 
   wireUi();
 
   let geojson;
   try {
     const res = await fetch('/countries.geojson');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     geojson = await res.json();
   } catch (err) {
     return fatal('Could not load map data. Is the server running?');
@@ -72,7 +75,7 @@ async function init() {
 
   try {
     const names = await fetchCountryNames();
-    new Autocomplete({ input: els.input, list: $('#ac-list'), names, onSubmit: () => els.form.requestSubmit() });
+    game.ac = new Autocomplete({ input: els.input, list: $('#ac-list'), names, onSubmit: () => els.form.requestSubmit() });
   } catch {
     /* autocomplete is a nice-to-have; typing still works without it */
   }
@@ -119,19 +122,24 @@ async function startNewGame() {
 async function handleGuess(rawValue) {
   const raw = (rawValue ?? els.input.value).trim();
   if (!raw || game.over || !game.id) return;
+  const gid = game.id; // guard against a new game starting mid-request
 
   els.message.textContent = '';
   let result;
   try {
-    result = await submitGuess(game.id, raw);
+    result = await submitGuess(gid, raw);
   } catch (err) {
+    if (game.id !== gid) return; // stale response — ignore
     if (err.code === 'unknown_country') showMessage(`"${raw}" isn't a country I know.`);
     else showMessage('Something went wrong — try again.');
     flash(els.input);
     return;
   }
 
+  if (game.id !== gid || game.over) return; // stale response — ignore
+
   els.input.value = '';
+  if (game.ac) game.ac.close();
   els.input.focus();
 
   if (result.duplicate) {
@@ -214,13 +222,15 @@ function onWin(result) {
 
 async function handleGiveUp() {
   if (game.over || !game.id) return;
+  const gid = game.id;
   let result;
   try {
-    result = await giveUp(game.id);
+    result = await giveUp(gid);
   } catch {
     showMessage('Could not give up — try again.');
     return;
   }
+  if (game.id !== gid || game.over) return; // stale response — ignore
   game.over = true;
   els.input.disabled = true;
   els.guessBtn.disabled = true;

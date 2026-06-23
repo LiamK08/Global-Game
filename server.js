@@ -8,6 +8,7 @@
 // Run directly (`npm start`) to listen; import { createApp } for tests.
 
 import express from 'express';
+import compression from 'compression';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadCountryIndex } from './lib/countries.js';
@@ -29,6 +30,7 @@ export function createApp(opts = {}) {
 
   const app = express();
   app.disable('x-powered-by');
+  app.use(compression()); // gzip responses (notably the globe bundle + GeoJSON)
   app.use(express.json({ limit: '16kb' }));
 
   // --- Static assets ---

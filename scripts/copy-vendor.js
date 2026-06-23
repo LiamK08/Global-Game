@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 // Refresh the vendored, self-contained globe.gl UMD bundle from node_modules.
-// Run after `npm install` if you bump the globe.gl version: `npm run build:vendor`.
+// globe.gl is NOT a runtime dependency (the bundle in public/vendor is committed),
+// so to refresh it install globe.gl first, then run this script:
+//   npm install --no-save globe.gl && npm run build:vendor
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -13,7 +15,7 @@ const SRC = path.join(ROOT, 'node_modules', 'globe.gl', 'dist', 'globe.gl.min.js
 const DEST = path.join(ROOT, 'public', 'vendor', 'globe.gl.min.js');
 
 if (!fs.existsSync(SRC)) {
-  console.error(`Source not found: ${SRC}\nRun "npm install" first.`);
+  console.error(`Source not found: ${SRC}\nInstall it first:  npm install --no-save globe.gl`);
   process.exit(1);
 }
 

@@ -7,6 +7,13 @@
     <meta name="theme-color" content="#0b1020" />
     <title>Globe Guesser — Unlimited Country Game</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8D%3C/text%3E%3C/svg%3E" />
+    <!-- Apply the saved theme before first paint to avoid a flash. -->
+    <script>
+      try {
+        var t = localStorage.getItem('globe-guesser:theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>

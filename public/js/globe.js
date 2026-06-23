@@ -48,6 +48,7 @@ export class GlobeView {
       .polygonSideColor(() => this.sideColor())
       .polygonStrokeColor(() => this.colors.stroke)
       .polygonAltitude((f) => this.altitude(f))
+      .polygonLabel((f) => this.label(f))
       .polygonsTransitionDuration(420);
 
     this.world = world;
@@ -87,6 +88,17 @@ export class GlobeView {
     return 'rgba(0, 0, 0, 0.18)';
   }
 
+  /** Hover tooltip: country name, plus proximity once it has been guessed. */
+  label(feat) {
+    const p = feat.properties;
+    const g = this.state.get(p.id);
+    const name = escapeHtml(p.name);
+    if (g) {
+      return `<div class="globe-tip"><b>${name}</b><span>${Math.round(g.proximity * 100)}%</span></div>`;
+    }
+    return `<div class="globe-tip">${name}</div>`;
+  }
+
   altitude(feat) {
     const id = feat.properties.id;
     if (id === this.winnerId) return WINNER_ALTITUDE;
@@ -122,11 +134,12 @@ export class GlobeView {
     this.refresh();
   }
 
-  /** Re-evaluate polygon colour + altitude accessors to trigger a redraw. */
+  /** Re-evaluate polygon accessors to trigger a redraw with current state. */
   refresh() {
     this.world
       .polygonCapColor((f) => this.capColor(f))
-      .polygonAltitude((f) => this.altitude(f));
+      .polygonAltitude((f) => this.altitude(f))
+      .polygonLabel((f) => this.label(f));
   }
 
   stopAutoRotate() {
@@ -162,4 +175,8 @@ export class GlobeView {
     const h = this.container.clientHeight || window.innerHeight;
     this.world.width(w).height(h);
   }
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 }

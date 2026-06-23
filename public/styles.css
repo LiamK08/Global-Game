@@ -574,6 +574,25 @@ body {
   );
 }
 
+/* --- Globe hover tooltip --- */
+.globe-tip {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font: 700 0.82rem/1.2 'Segoe UI', system-ui, sans-serif;
+  color: #fff;
+  padding: 4px 9px;
+  background: rgba(10, 14, 26, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+.globe-tip span {
+  color: var(--heat-3);
+  font-variant-numeric: tabular-nums;
+}
+
 [hidden] {
   display: none !important;
 }
