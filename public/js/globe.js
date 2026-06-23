@@ -53,10 +53,10 @@ export class GlobeView {
 
     this.world = world;
 
-    // Performance: cap the render resolution so the globe stays smooth on
-    // low-end / high-DPI machines (the DOM UI is unaffected and stays crisp).
+    // Balance sharpness vs. speed: allow up to 1.5x device pixels so the globe
+    // looks crisp on high-DPI screens without the cost of full native rendering.
     try {
-      world.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 1));
+      world.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
     } catch {
       /* renderer not ready; ignore */
     }

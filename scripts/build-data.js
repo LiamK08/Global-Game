@@ -80,7 +80,7 @@ function ringArea(ring) {
 
 // Sub-polygons smaller than this (deg²) are dropped — UNLESS it is the country's
 // largest piece, so every country always keeps at least its main landmass.
-const MIN_ISLAND_AREA = 0.02; // ~250 km² near the equator
+const MIN_ISLAND_AREA = 0.008; // ~100 km² near the equator (keeps most real islands)
 
 /** Drop tiny islands from a MultiPolygon to cut triangle and draw-call count. */
 function dropTinyIslands(geometry) {
@@ -104,7 +104,7 @@ async function simplifyCollection(fc) {
     console.warn('mapshaper not installed — skipping simplification (npm i --no-save mapshaper).');
     return fc;
   }
-  const cmd = '-i input.geojson -simplify 15% keep-shapes -o output.geojson precision=0.01 format=geojson';
+  const cmd = '-i input.geojson -simplify 35% keep-shapes -o output.geojson precision=0.01 format=geojson';
   const result = await new Promise((resolve, reject) => {
     mapshaper.applyCommands(cmd, { 'input.geojson': JSON.stringify(fc) }, (err, output) =>
       err ? reject(err) : resolve(output)
