@@ -1,0 +1,669 @@
+[
+ {
+  "image": "image8.png",
+  "number": "4",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "A business requires new manufacturing equipment.\n\nWhich of the following would provide leasing for this equipment?\n\nA. Unit trusts\nB. Property trusts\nC. Finance companies\nD. Superannuation funds",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-inf-institutions"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image9.png",
+  "number": "16",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Which independent federal body ensures that businesses adhere to government regulations, maintain appropriate financial information and provide consumer protection?\n\nA. Reserve Bank of Australia\nB. Australian Securities Exchange\nC. Australian Prudential Regulation Authority\nD. Australian Securities and Investment Commission",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-inf-government"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image10.png",
+  "number": "(b)",
+  "marks": 4,
+  "kind": "short-answer",
+  "text": "Explain government influences on the financial management of businesses.",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-inf-government"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image11.png",
+  "number": "8",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "What effect would a global downturn in the economic outlook have on Australia's unemployment, output and exchange rates?\n\nA. Unemployment: Increase; Output: Increase; Exchange rates: Decrease\nB. Unemployment: Decrease; Output: Increase; Exchange rates: Increase\nC. Unemployment: Decrease; Output: Decrease; Exchange rates: Increase\nD. Unemployment: Increase; Output: Decrease; Exchange rates: Decrease",
+  "stimulus": "The four options are laid out as a table with columns Unemployment, Output and Exchange rates, each row (A-D) giving an Increase/Decrease combination.",
+  "syllabusPoints": [
+   "fin-inf-global"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image12.png",
+  "number": "(b)",
+  "marks": 6,
+  "kind": "short-answer",
+  "text": "Discuss ONE internal and ONE external source of finance for Sue's purchase of stock.",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-inf-internal",
+   "fin-inf-debt"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image13.png",
+  "number": "14",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Which of the following is the correct order for financial planning?\n\nA. Developing budgets, determining financial needs, maintaining record systems, identifying financial risks, establishing financial controls\nB. Determining financial needs, establishing financial controls, identifying financial risks, maintaining record systems, developing budgets\nC. Determining financial needs, developing budgets, maintaining record systems, identifying financial risks, establishing financial controls\nD. Developing budgets, maintaining record systems, identifying financial risks, establishing financial controls, determining financial needs",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-planning"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image2.png",
+  "number": "24 (a)",
+  "marks": 2,
+  "kind": "short-answer",
+  "text": "Why is liquidity an objective of financial management?",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-role-objectives"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image3.png",
+  "number": "21 (a)",
+  "marks": 3,
+  "kind": "short-answer",
+  "text": "Explain a potential conflict between a short-term and a long-term financial objective for Sue.",
+  "stimulus": "Scenario above the question: \"Sue is a sole trader whose business is growing rapidly as sales are increasing. As a result of the growth, she needs to purchase stock worth $10 000.\" Question 21 is worth 9 marks in total.",
+  "syllabusPoints": [
+   "fin-role-objectives"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image4.png",
+  "number": "22 (c)\u2013(d)",
+  "marks": 8,
+  "kind": "short-answer",
+  "text": "(c) Why is it important for a business to control its debt to equity ratio? [4]\n(d) Explain the interdependence of finance and operations in a business. Support your answer with relevant examples. [4]",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-ratios",
+   "fin-role-objectives",
+   "fin-role-interdependence"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image5.png",
+  "number": "4",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "A business ensures all its debts are paid as they fall due.\n\nWhich financial objective is the business satisfying?\n\nA. Efficiency\nB. Growth\nC. Liquidity\nD. Solvency",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-role-objectives"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image6.png",
+  "number": "4",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "What does the expense ratio measure?\n\n(A) Efficiency\n(B) Growth\n(C) Profitability\n(D) Solvency",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-ratios",
+   "fin-role-objectives"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image7.png",
+  "number": "19",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "The table shows financial data for two businesses.\n\nWhich of the following statements is correct?\n\n(A) Business A is more profitable but less efficient than Business B.\n(B) Business B is more profitable but less efficient than Business A.\n(C) Business A is more profitable and more efficient than Business B.\n(D) Business B is more profitable and more efficient than Business A.",
+  "stimulus": "Table of financial data for two businesses \u2014 Business A / Business B: Annual sales ($) 1 600 000 / 2 800 000; Net profit ($) 400 000 / 400 000; Accounts receivable ($) 200 000 / 250 000. Formulas printed beneath the table: \"Net profit ratio: net profit \u00f7 sales\" and \"Accounts receivable turnover ratio: sales \u00f7 accounts receivable\". (Working: net profit ratio A 25% vs B 14.3%; AR turnover A 8 times vs B 11.2 times.)",
+  "syllabusPoints": [
+   "fin-proc-ratios",
+   "fin-proc-comparative"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image14.png",
+  "number": "2",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "A business is purchasing a new property.\n\nWhich source of finance would be the most appropriate?\n\nA. Shares\nB. Mortgage\nC. Debenture\nD. Letter of credit",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-matching",
+   "fin-inf-debt"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image15.png",
+  "number": "7",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "In which of the following are both sources of funds appropriate for a business purchasing extra stock before a busy trading period?\n\nA. Debentures and factoring\nB. Retained profits and unsecured notes\nC. Debentures and bank overdraft\nD. Retained profits and bank overdraft",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-matching",
+   "fin-inf-debt"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image16.png",
+  "number": "24 (c)",
+  "marks": 5,
+  "kind": "short-answer",
+  "text": "A business has decided to expand into a larger factory and is now considering its financial options.\n\nDiscuss the use of leasing and the use of mortgages as a source of long-term finance for this business.",
+  "stimulus": "Short inline scenario only (no table or graph): a business expanding into a larger factory and weighing its financial options. Crop is headed \"Question 24 (continued)\" and is followed by ruled answer lines.",
+  "syllabusPoints": [
+   "fin-proc-matching",
+   "fin-inf-debt"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image17.png",
+  "number": "22 (a)\u2013(b)",
+  "marks": 5,
+  "kind": "short-answer",
+  "text": "Question 22 (8 marks)\n\n(a) Outline ONE ethical issue related to the preparation of financial reports. 2\n\n(b) Explain ONE advantage of debt financing. 3",
+  "stimulus": "No stimulus material. The crop shows the header \"Question 22 (8 marks)\" with parts (a) [2 marks] and (b) [3 marks] and their ruled answer lines; part (c), which makes up the remaining 3 marks of the 8, is not in this crop.",
+  "syllabusPoints": [
+   "fin-proc-ethical",
+   "fin-proc-debtequity"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image18.png",
+  "number": "15",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Mick is deciding whether to purchase Business A or Business B and has received the following information.\n\nWhich of the following will help Mick make the best decision?\n\nA. Total sales\nB. Industry averages\nC. The value of assets\nD. Comparative ratio analysis",
+  "stimulus": "Two-column table comparing Business A and Business B. Assets ($): Business A 10 million, Business B 1 million. Total sales ($): Business A 4 million, Business B 2 million. The businesses are very different sizes, so raw totals mislead.",
+  "syllabusPoints": [
+   "fin-proc-comparative"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image19.png",
+  "number": "12",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Kevin is considering investing in a business.\n\nTo help Kevin determine which business to invest in, he should consider comparative ratio analysis because\n\nA. cash flow is assessed.\nB. market share is determined.\nC. similar businesses are evaluated.\nD. business sales growth is measured.",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-comparative"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image20.png",
+  "number": "16",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Auditors have discovered that the value of legal fees paid has been included in the asset value of a new warehouse purchased by a business.\n\nWhat limitation of financial reports does this show?\n\nA. Capitalised expenses B. Debt repayments C. Normalised earnings D. Timing issues",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-limitations"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image21.png",
+  "number": "6",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Which of the following would immediately improve the working capital of a business?\n\nA. Increasing credit sales B. Using sale and lease back C. Preparing a cash flow statement D. Repaying debt to creditors more quickly",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-str-workingcapital"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image22.png",
+  "number": "25",
+  "marks": 20,
+  "kind": "extended-response",
+  "text": "Question 25 (20 marks)\n\nA business, Roo's Outback Eatery Pty Ltd, is opening an additional restaurant in NSW. They plan to position the restaurant as an exclusive restaurant specialising in modern Australian food with quality customer service. The owners require assistance with the following:\n\n\u2022 the acquisition and development of suitable staff\n\n\u2022 additional funds for the day-to-day running of the business\n\n\u2022 the close monitoring of working capital.\n\nYou have been hired as a consultant to write a report for the owners. In your report:\n\n\u2022 discuss methods this business could use in the acquisition and development of staff\n\n\u2022 recommend TWO appropriate working capital management strategies for this business.",
+  "stimulus": "Section III boxed scenario (no figures): Roo's Outback Eatery Pty Ltd, opening an additional NSW restaurant positioned as an exclusive modern Australian restaurant with quality customer service; owners need help with acquisition and development of suitable staff, additional funds for day-to-day running, and close monitoring of working capital. Crop also shows the standard 20-mark business report assessment criteria.",
+  "syllabusPoints": [
+   "fin-str-workingcapital"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image23.png",
+  "number": "26",
+  "marks": 20,
+  "kind": "extended-response",
+  "text": "Question 26 (20 marks)\n\nThe table shows data for Lee's Catering, a small business. It has a high profile chef and the food is of excellent quality. It has many bookings for future events.\n\nA potential new partner is concerned about the accuracy of the financial reports and the effectiveness of current management.\n\nThe potential new partner has asked you to write a business report in which you:\n\n\u2022 explain possible limitations of the financial reports\n\n\u2022 recommend appropriate working capital management strategies for the business\n\n\u2022 evaluate a pricing strategy the business could use.",
+  "stimulus": "Table 'Extract from financial reports for Lee's Catering': Cash $1000; Accounts receivable $10 000; Inventory $50; Accounts payable $11 050; Goodwill $200 000; Current ratio (current assets \u00f7 current liabilities) 100% (industry average 150%); Gross profit ratio (gross profit \u00f7 sales) 30% (industry average 50%); Expense ratio (total expenses \u00f7 sales) 60% (industry average 30%).",
+  "syllabusPoints": [
+   "fin-proc-limitations",
+   "fin-str-workingcapital",
+   "fin-str-profitability"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image24.png",
+  "number": "26",
+  "marks": 20,
+  "kind": "extended-response",
+  "text": "Question 26 (20 marks)\n\nKingland Office Supplies operates in a large NSW city in a highly competitive market. A paid manager is responsible for the day-to-day running of the business.\n\nThe owners are concerned about the low profitability of the business.\n\nInvestigations by the owners indicate the following problems:\n\n\u2022 customers find the product mix unappealing\n\n\u2022 poor management of cash flow\n\n\u2022 poor accounts receivable turnover compared to similar businesses.\n\nThe manager has also identified low prices offered by larger competitors as a cause of the low profitability.\n\nYou have been employed as a consultant by the owners. Write a report to the owners recommending marketing and financial management strategies to improve the performance of the business.",
+  "stimulus": "Boxed scenario (no figures): Kingland Office Supplies, a large NSW city business in a highly competitive market run day-to-day by a paid manager. Owners concerned about low profitability; identified problems are an unappealing product mix, poor cash flow management, and poor accounts receivable turnover compared to similar businesses, plus low prices offered by larger competitors. Crop also shows the 20-mark business report assessment criteria.",
+  "syllabusPoints": [
+   "fin-str-profitability",
+   "fin-str-workingcapital",
+   "fin-str-cashflow"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image25.png",
+  "number": "25",
+  "marks": 20,
+  "kind": "extended-response",
+  "text": "Question 25 (20 marks)\n\nSportyz Goodz Ltd is a retailer that has been operating for the past 20 years in Australia. The directors have provided the following information:\n\n\u2022 In 2013 the business issued new shares on the Australian Securities Exchange and expanded its retail activities internationally.\n\n\u2022 The business is facing increasing competition.\n\n\u2022 The directors are concerned about the positioning of their product in the market.\n\n\u2022 The directors want the business to operate for the benefit of shareholders in the long term.\n\nFinancial data for Sportyz Goodz are shown on the graph.\n\nThe directors have asked you to write a business report in which you:\n\n\u2022 outline ONE strategic role of financial management\n\n\u2022 recommend TWO strategies to improve financial performance\n\n\u2022 explain the importance of monitoring and controlling the business's marketing strategy.",
+  "stimulus": "Boxed scenario plus a line graph. Graph: 'Amount (millions of $)' against Year 2012\u20132017, two unlabelled-value lines \u2014 Sales (starts highest in 2012, falls sharply to 2013, recovers to a 2014 peak, then declines steadily to 2017) and Profit (below Sales throughout, same shape \u2014 steep fall to a 2013 trough, 2014 recovery, then steady decline to 2017). No dollar values are printed on the axis; profit falls faster than sales so the gap between the two lines widens.",
+  "syllabusPoints": [
+   "fin-role-strategic",
+   "fin-str-profitability"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image26.png",
+  "number": "24 (a)\u2013(b)",
+  "marks": 3,
+  "kind": "short-answer",
+  "text": "Question 24 (10 marks)\n\n(a) Calculate the accounts receivable turnover ratio (sales \u00f7 accounts receivable) for this business.  1\n\n(b) Interpret this business's expense ratio (total expenses \u00f7 sales).  2",
+  "stimulus": "Table headed \"Financial Information for robotics company\" ($): Sales 225 000; Cost of goods sold 105 000; Selling expenses 8 500; Administration expenses 6 000; Financial expenses 4 000; Accounts receivable 30 000; Robotics company credit policy 30 days; Industry expense ratio 10%.",
+  "syllabusPoints": [
+   "fin-proc-ratios",
+   "fin-proc-comparative"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image27.png",
+  "number": "24 (c)\u2013(d)",
+  "marks": 7,
+  "kind": "short-answer",
+  "text": "Question 24 (continued)\n\n(c) Recommend ONE financial strategy this business could implement to improve efficiency in the collection of accounts receivable.  3\n\n(d) Explain TWO ways in which comparative ratio analysis can be used by this business to assess its financial position.  4",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-str-workingcapital",
+   "fin-str-cashflow",
+   "fin-proc-comparative"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image28.png",
+  "number": "23 (b)",
+  "marks": 3,
+  "kind": "short-answer",
+  "text": "(b) How could a business improve management of its accounts receivable turnover?",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-str-workingcapital",
+   "fin-str-cashflow"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image29.png",
+  "number": "24 (c)",
+  "marks": 4,
+  "kind": "short-answer",
+  "text": "Question 24 (continued)\n\n(c) Discuss factoring as a strategy for cash flow management.",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-str-cashflow"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image30.png",
+  "number": "22 (a)",
+  "marks": 2,
+  "kind": "short-answer",
+  "text": "Question 22 (12 marks)\n\n(a) Calculate the current ratio (current assets \u00f7 current liabilities) of this business. Show all working.",
+  "stimulus": "Balance Sheet for Chalker Pty Ltd as at year ending 30 June 2012. Current Assets: Cash 8 000, Receivables 12 000, Inventories 15 000 = 35 000. Non-Current Assets: Property, Plant and Equipment 33 000. Total Assets 68 000. Current Liabilities: Creditors 14 000. Non-Current Liabilities: Loan 20 000. Owners Equity: Capital 15 000, Retained Net Profit 19 000 = 34 000. Total Liabilities and Owners Equity 68 000.",
+  "syllabusPoints": [
+   "fin-proc-ratios"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image31.png",
+  "number": "22 (b)",
+  "marks": 2,
+  "kind": "short-answer",
+  "text": "(b) Calculate the debt to equity ratio (total liabilities \u00f7 total equity) of this business. Show all working.",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-ratios"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image32.png",
+  "number": "11\u201312 (stimulus)",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Use the information below to answer Questions 11 and 12.\n\nBalance sheet for Steve's Lawn Services as at 30th June 2016",
+  "stimulus": "Balance sheet for Steve's Lawn Services as at 30th June 2016. Current assets ($): Cash 15 000; Accounts receivable 3 000; Stock ? (deliberately left blank). Non-current assets: Plant and equipment 40 000; Goodwill 85 000. Current liabilities ($): Accounts payable 5 000; Overdraft 5 500. Non-current liabilities: Long-term loan 100 000. Total equity: Capital 22 700; Net profit 12 800. Footer box: \"Industry standard current ratio: 1.9:1\". Because Stock is shown as \"?\", total current assets \u2014 and therefore the current ratio \u2014 cannot be calculated.",
+  "syllabusPoints": [
+   "fin-proc-statements",
+   "fin-proc-ratios"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image33.png",
+  "number": "11\u201312",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "11 If Steve is a sole trader, how much equity does he have in the business?\nA. $12 800\nB. $35 500\nC. $135 500\nD. $146 000\n\n12 The current ratio (current assets \u00f7 current liabilities) for this business is\nA. too high.\nB. acceptable.\nC. dangerously low.\nD. unable to be calculated.",
+  "stimulus": "No table appears in this crop \u2014 both questions depend on the Steve's Lawn Services balance sheet (30 June 2016) shown in image32.png, in which Stock is left as \"?\".",
+  "syllabusPoints": [
+   "fin-proc-statements",
+   "fin-proc-ratios"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image34.png",
+  "number": "19\u201320 (stimulus)",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Use the following information to answer Questions 19\u201320.\n\nExtract from Balance Sheet for Kerry's Warehouse as at June 2014",
+  "stimulus": "Extract from Balance Sheet for Kerry's Warehouse as at June 2014 ($): Current assets 1500; Non-current assets 8500; Current liabilities 1000; Non-current liabilities 6000. Additional information \u2014 Financial data for Kerry's Warehouse 2013: Debt to equity ratio = 150%; Current ratio 1.25:1 or 125%. Industry averages for 2013\u201314: Debt to equity ratio (total liabilities \u00f7 total equity) = 100%; Current ratio (current assets \u00f7 current liabilities) = 1:1 or 100%. (2014 figures give a current ratio of 1.5:1 or 150% and a debt to equity ratio of 7000 \u00f7 3000 = 233%.)",
+  "syllabusPoints": [
+   "fin-proc-ratios",
+   "fin-proc-comparative"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image35.png",
+  "number": "19\u201320",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "19 Which of the following statements is true about liquidity for Kerry's Warehouse in 2014?\nA. It is better than industry average and has improved since 2013.\nB. It is better than industry average and has worsened since 2013.\nC. It is worse than industry average and has improved since 2013.\nD. It is worse than industry average and has worsened since 2013.\n\n20 Which of the following statements is true about gearing for Kerry's Warehouse in 2014?\nA. It is better than industry average and has improved since 2013.\nB. It is better than industry average and has worsened since 2013.\nC. It is worse than industry average and has improved since 2013.\nD. It is worse than industry average and has worsened since 2013.",
+  "stimulus": "No table appears in this crop \u2014 both questions depend on the Kerry's Warehouse balance sheet extract (June 2014) plus the 2013 figures and 2013\u201314 industry averages shown in image34.png.",
+  "syllabusPoints": [
+   "fin-proc-ratios",
+   "fin-proc-comparative"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image36.png",
+  "number": "17\u201318",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Use the following information to answer Questions 17 and 18.\n\nA business provided the following financial information.\n\n17 Which of the following shows the gross profit and the net profit ratio for this business in 2020?\nA. Gross profit $105 000 | Net profit ratio (net profit \u00f7 sales) 28.0%\nB. Gross profit $105 000 | Net profit ratio (net profit \u00f7 sales) 42.0%\nC. Gross profit $130 000 | Net profit ratio (net profit \u00f7 sales) 34.5%\nD. Gross profit $130 000 | Net profit ratio (net profit \u00f7 sales) 47.0%\n\n18 Which of the following describes the change in both the gross profit ratio and expense ratio from 2019 to 2020?\nA. Gross profit ratio (gross profit \u00f7 sales) Improved | Expense ratio (total expenses \u00f7 sales) Improved\nB. Gross profit ratio (gross profit \u00f7 sales) Improved | Expense ratio (total expenses \u00f7 sales) Worsened\nC. Gross profit ratio (gross profit \u00f7 sales) Worsened | Expense ratio (total expenses \u00f7 sales) Improved\nD. Gross profit ratio (gross profit \u00f7 sales) Worsened | Expense ratio (total expenses \u00f7 sales) Worsened",
+  "stimulus": "Two-year financial information table, 2019 ($) and 2020 ($): Sales 250 000 / 275 000; Cost of goods sold 145 000 / 145 000; Gross profit ? / ?; Expenses 35 000 / 35 000; Net profit ? / ?. Gross profit and net profit are left blank for the student to derive (2020 gross profit $130 000, net profit $95 000).",
+  "syllabusPoints": [
+   "fin-proc-ratios",
+   "fin-proc-comparative",
+   "fin-proc-statements"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image37.png",
+  "number": "19\u201320",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Use the following information to answer Questions 19 and 20.\n\nExtract from balance sheet for a business as at June 2020\n\n19 The liquidity position of this business in 2020 indicates that it is\nA. better than the industry average and has improved since 2019.\nB. better than the industry average and has worsened since 2019.\nC. worse than the industry average and has improved since 2019.\nD. worse than the industry average and has worsened since 2019.\n\n20 The gearing for this business in 2020 indicates that it is\nA. better than the industry average and has improved since 2019.\nB. better than the industry average and has worsened since 2019.\nC. worse than the industry average and has improved since 2019.\nD. worse than the industry average and has worsened since 2019.",
+  "stimulus": "Extract from balance sheet for a business as at June 2020 ($): Current assets 1700; Non-current assets 8650; Current liabilities 1100; Non-current liabilities 6500. Additional information \u2014 Financial data 2019: Debt to equity ratio = 2:1 or 200%; Current ratio = 1.25:1 or 125%. Industry averages for 2019\u20132020: Debt to equity ratio (total liabilities \u00f7 total equity) = 1:1 or 100%; Current ratio (current assets \u00f7 current liabilities) = 2:1 or 200%. (2020 figures give a current ratio of about 1.55:1 or 155% and a debt to equity ratio of 7600 \u00f7 2750 \u2248 276%.)",
+  "syllabusPoints": [
+   "fin-proc-ratios",
+   "fin-proc-comparative"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image38.png",
+  "number": "20",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "The table shows information supplied by a business.\n\n| Sales | ? |\n| Cost of goods sold | ? |\n| Gross profit | $400 000 |\n| Expenses | ? |\n| Net profit | ? |\n| Gross profit ratio (gross profit \u00f7 sales) | 66.7% |\n| Net profit ratio (net profit \u00f7 sales) | 50% |\n\nWhich row in the following table shows the sales and net profit for this business?\n\nA. Sales $66 700; Net profit $50 000\nB. Sales $200 000; Net profit $100 000\nC. Sales $600 000; Net profit $200 000\nD. Sales $600 000; Net profit $300 000",
+  "stimulus": "Partly blank income-statement style table: Sales ?, Cost of goods sold ?, Gross profit $400 000, Expenses ?, Net profit ?, with gross profit ratio (gross profit \u00f7 sales) 66.7% and net profit ratio (net profit \u00f7 sales) 50%. Answer options are a second table of Sales / Net profit pairs ($66 700/$50 000; $200 000/$100 000; $600 000/$200 000; $600 000/$300 000).",
+  "syllabusPoints": [
+   "fin-proc-ratios"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image39.png",
+  "number": "19\u201320",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Use the following information to answer Questions 19 and 20.\n\nA business provided the following financial information.\n\n| Sales | $600 000 |\n| Owner's equity | $320 000 |\n| Accounts receivable | $41 000 |\n| Cost of goods sold | $200 000 |\n| Expenses | $60 000 |\n\nAdditional information:\n\u2022 Gross profit ratio = gross profit \u00f7 sales\n\u2022 Accounts receivable turnover ratio = sales \u00f7 accounts receivable\n\n19 What is the gross profit ratio for the business?\nA. 53%\nB. 67%\nC. 78%\nD. 90%\n\n20 What is the average number of days the business takes to collect its debts?\nA. 15 days\nB. 25 days\nC. 29 days\nD. 30 days",
+  "stimulus": "Financial information table: Sales $600 000, Owner's equity $320 000, Accounts receivable $41 000, Cost of goods sold $200 000, Expenses $60 000. A boxed 'Additional information' note supplies the formulas: gross profit ratio = gross profit \u00f7 sales; accounts receivable turnover ratio = sales \u00f7 accounts receivable.",
+  "syllabusPoints": [
+   "fin-proc-ratios"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image40.png",
+  "number": "17",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "The expense ratio (total expenses \u00f7 sales) is always\n\nA. the difference between the net profit ratio and the gross profit ratio.\nB. the difference between sales and the gross profit ratio.\nC. greater than the gross profit ratio.\nD. greater than the net profit ratio.",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-ratios"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image41.png",
+  "number": "10",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Which of the following would improve the financial position of a business?\n\n(A) Lower current ratio and lower accounts receivable turnover ratio\n(B) Higher current ratio and lower accounts receivable turnover ratio\n(C) Lower current ratio and higher accounts receivable turnover ratio\n(D) Higher current ratio and higher accounts receivable turnover ratio",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-ratios"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image42.png",
+  "number": "15",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Use the information to answer Question 15.\n\nBalance sheet as at 30 June 2019\n\n| | ($) | | ($) |\n| Current assets | | Current liabilities | |\n| Cash | 10 000 | Accounts payable | 10 000 |\n| Accounts receivable | 5 000 | Overdraft | 5 000 |\n| Stock | 8 000 | | |\n| Non-current assets | | Non-current liabilities | |\n| Plant and equipment | 35 000 | Mortgage | 135 000 |\n| Land and buildings | 292 000 | | |\n| | | Total equity | |\n| | | Capital | 184 000 |\n| | | Net profit | 16 000 |\n| | 350 000 | | 350 000 |\n\nWhat is the gearing ratio (total liabilities \u00f7 total equity) for this business?\n\nA. 0.67 : 1\nB. 0.73 : 1\nC. 0.75 : 1\nD. 0.81 : 1",
+  "stimulus": "Full two-sided balance sheet as at 30 June 2019, totalling $350 000 each side. Current assets: cash $10 000, accounts receivable $5 000, stock $8 000. Non-current assets: plant and equipment $35 000, land and buildings $292 000. Current liabilities: accounts payable $10 000, overdraft $5 000. Non-current liabilities: mortgage $135 000. Total equity: capital $184 000, net profit $16 000 (total liabilities $150 000, total equity $200 000).",
+  "syllabusPoints": [
+   "fin-proc-ratios",
+   "fin-proc-statements"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image43.png",
+  "number": "10",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "The table shows cash flow information for a business.\n\n| | Jan | Feb | March | April |\n| Opening balance ($) | 4 000 | | | |\n| Cash in ($) | 20 000 | 20 000 | 20 000 | 24 000 |\n| Cash out ($) | 14 000 | 50 000 | 24 000 | 26 000 |\n\nWhat is the opening cash balance for April?\n\n(A) \u2212$24 000\n(B) \u2212$18 000\n(C) \u2212$16 000\n(D) \u2212$12 000",
+  "stimulus": "Four-month cash flow table (Jan\u2013April). Opening balance shown only for Jan at $4 000; cash in $20 000, $20 000, $20 000, $24 000; cash out $14 000, $50 000, $24 000, $26 000 \u2014 the opening balances for Feb, March and April are blank and must be carried forward.",
+  "syllabusPoints": [
+   "fin-proc-statements"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image44.png",
+  "number": "24 (a)",
+  "marks": 2,
+  "kind": "short-answer",
+  "text": "(a) The table shows an extract from a cash flow statement for a business.\n\nThe opening cash balance for January is $5000.\n\n(i) Calculate the opening cash balance for March.   1\n\n(ii) In which month did the business start with a negative cash balance?   1",
+  "stimulus": "Table headed \"Question 24 (10 marks)\" showing a six-month cash flow extract (Jan, Feb, March, April, May, June). Cash in ($): 6000, 5000, 3000, 2000, 4000, 3000. Cash out ($): 3000, 3000, 8000, 8000, 3000, 2000. Text below states the opening cash balance for January is $5000. (Working: Feb opens at $8000, March opens at $10 000, April opens at $5000, May opens at -$1000, June opens at $0.)",
+  "syllabusPoints": [
+   "fin-str-cashflow",
+   "fin-proc-statements"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image45.png",
+  "number": "12",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Which of the following allows shareholders of a public company to acquire additional shares at a discount?\n\nA. New issues\nB. Placements\nC. Private equity\nD. Unsecured notes",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-inf-equity"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image46.png",
+  "number": "6",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "A sole trader invests $500 000 into her business.\n\nWhat is this an example of?\n\nA. An overdraft\nB. Retained profits\nC. Internal debt finance\nD. Internal equity finance",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-inf-internal",
+   "fin-inf-equity"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image47.png",
+  "number": "22 (c)",
+  "marks": 3,
+  "kind": "short-answer",
+  "text": "(c) Explain ONE disadvantage of equity financing.",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-proc-debtequity",
+   "fin-inf-equity"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image48.png",
+  "number": "25",
+  "marks": 20,
+  "kind": "extended-response",
+  "text": "Question 25 (20 marks)\n\nEmu Uniform Manufacturers Pty Ltd are a successful business based in NSW. They currently supply a range of school, sport and work uniforms to a large number of customers throughout Australia. They are known for their outstanding customer service and high quality products.\n\nSales have been increasing for many years and they have recently received a large long-term contract to supply uniforms to a major company.\n\nThis will require them to significantly expand their output. To do this, the business will have to outsource overseas or spend $5 million to expand its existing factory in NSW.\n\nYou have been hired as a consultant to write a report to the management. In your report:\n\n\u2022 recommend a source of finance for the factory expansion\n\u2022 discuss outsourcing overseas compared with the factory expansion\n\u2022 explain the global factors that need to be considered if they decide to use outsourcing as an operations strategy.",
+  "stimulus": "Boxed scenario: Emu Uniform Manufacturers Pty Ltd, a successful NSW-based supplier of school, sport and work uniforms nationally, known for outstanding customer service and high quality. Sales rising for many years; a large long-term contract with a major company requires a significant expansion of output. Two options \u2014 outsource overseas, or spend $5 million expanding the existing NSW factory.",
+  "syllabusPoints": [
+   "fin-proc-debtequity",
+   "fin-proc-matching",
+   "fin-inf-equity"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image49.png",
+  "number": "24 (a)",
+  "marks": 3,
+  "kind": "short-answer",
+  "text": "Question 24 (7 marks)\n\nAn Australian-owned business manufactures bicycles in China and sells them to wholesalers in France. These wholesalers do not pay in advance.\n\n(a) Describe ONE method of payment the business could use to ensure that it receives payment for the sales.",
+  "stimulus": "Short written scenario (no table or graph): an Australian-owned business manufactures bicycles in China and sells them to French wholesalers who will not pay in advance. Question 24 is worth 7 marks in total; part (a) is 3 marks.",
+  "syllabusPoints": [
+   "fin-str-global"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image50.png",
+  "number": "24 (b)",
+  "marks": 5,
+  "kind": "short-answer",
+  "text": "Justify the method of payment that would be most effective in reducing the business's financial risk.",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-str-global"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image51.png",
+  "number": "24 (b)",
+  "marks": 4,
+  "kind": "short-answer",
+  "text": "How could this business protect itself against a change in the value of the Australian dollar relative to another currency?",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-str-global"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image52.png",
+  "number": "24 (a)",
+  "marks": 2,
+  "kind": "short-answer",
+  "text": "A business imports computers from China and sells them to customers in Australia.\n\n(a) How will an appreciation of the Australian dollar affect the competitive position of this business?",
+  "stimulus": "Question 24 header printed as \"Question 24 (7 marks)\", followed by a one-line business scenario: a business imports computers from China and sells them to customers in Australia (i.e. an importer). No table, graph or figures.",
+  "syllabusPoints": [
+   "fin-str-global"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image53.png",
+  "number": "20",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Which of the following groups would suffer the worst financial impact as a result of an increase in the value of the Australian dollar?\nA. Japanese shareholders of an Australian bank\nB. Australian producers selling wine to New Zealand\nC. Australian car makers purchasing inputs from Italy\nD. American travel agents organising tours for Australians",
+  "stimulus": null,
+  "syllabusPoints": [
+   "fin-str-global"
+  ],
+  "legible": true
+ },
+ {
+  "image": "image54.png",
+  "number": "18",
+  "marks": null,
+  "kind": "multiple-choice",
+  "text": "Australian businesses export to Canada.\n\nWhat would happen if the value of the Australian dollar increased compared to the Canadian dollar?\nA. There would be no effect on Canadian businesses.\nB. Australian imports from Canada would become more expensive.\nC. Canadian businesses would find Australian products more affordable.\nD. Australian products would become more expensive for Canadian businesses.",
+  "stimulus": "One-line scenario above the stem: \"Australian businesses export to Canada.\" No table, graph or figures.",
+  "syllabusPoints": [
+   "fin-str-global"
+  ],
+  "legible": true
+ }
+]

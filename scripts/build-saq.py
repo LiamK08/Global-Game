@@ -553,9 +553,10 @@ footer{max-width:1400px;margin:0 auto;padding:8px 16px 40px;color:var(--muted);f
       </select>
       <select id="fVerb"><option value="">Any directive verb</option></select>
       <select id="fType">
-        <option value="">Short answer + extended</option>
+        <option value="">All question types</option>
         <option value="short-answer">Short answer only</option>
         <option value="extended-response">Extended response only</option>
+        <option value="multiple-choice">Multiple choice only</option>
       </select>
       <label><input type="checkbox" id="fHideDone"> Hide completed</label>
       <label><input type="checkbox" id="fStim"> Stimulus only</label>
@@ -745,6 +746,7 @@ function card(q){
     <div class="q-foot">
       <span class="chip prov ${q.image?"scan":""}">${q.image ? "screenshot from the paper" : "retyped — no scan of this paper"}</span>
       ${q.type==="extended-response" ? `<span class="chip">extended response</span>` : ""}
+      ${q.type==="multiple-choice" ? `<span class="chip">multiple choice</span>` : ""}
       ${tags}
       <button class="donebtn">${isDone ? "✓ Done" : "Mark done"}</button>
     </div>
