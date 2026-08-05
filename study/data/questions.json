@@ -1740,6 +1740,174 @@
    "year": 2021
   },
   {
+   "id": "53de643207",
+   "number": "2020 HSC Question 26",
+   "text": "Evaluate the effectiveness of financial management strategies used to achieve profit and growth objectives.",
+   "marks": 20,
+   "verb": "evaluate",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-profitability",
+    "fin-str-cashflow",
+    "fin-role-objectives",
+    "fin-str-workingcapital"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions",
+    "2020 HSC Business Studies"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "bbfafff4b2",
+   "number": "2015 HSC Question 28",
+   "text": "Evaluate the importance of financial management strategies in improving business performance.",
+   "marks": 20,
+   "verb": "evaluate",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-cashflow",
+    "fin-str-workingcapital",
+    "fin-str-profitability",
+    "fin-str-global"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "fa90160ee9",
+   "number": "2018 HSC Question 26",
+   "text": "Explain the influence of global markets on financial management of businesses.",
+   "marks": 20,
+   "verb": "explain",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-inf-global",
+    "fin-str-global"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "7108750317",
+   "number": "2012 HSC Question 27",
+   "text": "How can different sources of funds help a business achieve its financial objectives?",
+   "marks": 20,
+   "verb": "how",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-inf-internal",
+    "fin-inf-debt",
+    "fin-inf-equity",
+    "fin-role-objectives"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "322b6d76e6",
+   "number": "2017 HSC Question 25",
+   "text": "The directors have asked you to write a business report in which you:\n\u2022 outline ONE strategic role of financial management\n\u2022 recommend TWO strategies to improve financial performance\n\u2022 explain the importance of monitoring and controlling the business's marketing strategy.",
+   "marks": 20,
+   "verb": "outline",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Case scenario (business report): Sportyz Goodz Ltd is a retailer that has been operating for the past 20 years in Australia. The directors have provided the following information: in 2013 the business issued new shares on the Australian Securities Exchange and expanded its retail activities internationally; the business is facing increasing competition; the directors are concerned about the positioning of their product in the market; the directors want the business to operate for the benefit of shareholders in the long term. A line graph of financial data (amount in millions of $, 2012-2017) shows both Sales and Profit peaking in 2012, falling sharply to a low in 2013, recovering partially in 2014, then declining steadily through to 2017; Profit sits below Sales across the whole period.",
+   "topics": [
+    "finance",
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "fin-role-strategic",
+    "fin-str-profitability",
+    "mkt-proc-implement"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "8687949f0b",
+   "number": "2016 HSC Question 26",
+   "text": "The potential new partner has asked you to write a business report in which you:\n\u2022 explain possible limitations of the financial reports\n\u2022 recommend appropriate working capital management strategies for the business\n\u2022 evaluate a pricing strategy the business could use.",
+   "marks": 20,
+   "verb": "explain",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Case scenario (business report): Lee's Catering is a small business with a high profile chef and food of excellent quality. It has many bookings for future events. Extract from financial reports for Lee's Catering: Cash $1000; Accounts receivable $10 000; Inventory $50; Accounts payable $11 050; Goodwill $200 000; Current ratio (current assets \u00f7 current liabilities) 100% (industry average 150%); Gross profit ratio (gross profit \u00f7 sales) 30% (industry average 50%); Expense ratio (total expenses \u00f7 sales) 60% (industry average 30%). A potential new partner is concerned about the accuracy of the financial reports and the effectiveness of current management.",
+   "topics": [
+    "finance",
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "fin-proc-limitations",
+    "fin-str-workingcapital",
+    "mkt-str-price"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "6a08ed45dd",
+   "number": "2013 HSC Question 26",
+   "text": "You have been employed as a consultant by the owners. Write a report to the owners recommending marketing and financial management strategies to improve the performance of the business.",
+   "marks": 20,
+   "verb": "recommend",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Case scenario (business report): Kingland Office Supplies operates in a large NSW city in a highly competitive market. A paid manager is responsible for the day-to-day running of the business. The owners are concerned about the low profitability of the business. Investigations by the owners indicate the following problems: customers find the product mix unappealing; poor management of cash flow; poor accounts receivable turnover compared to similar businesses. The manager has also identified low prices offered by larger competitors as a cause of the low profitability.",
+   "topics": [
+    "finance",
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "fin-str-cashflow",
+    "fin-str-profitability",
+    "mkt-str-product",
+    "mkt-str-price"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
    "id": "258b714717",
    "number": "25",
    "text": "You have been hired as a consultant by Ozzi Baby Food Pty Ltd to write a business report to the owners. In your report:\n- outline TWO operations influences affecting this business\n- discuss the use of retraining and redundancy payments to help overcome employee resistance to these changes\n- compare the use of a mortgage to a new issue of shares to fund the factory purchase.",
@@ -1771,28 +1939,56 @@
    "year": 2021
   },
   {
-   "id": "53de643207",
-   "number": "26",
-   "text": "Evaluate the effectiveness of financial management strategies used to achieve profit and growth objectives.",
+   "id": "0c4487ab68",
+   "number": "2014 HSC Question 25",
+   "text": "You have been hired as a consultant to write a report to the management. In your report:\n\u2022 recommend a source of finance for the factory expansion\n\u2022 discuss outsourcing overseas compared with the factory expansion\n\u2022 explain the global factors that need to be considered if they decide to use outsourcing as an operations strategy.",
    "marks": 20,
-   "verb": "evaluate",
+   "verb": "recommend",
    "type": "extended-response",
-   "section": "IV",
-   "stimulus": null,
+   "section": "III",
+   "stimulus": "Case scenario (business report): Emu Uniform Manufacturers Pty Ltd are a successful business based in NSW. They currently supply a range of school, sport and work uniforms to a large number of customers throughout Australia. They are known for their outstanding customer service and high quality products. Sales have been increasing for many years and they have recently received a large long-term contract to supply uniforms to a major company. This will require them to significantly expand their output. To do this, the business will have to outsource overseas or spend $5 million to expand its existing factory in NSW.",
    "topics": [
-    "finance"
+    "finance",
+    "operations"
    ],
    "syllabusPoints": [
-    "fin-role-objectives",
-    "fin-str-cashflow",
-    "fin-str-workingcapital",
-    "fin-str-profitability"
+    "fin-inf-debt",
+    "ops-str-outsourcing",
+    "ops-str-global"
    ],
    "sources": [
-    "2020 HSC Business Studies"
+    "2021 Finance Practice HSC Questions"
    ],
-   "kind": "NESA HSC",
-   "year": 2020
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "c2fe0e2523",
+   "number": "2019 HSC Question 25",
+   "text": "You have been hired as a consultant to write a report for the owners. In your report:\n\u2022 discuss methods this business could use in the acquisition and development of staff\n\u2022 recommend TWO appropriate working capital management strategies for this business.",
+   "marks": 20,
+   "verb": "discuss",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Case scenario (business report): A business, Roo's Outback Eatery Pty Ltd, is opening an additional restaurant in NSW. They plan to position the restaurant as an exclusive restaurant specialising in modern Australian food with quality customer service. The owners require assistance with the following: the acquisition and development of suitable staff; additional funds for the day-to-day running of the business; the close monitoring of working capital.",
+   "topics": [
+    "finance",
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-proc-acquisition",
+    "hr-proc-development",
+    "fin-str-workingcapital",
+    "hr-str-recruitment",
+    "hr-str-training"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions",
+    "HSC Final Exam Preparation \u2014 HRM",
+    "2019 HSC Business Studies"
+   ],
+   "kind": "Question bank",
+   "year": 2021
   },
   {
    "id": "37b87f7902",
@@ -2248,33 +2444,6 @@
    "year": null
   },
   {
-   "id": "c2fe0e2523",
-   "number": "Question 25",
-   "text": "You have been hired as a consultant to write a report for the owners. In your report:\n\u2022 discuss methods this business could use in the acquisition and development of staff\n\u2022 recommend TWO appropriate working capital management strategies for this business.",
-   "marks": 20,
-   "verb": "write",
-   "type": "extended-response",
-   "section": "bank",
-   "stimulus": "A business, Roo\u2019s Outback Eatery Pty Ltd, is opening an additional restaurant in NSW. They plan to position the restaurant as an exclusive restaurant specialising in modern Australian food with quality customer service. The owners require assistance with the following: the acquisition and development of suitable staff; additional funds for the day-to-day running of the business; the close monitoring of working capital.",
-   "topics": [
-    "hr",
-    "finance"
-   ],
-   "syllabusPoints": [
-    "hr-proc-acquisition",
-    "hr-proc-development",
-    "fin-str-workingcapital",
-    "hr-str-recruitment",
-    "hr-str-training"
-   ],
-   "sources": [
-    "HSC Final Exam Preparation \u2014 HRM",
-    "2019 HSC Business Studies"
-   ],
-   "kind": "Question bank",
-   "year": null
-  },
-  {
    "id": "1ac1526d12",
    "number": "22 (c)\u2013(d)",
    "text": "(c) Why is it important for a business to control its debt to equity ratio? [4]\n(d) Explain the interdependence of finance and operations in a business. Support your answer with relevant examples. [4]",
@@ -2464,13 +2633,14 @@
    "verb": null,
    "type": "short-answer",
    "section": null,
-   "stimulus": null,
+   "stimulus": "Case scenario: Sue is a sole trader whose business is growing rapidly as sales are increasing. As a result of the growth, she needs to purchase stock worth $10 000.",
    "topics": [
     "finance"
    ],
    "syllabusPoints": [
     "fin-inf-internal",
-    "fin-inf-debt"
+    "fin-inf-debt",
+    "fin-proc-matching"
    ],
    "sources": [
     "2021 Finance Practice HSC Questions"
@@ -2894,6 +3064,50 @@
    "year": 2021
   },
   {
+   "id": "510b8a30b4",
+   "number": "2015 HSC Question 24 (b)",
+   "text": "Discuss the gearing of Andrew's Discount Tyres.",
+   "marks": 5,
+   "verb": "discuss",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Extract from financial reports for Andrew's Discount Tyres as at 30 May 2015. Current assets: Accounts receivable $1 000; Inventory $2 000; Cash $2 000. Non-current assets: Building $13 000; Fittings $1 000; Research and development $5 000. Current liabilities: Overdraft $2 000; Accounts payable $1 000. Non-current liabilities: Mortgage $5 000. Owner's Equity $16 000. Other information: Net profit for Andrew's Discount Tyres $1000; Industry average gearing ratio (total liabilities \u00f7 total equity): 80%.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios",
+    "fin-proc-comparative"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "7e1fff9d68",
+   "number": "2018 HSC Question 24 (c)",
+   "text": "Discuss the use of leasing and the use of mortgages as a source of long-term finance for this business.",
+   "marks": 5,
+   "verb": "discuss",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Case scenario: A business has decided to expand into a larger factory and is now considering its financial options.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-inf-debt",
+    "fin-proc-matching"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
    "id": "e19036eb8c",
    "number": "23 (c)",
    "text": "Assess the impact of ONE social influence on human resource management.",
@@ -2945,7 +3159,7 @@
    "verb": null,
    "type": "short-answer",
    "section": null,
-   "stimulus": null,
+   "stimulus": "Case scenario: A business imports computers from China and sells them to customers in Australia.",
    "topics": [
     "finance"
    ],
@@ -4216,6 +4430,27 @@
    "year": 2022
   },
   {
+   "id": "366e6a6b6c",
+   "number": "2014 HSC Question 24 (c)",
+   "text": "Discuss factoring as a strategy for cash flow management.",
+   "marks": 4,
+   "verb": "discuss",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-cashflow"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
    "id": "f0ad31df15",
    "number": "21 (c)",
    "text": "Explain TWO quality management strategies that could be used to ensure the quality of the outsourced work.",
@@ -4235,6 +4470,51 @@
     "2021 HSC Business Studies"
    ],
    "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "145e133307",
+   "number": "2020 HSC Question 24 (d)",
+   "text": "Explain TWO ways in which comparative ratio analysis can be used by this business to assess its financial position.",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Financial Information for robotics company ($): Sales 225 000; Cost of goods sold 105 000; Selling expenses 8 500; Administration expenses 6 000; Financial expenses 4 000; Accounts receivable 30 000; Robotics company credit policy 30 days; Industry expense ratio 10%.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-comparative"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions",
+    "2020 HSC Business Studies"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "ff08d999ff",
+   "number": "2012 HSC Question 22 (d)",
+   "text": "Explain the interdependence of finance and operations in a business. Support your answer with relevant examples.",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance",
+    "operations"
+   ],
+   "syllabusPoints": [
+    "fin-role-interdependence",
+    "ops-role-interdependence"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
    "year": 2021
   },
   {
@@ -4280,6 +4560,28 @@
    "year": 2021
   },
   {
+   "id": "8de01f2bac",
+   "number": "2012 HSC Question 22 (c)",
+   "text": "Why is it important for a business to control its debt to equity ratio?",
+   "marks": 4,
+   "verb": "why",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Balance Sheet for Chalker Pty Ltd as at year ending 30 June 2012. Current Assets: Cash $8 000; Receivables $12 000; Inventories $15 000 (total current assets $35 000). Non-Current Assets: Property, Plant and Equipment $33 000. Total Assets $68 000. Current Liabilities: Creditors $14 000. Non-Current Liabilities: Loan $20 000. Owners Equity: Capital $15 000; Retained Net Profit $19 000 (total $34 000). Total Liabilities and Owners Equity $68 000.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios",
+    "fin-proc-debtequity"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
    "id": "a1a845a321",
    "number": "21 (b)",
    "text": "Distinguish between voluntary and involuntary separation.",
@@ -4293,27 +4595,6 @@
    ],
    "syllabusPoints": [
     "hr-proc-separation"
-   ],
-   "sources": [
-    "2020 HSC Business Studies"
-   ],
-   "kind": "NESA HSC",
-   "year": 2020
-  },
-  {
-   "id": "145e133307",
-   "number": "24 (d)",
-   "text": "Explain TWO ways in which comparative ratio analysis can be used by this business to assess its financial position.",
-   "marks": 4,
-   "verb": "explain",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": "Financial information for a robotics company: Sales $225 000; Cost of goods sold $105 000; Selling expenses $8 500; Administration expenses $6 000; Financial expenses $4 000; Accounts receivable $30 000; company credit policy 30 days; industry expense ratio 10%.",
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-proc-comparative"
    ],
    "sources": [
     "2020 HSC Business Studies"
@@ -4629,7 +4910,7 @@
    "verb": null,
    "type": "short-answer",
    "section": null,
-   "stimulus": null,
+   "stimulus": "Case scenario: An Australian-owned business manufactures bicycles in China and sells them to wholesalers in France. These wholesalers do not pay in advance.",
    "topics": [
     "finance"
    ],
@@ -5565,6 +5846,92 @@
    "year": 2022
   },
   {
+   "id": "f79d7ff640",
+   "number": "2013 HSC Question 24 (a)",
+   "text": "Describe ONE method of payment the business could use to ensure that it receives payment for the sales.",
+   "marks": 3,
+   "verb": "describe",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Case scenario: An Australian-owned business manufactures bicycles in China and sells them to wholesalers in France. These wholesalers do not pay in advance.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-global"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "a2f49b8f07",
+   "number": "2019 HSC Question 22 (b)",
+   "text": "Explain ONE advantage of debt financing.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-debtequity"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions",
+    "2019 HSC Business Studies"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "39535a18f6",
+   "number": "2019 HSC Question 22 (c)",
+   "text": "Explain ONE disadvantage of equity financing.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-debtequity"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions",
+    "2019 HSC Business Studies"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "57647bb5a3",
+   "number": "2015 HSC Question 24 (a)",
+   "text": "Explain ONE possible limitation of this financial report.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Extract from financial reports for Andrew's Discount Tyres as at 30 May 2015. Current assets: Accounts receivable $1 000; Inventory $2 000; Cash $2 000. Non-current assets: Building $13 000; Fittings $1 000; Research and development $5 000. Current liabilities: Overdraft $2 000; Accounts payable $1 000. Non-current liabilities: Mortgage $5 000. Owner's Equity $16 000. Other information: Net profit for Andrew's Discount Tyres $1000; Industry average gearing ratio (total liabilities \u00f7 total equity): 80%.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-limitations"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
    "id": "f4e9bc3f9e",
    "number": "22 (b)",
    "text": "Explain a financial risk associated with borrowing funds from the USA.",
@@ -5608,6 +5975,28 @@
    "year": 2021
   },
   {
+   "id": "e17db3cf06",
+   "number": "2018 HSC Question 24 (b)",
+   "text": "How could a business improve management of its accounts receivable turnover?",
+   "marks": 3,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-cashflow",
+    "fin-str-workingcapital"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
    "id": "6f6be66b42",
    "number": "24 (b)",
    "text": "How does this advertisement use sociocultural factors to influence customer choice?",
@@ -5629,6 +6018,29 @@
    "year": 2021
   },
   {
+   "id": "dfe0d6efa9",
+   "number": "2020 HSC Question 24 (c)",
+   "text": "Recommend ONE financial strategy this business could implement to improve efficiency in the collection of accounts receivable.",
+   "marks": 3,
+   "verb": "recommend",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Financial Information for robotics company ($): Sales 225 000; Cost of goods sold 105 000; Selling expenses 8 500; Administration expenses 6 000; Financial expenses 4 000; Accounts receivable 30 000; Robotics company credit policy 30 days; Industry expense ratio 10%.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-cashflow",
+    "fin-str-workingcapital"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions",
+    "2020 HSC Business Studies"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
    "id": "5309d2b363",
    "number": "22 (a)",
    "text": "Clarify the purpose of a SWOT analysis for this business.",
@@ -5642,28 +6054,6 @@
    ],
    "syllabusPoints": [
     "mkt-proc-situational"
-   ],
-   "sources": [
-    "2020 HSC Business Studies"
-   ],
-   "kind": "NESA HSC",
-   "year": 2020
-  },
-  {
-   "id": "dfe0d6efa9",
-   "number": "24 (c)",
-   "text": "Recommend ONE financial strategy this business could implement to improve efficiency in the collection of accounts receivable.",
-   "marks": 3,
-   "verb": "recommend",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": "Financial information for a robotics company: Sales $225 000; Cost of goods sold $105 000; Selling expenses $8 500; Administration expenses $6 000; Financial expenses $4 000; Accounts receivable $30 000; company credit policy 30 days; industry expense ratio 10%.",
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-str-cashflow",
-    "fin-str-workingcapital"
    ],
    "sources": [
     "2020 HSC Business Studies"
@@ -5710,48 +6100,6 @@
     "mkt-inf-sociocultural",
     "mkt-inf-economic",
     "mkt-inf-government"
-   ],
-   "sources": [
-    "2019 HSC Business Studies"
-   ],
-   "kind": "NESA HSC",
-   "year": 2019
-  },
-  {
-   "id": "a2f49b8f07",
-   "number": "22 (b)",
-   "text": "Explain ONE advantage of debt financing.",
-   "marks": 3,
-   "verb": "explain",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": null,
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-proc-debtequity"
-   ],
-   "sources": [
-    "2019 HSC Business Studies"
-   ],
-   "kind": "NESA HSC",
-   "year": 2019
-  },
-  {
-   "id": "39535a18f6",
-   "number": "22 (c)",
-   "text": "Explain ONE disadvantage of equity financing.",
-   "marks": 3,
-   "verb": "explain",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": null,
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-proc-debtequity"
    ],
    "sources": [
     "2019 HSC Business Studies"
@@ -7488,6 +7836,69 @@
    "year": 2022
   },
   {
+   "id": "b4f2efda80",
+   "number": "2012 HSC Question 22 (a)",
+   "text": "Calculate the current ratio (current assets \u00f7 current liabilities) of this business. Show all working.",
+   "marks": 2,
+   "verb": "calculate",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Balance Sheet for Chalker Pty Ltd as at year ending 30 June 2012. Current Assets: Cash $8 000; Receivables $12 000; Inventories $15 000 (total current assets $35 000). Non-Current Assets: Property, Plant and Equipment $33 000. Total Assets $68 000. Current Liabilities: Creditors $14 000. Non-Current Liabilities: Loan $20 000. Owners Equity: Capital $15 000; Retained Net Profit $19 000 (total $34 000). Total Liabilities and Owners Equity $68 000.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "aa78bf4058",
+   "number": "2012 HSC Question 22 (b)",
+   "text": "Calculate the debt to equity ratio (total liabilities \u00f7 total equity) of this business. Show all working.",
+   "marks": 2,
+   "verb": "calculate",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Balance Sheet for Chalker Pty Ltd as at year ending 30 June 2012. Current Assets: Cash $8 000; Receivables $12 000; Inventories $15 000 (total current assets $35 000). Non-Current Assets: Property, Plant and Equipment $33 000. Total Assets $68 000. Current Liabilities: Creditors $14 000. Non-Current Liabilities: Loan $20 000. Owners Equity: Capital $15 000; Retained Net Profit $19 000 (total $34 000). Total Liabilities and Owners Equity $68 000.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "84f6b57749",
+   "number": "2017 HSC Question 24 (a)",
+   "text": "How will an appreciation of the Australian dollar affect the competitive position of this business?",
+   "marks": 2,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Case scenario: A business imports computers from China and sells them to customers in Australia.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-global"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
    "id": "ac15d07cc7",
    "number": "22 (a)",
    "text": "Identify where the business could record the loan and the properties on its balance sheet.",
@@ -7506,6 +7917,51 @@
     "2021 HSC Business Studies"
    ],
    "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "f4df218567",
+   "number": "2020 HSC Question 24 (b)",
+   "text": "Interpret this business's expense ratio (total expenses \u00f7 sales).",
+   "marks": 2,
+   "verb": "interpret",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Financial Information for robotics company ($): Sales 225 000; Cost of goods sold 105 000; Selling expenses 8 500; Administration expenses 6 000; Financial expenses 4 000; Accounts receivable 30 000; Robotics company credit policy 30 days; Industry expense ratio 10%.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios",
+    "fin-proc-comparative"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions",
+    "2020 HSC Business Studies"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "8419a30343",
+   "number": "2019 HSC Question 22 (a)",
+   "text": "Outline ONE ethical issue related to the preparation of financial reports.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ethical"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions",
+    "2019 HSC Business Studies"
+   ],
+   "kind": "Question bank",
    "year": 2021
   },
   {
@@ -7573,28 +8029,6 @@
    "year": 2021
   },
   {
-   "id": "f4df218567",
-   "number": "24 (b)",
-   "text": "Interpret this business's expense ratio (total expenses \u00f7 sales).",
-   "marks": 2,
-   "verb": "interpret",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": "Financial information for a robotics company: Sales $225 000; Cost of goods sold $105 000; Selling expenses $8 500; Administration expenses $6 000; Financial expenses $4 000; Accounts receivable $30 000; company credit policy 30 days; industry expense ratio 10%.",
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-proc-ratios",
-    "fin-proc-comparative"
-   ],
-   "sources": [
-    "2020 HSC Business Studies"
-   ],
-   "kind": "NESA HSC",
-   "year": 2020
-  },
-  {
    "id": "85dea02f64",
    "number": "21 (a)",
    "text": "Outline the role of ONE external stakeholder who represents the interests of employees in workplace disputes.",
@@ -7651,27 +8085,6 @@
    ],
    "syllabusPoints": [
     "hr-inf-legal-framework"
-   ],
-   "sources": [
-    "2019 HSC Business Studies"
-   ],
-   "kind": "NESA HSC",
-   "year": 2019
-  },
-  {
-   "id": "8419a30343",
-   "number": "22 (a)",
-   "text": "Outline ONE ethical issue related to the preparation of financial reports.",
-   "marks": 2,
-   "verb": "outline",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": null,
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-proc-ethical"
    ],
    "sources": [
     "2019 HSC Business Studies"
@@ -8002,13 +8415,13 @@
   },
   {
    "id": "75d544142f",
-   "number": "24 (a)",
+   "number": "2020 HSC Question 24 (a)",
    "text": "Calculate the accounts receivable turnover ratio (sales \u00f7 accounts receivable) for this business.",
    "marks": 1,
    "verb": "calculate",
    "type": "short-answer",
    "section": "II",
-   "stimulus": "Financial information for a robotics company: Sales $225 000; Cost of goods sold $105 000; Selling expenses $8 500; Administration expenses $6 000; Financial expenses $4 000; Accounts receivable $30 000; company credit policy 30 days; industry expense ratio 10%.",
+   "stimulus": "Financial Information for robotics company ($): Sales 225 000; Cost of goods sold 105 000; Selling expenses 8 500; Administration expenses 6 000; Financial expenses 4 000; Accounts receivable 30 000; Robotics company credit policy 30 days; Industry expense ratio 10%.",
    "topics": [
     "finance"
    ],
@@ -8016,10 +8429,55 @@
     "fin-proc-ratios"
    ],
    "sources": [
+    "2021 Finance Practice HSC Questions",
     "2020 HSC Business Studies"
    ],
-   "kind": "NESA HSC",
-   "year": 2020
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "4d01ad5673",
+   "number": "2014 HSC Question 24 (a) (i)",
+   "text": "Calculate the opening cash balance for March.",
+   "marks": 1,
+   "verb": "calculate",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Extract from a cash flow statement for a business ($): Cash in - Jan 6000, Feb 5000, March 3000, April 2000, May 4000, June 3000. Cash out - Jan 3000, Feb 3000, March 8000, April 8000, May 3000, June 2000. The opening cash balance for January is $5000.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-cashflow",
+    "fin-proc-statements"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
+  },
+  {
+   "id": "1b2bc356e4",
+   "number": "2014 HSC Question 24 (a) (ii)",
+   "text": "In which month did the business start with a negative cash balance?",
+   "marks": 1,
+   "verb": "which",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Extract from a cash flow statement for a business ($): Cash in - Jan 6000, Feb 5000, March 3000, April 2000, May 4000, June 3000. Cash out - Jan 3000, Feb 3000, March 8000, April 8000, May 3000, June 2000. The opening cash balance for January is $5000.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-cashflow",
+    "fin-proc-statements"
+   ],
+   "sources": [
+    "2021 Finance Practice HSC Questions"
+   ],
+   "kind": "Question bank",
+   "year": 2021
   },
   {
    "id": "6956d14fab",
@@ -9037,11 +9495,11 @@
   }
  ],
  "counts": {
-  "fin-str-cashflow": 17,
-  "fin-str-profitability": 16,
-  "fin-str-workingcapital": 23,
-  "fin-role-objectives": 16,
-  "fin-str-global": 16,
+  "fin-str-cashflow": 23,
+  "fin-str-profitability": 19,
+  "fin-str-workingcapital": 26,
+  "fin-role-objectives": 17,
+  "fin-str-global": 20,
   "hr-eff-indicators": 17,
   "hr-str-rewards": 10,
   "hr-str-training": 11,
@@ -9049,12 +9507,12 @@
   "hr-str-leadership": 3,
   "hr-inf-ethics": 6,
   "hr-inf-technological": 6,
-  "fin-inf-debt": 13,
-  "fin-inf-equity": 11,
+  "fin-inf-debt": 16,
+  "fin-inf-equity": 12,
   "fin-inf-government": 5,
-  "fin-inf-global": 4,
-  "mkt-str-product": 6,
-  "mkt-str-price": 9,
+  "fin-inf-global": 5,
+  "mkt-str-product": 7,
+  "mkt-str-price": 11,
   "mkt-str-promotion": 11,
   "mkt-str-place": 8,
   "mkt-inf-economic": 7,
@@ -9064,12 +9522,12 @@
   "ops-str-performance": 15,
   "ops-str-quality": 13,
   "ops-str-technology": 11,
-  "ops-str-global": 7,
+  "ops-str-global": 8,
   "hr-proc-acquisition": 9,
   "hr-proc-development": 7,
   "hr-str-disputes": 11,
   "fin-proc-planning": 4,
-  "fin-proc-statements": 10,
+  "fin-proc-statements": 12,
   "ops-str-supplychain": 6,
   "ops-str-inventory": 8,
   "ops-proc-monitoring": 4,
@@ -9079,7 +9537,7 @@
   "mkt-str-global": 13,
   "hr-role-interdependence": 7,
   "mkt-role-interdependence": 8,
-  "mkt-proc-implement": 2,
+  "mkt-proc-implement": 3,
   "mkt-proc-strategies": 7,
   "ops-proc-fourvs": 10,
   "hr-str-recruitment": 6,
@@ -9089,17 +9547,17 @@
   "mkt-str-segmentation": 5,
   "ops-proc-inputs": 9,
   "ops-proc-outputs": 2,
-  "fin-inf-internal": 4,
+  "fin-inf-internal": 5,
   "hr-role-strategic": 4,
-  "ops-str-outsourcing": 4,
+  "ops-str-outsourcing": 5,
   "mkt-inf-psychological": 6,
   "mkt-inf-government": 6,
   "ops-role-strategic": 9,
-  "fin-role-interdependence": 4,
+  "fin-role-interdependence": 5,
   "hr-str-global": 3,
   "hr-proc-maintenance": 4,
-  "fin-proc-debtequity": 14,
-  "fin-proc-matching": 7,
+  "fin-proc-debtequity": 15,
+  "fin-proc-matching": 9,
   "ops-inf-globalisation": 9,
   "ops-inf-technology": 6,
   "ops-inf-quality": 5,
@@ -9110,7 +9568,8 @@
   "ops-inf-csr": 9,
   "hr-role-outsourcing": 9,
   "mkt-proc-situational": 11,
-  "fin-proc-limitations": 8,
+  "fin-proc-limitations": 10,
+  "fin-role-strategic": 2,
   "ops-str-change": 5,
   "hr-proc-separation": 4,
   "hr-inf-economic": 4,
@@ -9118,11 +9577,10 @@
   "hr-inf-legal-framework": 15,
   "hr-inf-discrimination": 5,
   "hr-inf-stakeholders": 7,
-  "fin-role-strategic": 1,
   "mkt-proc-research": 7,
-  "fin-proc-ratios": 41,
-  "fin-proc-comparative": 24,
-  "ops-role-interdependence": 4,
+  "fin-proc-ratios": 45,
+  "fin-proc-comparative": 25,
+  "ops-role-interdependence": 5,
   "fin-proc-ethical": 4,
   "ops-str-newproduct": 2,
   "mkt-role-approaches": 4,
