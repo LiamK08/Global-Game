@@ -9,6 +9,7 @@ with the question data inlined.
 """
 
 import argparse
+import base64
 import hashlib
 import json
 import os
@@ -20,6 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 OUT_HTML = os.path.join(ROOT, "study", "hsc-business-studies-saq.html")
 OUT_JSON = os.path.join(ROOT, "study", "data", "questions.json")
+IMG_DIR = os.path.join(ROOT, "study", "img")
 
 TOPIC_ORDER = ["operations", "marketing", "finance", "hr"]
 
@@ -86,14 +88,74 @@ def load_questions(extracted_dir, valid_ids):
     return docs
 
 
-def build(extracted_dir, taxonomy_path, fragment_path=None):
+def load_crops(path, valid_ids):
+    """Screenshots cropped from a scanned paper, catalogued by reading them.
+
+    These are the real thing — an image of the question as printed — so they
+    take priority over any retyped version of the same question.
+    """
+    if not path or not os.path.exists(path):
+        return []
+    with open(path) as fh:
+        records = json.load(fh)
+    if isinstance(records, dict):
+        records = records.get("records", [])
+
+    out = []
+    for r in records:
+        text = (r.get("text") or "").strip()
+        if not text:
+            continue
+        points = [p for p in (r.get("syllabusPoints") or []) if p in valid_ids]
+        if not points:
+            continue
+        kind = r.get("kind") or "short-answer"
+        out.append({
+            "number": (r.get("number") or "").strip(),
+            "text": text,
+            "marks": r.get("marks") if isinstance(r.get("marks"), int) else None,
+            "type": "multiple-choice" if kind == "multiple-choice" else kind,
+            "section": None,
+            "stimulus": r.get("stimulus") or None,
+            "topics": sorted({valid_ids[p]["topic"] for p in points}),
+            "syllabusPoints": points,
+            "image": r.get("image"),
+            "verb": None,
+            "legible": r.get("legible", True),
+        })
+    return out
+
+
+def build(extracted_dir, taxonomy_path, fragment_path=None, crops_path=None):
     tax, valid_ids = load_taxonomy(taxonomy_path)
     docs = load_questions(extracted_dir, valid_ids)
+    crops = load_crops(crops_path, valid_ids)
 
     questions = []
     seen = {}
     dropped_ids = Counter()
     dupes = 0
+
+    # Crops go in first so a screenshot always wins over the retyped version.
+    for c in crops:
+        key = norm_text(c["text"])[:220]
+        rec = OrderedDict()
+        rec["id"] = hashlib.sha1(("crop:" + (c["image"] or key)).encode()).hexdigest()[:10]
+        rec["number"] = c["number"]
+        rec["text"] = c["text"]
+        rec["marks"] = c["marks"]
+        rec["verb"] = None
+        rec["type"] = c["type"]
+        rec["section"] = None
+        rec["stimulus"] = c["stimulus"]
+        rec["topics"] = c["topics"]
+        rec["syllabusPoints"] = c["syllabusPoints"]
+        rec["sources"] = ["2021 Finance Practice HSC Questions"]
+        rec["kind"] = "Question bank (scanned)"
+        rec["year"] = None
+        rec["image"] = c["image"]
+        questions.append(rec)
+        seen[key] = rec
 
     for name, doc in docs:
         src_title = doc.get("title") or doc.get("slug") or name
@@ -137,6 +199,9 @@ def build(extracted_dir, taxonomy_path, fragment_path=None):
                         prev["topics"].append(t)
                 if not prev.get("stimulus") and q.get("stimulus"):
                     prev["stimulus"] = q["stimulus"]
+                if prev.get("image") and prev["sources"][0] != src_title:
+                    # A retyped copy confirms the crop's wording; keep the image.
+                    pass
                 dupes += 1
                 continue
 
@@ -188,12 +253,16 @@ def build(extracted_dir, taxonomy_path, fragment_path=None):
         fh.write(html)
 
     if fragment_path:
+        embedded = inline_images(payload, IMG_DIR)
+        frag = to_fragment(render(payload, embedded))
         with open(fragment_path, "w") as fh:
-            fh.write(to_fragment(html))
-        print(f"wrote {fragment_path}")
+            fh.write(frag)
+        print(f"wrote {fragment_path} ({len(embedded)} images inlined, {len(frag)/1e6:.1f} MB)")
 
     uncovered = [pid for pid in valid_ids if counts.get(pid, 0) == 0]
+    shots = sum(1 for q in questions if q.get("image"))
     print(f"papers        : {len(docs)}")
+    print(f"screenshots    : {shots}")
     print(f"questions      : {len(questions)} ({dupes} cross-paper duplicates merged)")
     print(f"syllabus points: {len(valid_ids) - len(uncovered)}/{len(valid_ids)} covered")
     if dropped_ids:
@@ -205,9 +274,22 @@ def build(extracted_dir, taxonomy_path, fragment_path=None):
     return payload
 
 
-def render(payload):
+def render(payload, images=None):
     data = json.dumps(payload, separators=(",", ":"))
-    return HTML_TEMPLATE.replace("/*__DATA__*/null", data)
+    html = HTML_TEMPLATE.replace("/*__DATA__*/null", data)
+    return html.replace("/*__IMAGES__*/{}", json.dumps(images or {}, separators=(",", ":")))
+
+
+def inline_images(payload, img_dir):
+    """Base64 the crops so a published page carries them with it."""
+    out = {}
+    for name in sorted({q["image"] for q in payload["questions"] if q.get("image")}):
+        path = os.path.join(img_dir, name)
+        if not os.path.exists(path):
+            continue
+        with open(path, "rb") as fh:
+            out[name] = "data:image/png;base64," + base64.b64encode(fh.read()).decode()
+    return out
 
 
 def to_fragment(full_html):
@@ -382,7 +464,26 @@ main{min-width:0}
   margin-left:auto;flex:none;font-size:12px;font-weight:650;background:var(--chip);border-radius:999px;padding:2px 10px;
   font-variant-numeric:tabular-nums;
 }
-.q-text{font-family:var(--serif);font-size:16.5px;line-height:1.62;white-space:pre-wrap;max-width:74ch}
+/* The question always renders on white, in both themes — it is a page from an
+   exam paper, and a scan and a typeset extract have to sit side by side. */
+.paper{
+  background:#fff;color:#12151a;border:1px solid #d7dbe2;border-radius:6px;
+  padding:18px 20px;margin:0;overflow-x:auto;
+}
+.paper img{display:block;width:100%;max-width:840px;height:auto;margin:0 auto}
+.paper.typeset{font-family:var(--serif)}
+.ex-row{display:flex;gap:14px;align-items:baseline}
+.ex-num{flex:none;min-width:46px;font-weight:600;font-variant-numeric:tabular-nums}
+.ex-text{flex:1;font-size:16px;line-height:1.55;white-space:pre-wrap}
+.ex-marks{flex:none;min-width:20px;text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.ex-stim{
+  margin:12px 0 0 60px;padding:10px 12px;background:#f3f5f8;border:1px solid #e2e6ec;
+  border-radius:4px;font-size:13.5px;line-height:1.5;white-space:pre-wrap;
+}
+.ex-rules{margin:14px 0 0 60px;display:flex;flex-direction:column;gap:13px}
+.ex-rules i{display:block;border-bottom:1px dotted #98a2b0}
+.chip.prov{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em}
+.chip.prov.scan{background:var(--accent-soft);color:var(--accent)}
 .q-stim{
   margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);background:var(--accent-soft);
   border-radius:0 8px 8px 0;font-size:13.5px;line-height:1.55;white-space:pre-wrap;
@@ -468,6 +569,7 @@ footer{max-width:1400px;margin:0 auto;padding:8px 16px 40px;color:var(--muted);f
 
 <script>
 const DATA = /*__DATA__*/null;
+const IMAGES = /*__IMAGES__*/{};
 const TOPIC_ORDER = ["operations","marketing","finance","hr"];
 const TOPIC_COLOR = {operations:"var(--ops)",marketing:"var(--mkt)",finance:"var(--fin)",hr:"var(--hr)"};
 const SHORT = {operations:"Operations",marketing:"Marketing",finance:"Finance",hr:"HR"};
@@ -601,6 +703,27 @@ function renderFilterOptions(){
   fill("fVerb", pool.map(q => q.verb), "Any directive verb");
 }
 
+/** The question as it sits on the paper: the real crop where we have one,
+ *  otherwise the wording typeset the same way, with answer lines sized to the
+ *  marks. Both render on white — it is paper either way. */
+function paperBlock(q){
+  if (q.image){
+    const src = IMAGES[q.image] || ("img/" + q.image);
+    return `<figure class="paper"><img loading="lazy" src="${src}"
+      alt="Screenshot of question ${esc(q.number)} as printed in the exam paper"></figure>`;
+  }
+  const lines = Math.min(14, Math.max(2, Math.round((q.marks || 2) * 1.6)));
+  return `<div class="paper typeset">
+    <div class="ex-row">
+      <span class="ex-num">${esc(q.number || "")}</span>
+      <span class="ex-text">${highlight(q.text)}</span>
+      ${q.marks!=null ? `<span class="ex-marks">${q.marks}</span>` : ""}
+    </div>
+    ${q.stimulus ? `<div class="ex-stim">${highlight(q.stimulus)}</div>` : ""}
+    <div class="ex-rules">${"<i></i>".repeat(lines)}</div>
+  </div>`;
+}
+
 function card(q){
   const isDone = done.has(q.id);
   // Tags are ordered so the topic you are currently reading comes first.
@@ -618,9 +741,9 @@ function card(q){
       <span class="q-src">${esc(q.sources.join(" · "))}</span>
       ${q.marks!=null ? `<span class="q-marks">${q.marks} mark${q.marks===1?"":"s"}</span>` : ""}
     </div>
-    <div class="q-text">${highlight(q.text)}</div>
-    ${q.stimulus ? `<div class="q-stim"><b>Stimulus</b>${highlight(q.stimulus)}</div>` : ""}
+    ${paperBlock(q)}
     <div class="q-foot">
+      <span class="chip prov ${q.image?"scan":""}">${q.image ? "screenshot from the paper" : "retyped — no scan of this paper"}</span>
       ${q.type==="extended-response" ? `<span class="chip">extended response</span>` : ""}
       ${tags}
       <button class="donebtn">${isDone ? "✓ Done" : "Mark done"}</button>
@@ -727,5 +850,6 @@ if __name__ == "__main__":
     ap.add_argument("--extracted", required=True, help="directory of per-paper extraction JSON")
     ap.add_argument("--taxonomy", required=True, help="syllabus taxonomy JSON")
     ap.add_argument("--fragment", help="also write a head+body fragment for publishing as an Artifact")
+    ap.add_argument("--crops", help="catalogued screenshot records to merge in")
     args = ap.parse_args()
-    build(args.extracted, args.taxonomy, args.fragment)
+    build(args.extracted, args.taxonomy, args.fragment, args.crops)

@@ -1,0 +1,657 @@
+[
+ {
+  "name": "Role of financial management",
+  "subpoints": [
+   "strategic role of financial management \u2014 managing the funds of the business so it meets its goals \u2014 a long-term view, not just paying the bills",
+   "objectives \u2014 profitability \u2014 the ability to maximise profit; measured by gross profit, net profit and return on equity",
+   "objectives \u2014 growth \u2014 the ability to increase in size in the long term",
+   "objectives \u2014 efficiency \u2014 minimising costs and managing assets so maximum profit comes from the lowest possible level of assets",
+   "objectives \u2014 liquidity \u2014 the ability to pay short-term liabilities as they fall due",
+   "objectives \u2014 solvency \u2014 the ability to pay both short-term and long-term liabilities as they fall due",
+   "short-term and long-term objectives \u2014 and the conflicts between them \u2014 growth now usually costs profit now",
+   "interdependence with other key business functions \u2014 finance with operations, marketing and human resources"
+  ],
+  "shots": [
+   {
+    "source": "Past HSC",
+    "number": "Question 24(a)2",
+    "marks": "marks",
+    "image": "image2.png",
+    "note": "Straight at the objectives dot point. Define liquidity, then say why a business needs it."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 21(a)3",
+    "marks": "marks",
+    "image": "image3.png",
+    "note": "The short-term versus long-term conflict, set on a sole trader whose sales are growing so fast she needs $10 000 of stock. Growth versus liquidity."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 22(c)\u2013(d)4",
+    "marks": "+ 4 marks",
+    "image": "image4.png",
+    "note": "Part (d) is the interdependence question \u2014 finance and operations, with examples. Part (c) covers solvency."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 4Multiple",
+    "marks": "choice",
+    "image": "image5.png",
+    "note": "\u201cDebts paid as they fall due\u201d is doing the work here \u2014 read it carefully, because it decides between liquidity and solvency."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 4Multiple",
+    "marks": "choice",
+    "image": "image6.png",
+    "note": "Which objective the expense ratio measures. Markers repeatedly penalise students for calling this a profitability ratio \u2014 it is efficiency."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 19Multiple",
+    "marks": "choice",
+    "image": "image7.png",
+    "note": "Profitability and efficiency pulling in opposite directions across two businesses. Work out both ratios before you choose."
+   }
+  ],
+  "textOnly": [
+   {
+    "header": "2023 HSC, Question 24(b) \u2014 3 marks",
+    "text": "Explain a possible conflict between ONE short-term and ONE long-term financial objective.",
+    "note": "The same idea as the screenshot above, asked with no stimulus at all."
+   },
+   {
+    "header": "NSW Independent Trial 2024, Question 23(a) \u2014 2 marks",
+    "text": "Outline how the short-term and long-term financial goals of this business may conflict.",
+    "note": "Food Plus Pty Ltd, a health food grocer opening three stores in the USA."
+   },
+   {
+    "header": "Barker Trial 2023, Question 23(c) \u2014 2 marks",
+    "text": "Why is efficiency a financial objective?",
+    "note": "Marker\u2019s note: the definition must cover minimising costs AND managing assets \u2014 maximum profit from the lowest possible level of assets."
+   },
+   {
+    "header": "2019 HSC, Question 21(b) \u2014 4 marks",
+    "text": "Explain the interdependence between marketing and finance for this business.",
+    "note": "A business selling stylish, high-performance luxury cars."
+   },
+   {
+    "header": "Abbotsleigh Trial 2023, Question 24(c) \u2014 4 marks",
+    "text": "Using the data, analyse the interdependence between human resources management and financial management in this business.",
+    "note": "Comes with two years of HR data \u2014 training spend, absenteeism, accidents, strike days, staff turnover \u2014 and total HR costs."
+   },
+   {
+    "header": "Barker Trial 2023, Question 25 \u2014 part of a 20-mark report",
+    "text": "Examine the interdependence between finance and human resources for this business.",
+    "note": "Marvel Metals, where rising wages are squeezing profitability and new technology means retraining and redundancies."
+   },
+   {
+    "header": "Abbotsleigh Trial 2023, Question 8 \u2014 multiple choice",
+    "text": "A business closely monitors their financial records to minimise their expenses and manage assets so that maximum profit is achieved with the lowest possible level of assets. What financial objective does this best illustrate?",
+    "note": "Answer: efficiency. Note how the stem is just the definition, rearranged."
+   },
+   {
+    "header": "St Ignatius\u2019 Trial 2023, Question 2 \u2014 multiple choice",
+    "text": "Liquidity is defined as the extent to which a business can\u2026 (fund shareholder dividends / pay long term debts as they fall due / collect its accounts receivable on time / meet its financial commitments in the short term)",
+    "note": "Answer: D. Option B is solvency \u2014 the classic distractor."
+   },
+   {
+    "header": "St Ignatius\u2019 Trial 2024, Question 1 \u2014 multiple choice",
+    "text": "Budgeting for the acquisition of staff needs is an example of interdependence between which of the following business functions?",
+    "note": "Answer: finance and human resources."
+   },
+   {
+    "header": "2023 HSC, Question 9 \u2014 multiple choice",
+    "text": "The training of staff in the manufacturing process is an example of interdependence between which of the following business functions?",
+    "note": "Answer: operations and human resources."
+   }
+  ]
+ },
+ {
+  "name": "Influences on financial management",
+  "subpoints": [
+   "internal sources of finance \u2014 retained profits \u2014 the cheapest and most flexible source",
+   "external sources \u2014 debt, short-term \u2014 overdraft, commercial bills, factoring",
+   "external sources \u2014 debt, long-term \u2014 mortgage, debentures, unsecured notes, leasing",
+   "external sources \u2014 equity \u2014 ordinary shares (new issues, rights issues, placements, share purchase plans) and private equity \u2014 see Topic 6",
+   "financial institutions \u2014 banks, investment banks, finance companies, superannuation funds, life insurance companies, unit trusts, the Australian Securities Exchange",
+   "influence of government \u2014 the Australian Securities and Investments Commission, and company taxation",
+   "global market influences \u2014 economic outlook, availability of funds, interest rates"
+  ],
+  "shots": [
+   {
+    "source": "2019 HSC",
+    "number": "Question 4Multiple",
+    "marks": "choice",
+    "image": "image8.png",
+    "note": "The financial institutions dot point, tested directly. You have to know which institution actually provides leasing."
+   },
+   {
+    "source": "2019 HSC",
+    "number": "Question 16Multiple",
+    "marks": "choice",
+    "image": "image9.png",
+    "note": "ASIC \u2014 the government influence. Note how the stem describes what it does rather than naming it."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 24(b)4",
+    "marks": "marks",
+    "image": "image10.png",
+    "note": "The main written question on government influence. Cover both ASIC and company taxation."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 8Multiple",
+    "marks": "choice",
+    "image": "image11.png",
+    "note": "Global market influences \u2014 a downturn in the economic outlook working through unemployment, output and exchange rates."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 21(b)6",
+    "marks": "marks",
+    "image": "image12.png",
+    "note": "Internal versus external sources, compared, for a specific purchase. The biggest sources-of-finance question in the collection."
+   }
+  ],
+  "textOnly": [
+   {
+    "header": "Abbotsleigh Trial 2023, Question 3 \u2014 multiple choice",
+    "text": "Which of the following financial institutions take funds from a large number of small investors and invests them in specific types of financial assets?",
+    "note": "Answer: unit trusts."
+   },
+   {
+    "header": "St Ignatius\u2019 Trial 2024, Question 12 \u2014 multiple choice",
+    "text": "Which of the following is correct for a unit trust? (Investors buy direct from ASX / Investor funds are pooled and distributed upon retirement / They are only for investment by sophisticated investors / Investor funds are pooled, and assets purchased on their behalf)",
+    "note": "Answer: D. Option B describes a superannuation fund."
+   },
+   {
+    "header": "Abbotsleigh Trial 2023, Question 21(d) \u2014 2 marks",
+    "text": "Describe how the Australian Securities and Investment Commission impacts this business.",
+    "note": "Set on the Bakers Dozen balance sheet. The school\u2019s marking guide prints a different version of this question asking about company taxation instead \u2014 worth practising both."
+   },
+   {
+    "header": "NSW Independent Trial 2024, Question 23(c) \u2014 4 marks",
+    "text": "Explain TWO global influences on the financial management of this business.",
+    "note": "Answers: global economic outlook, availability of funds, interest rates, exchange rates."
+   },
+   {
+    "header": "NSW Independent Trial 2024, Question 23(b) \u2014 4 marks",
+    "text": "Discuss TWO sources of finance that Food Plus Pty Ltd can use to fund its expansion.",
+    "note": ""
+   },
+   {
+    "header": "Reddam House Trial 2023, Question 22(d) \u2014 4 marks",
+    "text": "Compare and contrast TWO sources of debt finance used by Local Grocer Pty Ltd.",
+    "note": "Compare and contrast means similarities AND differences \u2014 e.g. overdraft against mortgage."
+   },
+   {
+    "header": "2021 HSC, Question 22(b) \u2014 3 marks",
+    "text": "Explain a financial risk associated with borrowing funds from the USA.",
+    "note": "A luxury Australian handbag business borrowing US$30 million. Availability of funds and exchange rate risk together."
+   },
+   {
+    "header": "Knox Grammar Trial 2023, Question 26 \u2014 20 marks",
+    "text": "Analyse how different sources of finance impact the financial objectives of a business.",
+    "note": "The marking guide wants explicit links from each source to profitability, growth, efficiency, liquidity and solvency."
+   },
+   {
+    "header": "Reddam House Trial 2023, Question 27 \u2014 20 marks",
+    "text": "Analyse the influence of government and the global market on financial management strategies.",
+    "note": ""
+   }
+  ]
+ },
+ {
+  "name": "Planning and implementing",
+  "subpoints": [
+   "financial needs \u2014 how much the business needs and what for",
+   "budgets \u2014 operating, project and financial budgets",
+   "record systems \u2014 the mechanisms for keeping accurate financial records",
+   "financial risks \u2014 the danger that debts cannot be repaid",
+   "financial controls \u2014 policies to prevent loss, waste and fraud \u2014 clear authorisation, separation of duties, rotation of duties, control of cash",
+   "debt and equity financing \u2014 the advantages and disadvantages of each",
+   "matching the terms and source of finance to business purpose \u2014 short-term finance for short-term needs, long-term finance for long-term assets"
+  ],
+  "shots": [
+   {
+    "source": "2019 HSC",
+    "number": "Question 14Multiple",
+    "marks": "choice",
+    "image": "image13.png",
+    "note": "The whole process in one question, and the sequence you have to know: determining financial needs, developing budgets, maintaining record systems, identifying financial risks, establishing financial controls."
+   },
+   {
+    "source": "2019 HSC",
+    "number": "Question 2Multiple",
+    "marks": "choice",
+    "image": "image14.png",
+    "note": "Matching the source of finance to the purpose \u2014 a property is a long-term asset, so it needs long-term finance."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 7Multiple",
+    "marks": "choice",
+    "image": "image15.png",
+    "note": "Matching again, but for a short-term need. Stock before a busy trading period calls for short-term sources."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 24(c)5",
+    "marks": "marks",
+    "image": "image16.png",
+    "note": "The best written question on matching terms and source of finance to purpose."
+   },
+   {
+    "source": "2019 HSC",
+    "number": "Question 22(a)\u2013(b)2",
+    "marks": "+ 3 marks",
+    "image": "image17.png",
+    "note": "Part (b) is the debt half of the debt-versus-equity dot point \u2014 pair it with 22(c) in Topic 6 for the full comparison. Part (a) is the ethical-issues question, so this crop appears again in Topic 4."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 15Multiple",
+    "marks": "choice",
+    "image": "image18.png",
+    "note": "Comparative ratio analysis as a decision tool \u2014 note that raw totals mislead when the two businesses are different sizes."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 12Multiple",
+    "marks": "choice",
+    "image": "image19.png",
+    "note": "The same idea, asked from the investor\u2019s side."
+   }
+  ],
+  "textOnly": []
+ },
+ {
+  "name": "Ethical issues of financial statements",
+  "subpoints": [
+   "audited accounts \u2014 internal, management or independent external audits",
+   "record keeping \u2014 accurate and honest recording of all transactions",
+   "reporting practices \u2014 statements that reflect the true position and performance of the business",
+   "inappropriate cut-off periods \u2014 shifting revenue or expenses between periods to flatter a result",
+   "misuse of funds \u2014 employees or managers taking money or stock",
+   "\u2014 examined alongside \u2014 \u2014 limitations of financial reports: normalised earnings, capitalising expenses, valuing assets, timing issues, debt repayments, notes to the financial statements"
+  ],
+  "shots": [
+   {
+    "source": "2019 HSC",
+    "number": "Question 22(a)2",
+    "marks": "marks",
+    "image": "image17.png",
+    "note": "The only written ethical-issues question in the 2012\u20132020 HSC papers. Part (a) is the one you want here."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 16Multiple",
+    "marks": "choice",
+    "image": "image20.png",
+    "note": "Capitalising expenses \u2014 legal fees buried in the asset value of a warehouse. The classic limitations question."
+   }
+  ],
+  "textOnly": [
+   {
+    "header": "Knox Grammar Trial 2023, Question 21(b) \u2014 3 marks",
+    "text": "Explain ONE ethical issue related to financial reports for the stakeholders of this business.",
+    "note": "Set on the Playsmart Child Care balance sheet, which carries $100 000 of goodwill and a $320 000 building. The marking guide wants transparency about how those were valued, and the risk that a lender is misled."
+   },
+   {
+    "header": "Reddam House Trial 2024, Question 22(d) \u2014 2 marks",
+    "text": "Outline ONE ethical issue related to this financial report.",
+    "note": "Marking guide accepts: audited accounts, record keeping, reporting practices, inappropriate cut-off periods, misuse of funds."
+   },
+   {
+    "header": "Abbotsleigh Trial 2024, Question 24(b) \u2014 4 marks",
+    "text": "Describe TWO limitations of SK Pty Ltd\u2019s 2024 Balance Sheet.",
+    "note": "Answer runs on valuing assets (equipment depreciates, and depreciation is an estimate) and capitalising expenses ($60 000 of R&D recorded as a non-current asset)."
+   },
+   {
+    "header": "Loreto Trial 2024, Question 22(b) \u2014 3 marks",
+    "text": "Explain ONE limitation of financial statements in providing a complete picture of Coffee Mania\u2019s financial health.",
+    "note": ""
+   },
+   {
+    "header": "Roseville Trial 2024, Question 22(a) \u2014 2 marks",
+    "text": "Outline ONE limitation of financial reports.",
+    "note": ""
+   }
+  ]
+ },
+ {
+  "name": "Profitability and working capital management",
+  "subpoints": [
+   "working capital \u2014 control of current assets \u2014 cash, receivables, inventories",
+   "working capital \u2014 control of current liabilities \u2014 payables, loans, overdrafts",
+   "working capital \u2014 strategies \u2014 leasing, sale and lease back",
+   "profitability \u2014 cost controls \u2014 fixed and variable costs, cost centres, expense minimisation",
+   "profitability \u2014 revenue controls \u2014 marketing objectives (sales mix, pricing policy)",
+   "\u2014 measured by \u2014 \u2014 profitability ratios: gross profit ratio, net profit ratio, return on equity ratio \u00b7 liquidity: current ratio"
+  ],
+  "shots": [
+   {
+    "source": "Past HSC",
+    "number": "Question 6Multiple",
+    "marks": "choice",
+    "image": "image21.png",
+    "note": "Straight to the point \u2014 which action immediately improves working capital."
+   },
+   {
+    "source": "2019 HSC",
+    "number": "Question 2520",
+    "marks": "marks \u2014 business report",
+    "image": "image22.png",
+    "note": "The benchmark working capital business report: \u201crecommend TWO appropriate working capital management strategies for this business\u201d."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 2620",
+    "marks": "marks \u2014 business report",
+    "image": "image23.png",
+    "note": "Lee\u2019s Catering. The best single question in the collection \u2014 working capital AND profitability in one report, and every figure in the stimulus is there to be used."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 2620",
+    "marks": "marks \u2014 business report",
+    "image": "image24.png",
+    "note": "Kingland Office Supplies. Low profitability, an unappealing product mix, poor cash flow and poor accounts receivable turnover \u2014 revenue controls and receivables together."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 2520",
+    "marks": "marks \u2014 business report",
+    "image": "image25.png",
+    "note": "Sportyz Goodz. Sales and profit both falling, with profit falling faster \u2014 read the graph and the widening gap points straight at costs. Its first bullet also covers the strategic role of financial management from Topic 1."
+   },
+   {
+    "source": "2020 HSC",
+    "number": "Question 24(a)\u2013(b)1",
+    "marks": "+ 2 marks",
+    "image": "image26.png",
+    "note": "Accounts receivable turnover and the expense ratio, off one stimulus."
+   },
+   {
+    "source": "2020 HSC",
+    "number": "Question 24(c)\u2013(d)3",
+    "marks": "+ 4 marks",
+    "image": "image27.png",
+    "note": "Part (c) is the key receivables-control question: recommend a strategy to improve efficiency in collecting accounts receivable."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 23(b)3",
+    "marks": "marks",
+    "image": "image28.png",
+    "note": "How to improve management of accounts receivable turnover."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 24(c)4",
+    "marks": "marks",
+    "image": "image29.png",
+    "note": "Factoring. Remember it cuts both ways \u2014 better cash flow, worse profitability."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 22(a)2",
+    "marks": "marks",
+    "image": "image30.png",
+    "note": "Chalker Pty Ltd \u2014 calculate the current ratio from a full balance sheet."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 22(b)2",
+    "marks": "marks",
+    "image": "image31.png",
+    "note": "Same balance sheet, gearing this time."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Questions",
+    "marks": "11\u201312 \u2014 stimulusMultiple choice",
+    "image": "image32.png",
+    "note": "Steve\u2019s Lawn Services. Note that stock is left blank \u2014 that is the whole trick of Question 12 below."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Questions",
+    "marks": "11\u201312Multiple choice",
+    "image": "image33.png",
+    "note": "Question 11 is equity for a sole trader; Question 12 cannot be answered at all, because stock is missing from the stimulus."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Questions",
+    "marks": "19\u201320 \u2014 stimulusMultiple choice",
+    "image": "image34.png",
+    "note": "Kerry\u2019s Warehouse \u2014 liquidity and gearing against both the industry average and last year."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Questions",
+    "marks": "19\u201320Multiple choice",
+    "image": "image35.png",
+    "note": ""
+   },
+   {
+    "source": "2020 HSC",
+    "number": "Questions",
+    "marks": "17\u201318Multiple choice",
+    "image": "image36.png",
+    "note": "Gross profit ratio, net profit ratio and expense ratio off one table."
+   },
+   {
+    "source": "2020 HSC",
+    "number": "Questions",
+    "marks": "19\u201320Multiple choice",
+    "image": "image37.png",
+    "note": "The 2020 version of the liquidity-and-gearing pair."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Questions",
+    "marks": "19\u201320Multiple choice",
+    "image": "image38.png",
+    "note": "Gross profit ratio, and the average number of days to collect debts."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 20Multiple",
+    "marks": "choice",
+    "image": "image39.png",
+    "note": "Working backwards from the ratios to sales and net profit."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 17Multiple",
+    "marks": "choice",
+    "image": "image40.png",
+    "note": "The relationship between the expense ratio, gross profit ratio and net profit ratio."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 10Multiple",
+    "marks": "choice",
+    "image": "image41.png",
+    "note": "Current ratio and accounts receivable turnover moving together."
+   },
+   {
+    "source": "2019 HSC",
+    "number": "Question 15Multiple",
+    "marks": "choice",
+    "image": "image42.png",
+    "note": "Gearing ratio from a full balance sheet."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 10Multiple",
+    "marks": "choice",
+    "image": "image43.png",
+    "note": "Cash flow \u2014 the opening balance carried across months."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 24(a)1",
+    "marks": "+ 1 marks",
+    "image": "image44.png",
+    "note": "The same skill in short-answer form."
+   }
+  ],
+  "textOnly": []
+ },
+ {
+  "name": "Equity financing",
+  "subpoints": [
+   "internal equity \u2014 the owner\u2019s own funds put into the business, and retained profits",
+   "ordinary shares \u2014 new issues \u2014 shares offered to the public for the first time",
+   "ordinary shares \u2014 rights issues \u2014 existing shareholders offered more shares, usually at a discount",
+   "ordinary shares \u2014 placements \u2014 shares sold directly to selected institutional investors",
+   "ordinary shares \u2014 share purchase plans \u2014 existing shareholders buy a set parcel without brokerage",
+   "private equity \u2014 money invested in a private company not listed on the ASX",
+   "advantages and disadvantages \u2014 no repayment and no interest, so lower risk \u00b7 but ownership is diluted, returns must be shared, and it is slower and more expensive to raise"
+  ],
+  "shots": [
+   {
+    "source": "2019 HSC",
+    "number": "Question 12Multiple",
+    "marks": "choice",
+    "image": "image45.png",
+    "note": "Rights issues \u2014 the discount to existing shareholders is the giveaway."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 6Multiple",
+    "marks": "choice",
+    "image": "image46.png",
+    "note": "A sole trader putting her own money in is internal equity finance \u2014 not a loan, and not retained profits."
+   },
+   {
+    "source": "2019 HSC",
+    "number": "Question 22(c)3",
+    "marks": "marks",
+    "image": "image47.png",
+    "note": "The disadvantage-of-equity question. Pair it with 22(b) in Topic 3 for the full debt-versus-equity comparison."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 2520",
+    "marks": "marks \u2014 business report",
+    "image": "image48.png",
+    "note": "Emu Uniform Manufacturers \u2014 recommend a source of finance for a $5 million factory expansion."
+   }
+  ],
+  "textOnly": [
+   {
+    "header": "2023 HSC, Question 25 \u2014 20 marks (business report)",
+    "text": "Compare the use of debt and equity as sources of finance, and recommend ONE source of finance this business could use to fund its expansion.",
+    "note": "Future Century Gaming Pty Ltd, an online gaming platform funding global expansion through external sources."
+   },
+   {
+    "header": "2021 HSC, Question 25 \u2014 20 marks (business report)",
+    "text": "Compare the use of a mortgage to a new issue of shares to fund the factory purchase.",
+    "note": "Ozzi Baby Food Pty Ltd \u2014 a direct debt-versus-equity comparison, with the equity option being an ASX listing."
+   },
+   {
+    "header": "Abbotsleigh Trial 2024, Question 3 \u2014 multiple choice",
+    "text": "A business is offering existing shareholders the opportunity to purchase more shares at a discount. This is known as what type of equity finance?",
+    "note": "Answer: share purchase plans."
+   },
+   {
+    "header": "Barker Trial 2024, Question 9 \u2014 multiple choice",
+    "text": "Which of the following is an external source of equity? (Overdraft / Ordinary shares / Retained profits / Debentures)",
+    "note": "Answer: ordinary shares. Retained profits are internal equity; the other two are debt."
+   },
+   {
+    "header": "St Ignatius\u2019 Trial 2024, Question 25 \u2014 part of a 20-mark report",
+    "text": "Discuss a suitable source of finance for this business expansion.",
+    "note": "An investor has offered the full capital in return for 51% equity \u2014 so the trade-off is losing control against borrowing at 8% interest."
+   }
+  ]
+ },
+ {
+  "name": "Global financial management strategies",
+  "subpoints": [
+   "exchange rates \u2014 appreciation and depreciation, and their effect on importers and exporters",
+   "interest rates \u2014 the cost of borrowing overseas versus at home",
+   "methods of international payment \u2014 payment in advance, letter of credit, clean payment, bill of exchange \u2014 ranked by risk to each side",
+   "hedging \u2014 taking action to protect against an adverse currency movement",
+   "derivatives \u2014 forward exchange contracts, options contracts, swap contracts"
+  ],
+  "shots": [
+   {
+    "source": "Past HSC",
+    "number": "Question 24(a)3",
+    "marks": "marks",
+    "image": "image49.png",
+    "note": "Methods of international payment \u2014 an Australian business selling to French wholesalers who will not pay in advance."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 24(b)5",
+    "marks": "marks",
+    "image": "image50.png",
+    "note": "Justify the method of payment that most reduces financial risk. The biggest written global question in the collection."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 24(b)4",
+    "marks": "marks",
+    "image": "image51.png",
+    "note": "Hedging and derivatives \u2014 how to protect against a change in the value of the Australian dollar."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 24(a)2",
+    "marks": "marks",
+    "image": "image52.png",
+    "note": "Exchange rates \u2014 how an appreciation affects an importer\u2019s competitive position."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 20Multiple",
+    "marks": "choice",
+    "image": "image53.png",
+    "note": "Who suffers most when the Australian dollar rises. Work through each option as either an importer or an exporter."
+   },
+   {
+    "source": "Past HSC",
+    "number": "Question 18Multiple",
+    "marks": "choice",
+    "image": "image54.png",
+    "note": "The same idea, tested on exports to Canada."
+   }
+  ],
+  "textOnly": [
+   {
+    "header": "Knox Grammar Trial 2023, Question 14 \u2014 multiple choice",
+    "text": "Hardwood Timber Pty Ltd has 90 days to pay an overseas supplier in US dollars. They will lock in the payment amount at today\u2019s exchange rate. Which global financial management strategy best describes this process?",
+    "note": "Answer: a forward exchange contract. Hedging is the broader category; the forward contract is the specific instrument."
+   },
+   {
+    "header": "Abbotsleigh Trial 2023, Question 11 \u2014 multiple choice",
+    "text": "Which of the following is an agreement to exchange currency in the spot market with an agreement to reverse the transaction in the future?",
+    "note": "Answer: a swap contract."
+   },
+   {
+    "header": "Abbotsleigh Trial 2024, Question 17 \u2014 multiple choice",
+    "text": "An Australian candle shop imports products from overseas and sells them locally. Which method of international payment would be the highest risk for the candle shop?",
+    "note": "Answer: payment in advance \u2014 the importer pays before the goods arrive."
+   },
+   {
+    "header": "2023 HSC, Question 8 \u2014 multiple choice",
+    "text": "An export company based in Sydney sells Australian-made art to the Asian market. Which form of payment has the lowest level of risk for the exporter?",
+    "note": "Answer: payment in advance. Same instrument as above \u2014 the risk just sits with the other party."
+   },
+   {
+    "header": "Knox Grammar Trial 2023, Question 20 \u2014 multiple choice",
+    "text": "An Australian logistics company purchases their fuel from overseas suppliers. What impact would a decrease in the Australian dollar relative to all other foreign currencies have on this business?",
+    "note": "Answer: decreased net profit and increased expenses."
+   }
+  ]
+ }
+]
