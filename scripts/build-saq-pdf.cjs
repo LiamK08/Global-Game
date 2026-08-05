@@ -12,7 +12,7 @@
 const fs = require("fs");
 const path = require("path");
 const { chromium } = require("playwright");
-const { plan, TOPICS } = require("./build-saq-docs.cjs");
+const { plan, TOPICS, isExtended } = require("./build-saq-docs.cjs");
 
 const ROOT = path.dirname(__dirname);
 const IMG_DIR = path.join(ROOT, "study/img");
@@ -39,8 +39,7 @@ function dataUri(name) {
 function linesFor(q) {
   if (q.type === "multiple-choice") return 1;
   const m = q.marks || 2;
-  if (m >= 15) return 46;
-  if (m >= 10) return 30;
+  if (m >= 10) return 26;
   return Math.max(4, m * 2 + 2);
 }
 
@@ -74,7 +73,7 @@ function questionHtml(q, n) {
 }
 
 function topicHtml(topic) {
-  const { tax, mine, orderedPoints, primary, alsoAt, numberOf, total } = plan(topic);
+  const { tax, mine, orderedPoints, sections, primary, extendedBySection, alsoAt, numberOf, total } = plan(topic);
   const accent = "#" + topic.accent;
   const shots = mine.filter(q => q.image).length;
   const covered = orderedPoints.filter(p => (primary.get(p.id) || []).length).length;
@@ -89,28 +88,53 @@ function topicHtml(topic) {
     return out;
   })();
 
-  let body = "", lastSection = null, sectionNo = 0;
-  for (const p of orderedPoints) {
-    const qs = primary.get(p.id) || [];
-    const also = [...new Set(alsoAt.get(p.id) || [])].sort((a, b) => a - b);
-    if (!qs.length && !also.length) continue;
+  let body = "", sectionNo = 0;
+  for (const section of sections) {
+    sectionNo++;
+    body += `<section class="part${sectionNo > 1 ? " brk" : ""}">
+      <div class="parteyebrow">Part ${sectionNo}</div>
+      <h1>${esc(section)}</h1></section>`;
 
-    if (p.section !== lastSection) {
-      lastSection = p.section;
-      sectionNo++;
-      body += `<section class="part${sectionNo > 1 ? " brk" : ""}">
-        <div class="parteyebrow">Part ${sectionNo}</div>
-        <h1>${esc(p.section)}</h1></section>`;
+    for (const p of orderedPoints.filter(x => x.section === section)) {
+      const qs = primary.get(p.id) || [];
+      const also = [...new Set(alsoAt.get(p.id) || [])].sort((a, b) => a - b);
+      if (!qs.length && !also.length) continue;
+
+      body += `<h2>${esc(p.label)}</h2>`;
+      if (!qs.length) {
+        body += `<p class="empty">${also.length
+          ? `No short-answer question of its own. Covered inside question${also.length > 1 ? "s" : ""} ${also.join(", ")}.`
+          : "No question in these papers examines this dot point."}</p>`;
+        continue;
+      }
+      body += qs.map(q => questionHtml(q, numberOf.get(q.id))).join("");
+      if (also.length) body += `<p class="also">Also tested by question${also.length > 1 ? "s" : ""} ${also.join(", ")}.</p>`;
     }
-    body += `<h2>${esc(p.label)}</h2>`;
-    if (!qs.length) {
-      body += `<p class="empty">${also.length
-        ? `No question of its own. Covered inside question${also.length > 1 ? "s" : ""} ${also.join(", ")}.`
-        : "No question in these papers examines this dot point."}</p>`;
-      continue;
+
+    // Every 20-marker for this part, gathered on its own page and listed
+    // without answer space — these get written up on separate paper.
+    const ext = extendedBySection.get(section) || [];
+    if (ext.length) {
+      body += `<section class="extpage">
+        <div class="parteyebrow">Part ${sectionNo} · extended response</div>
+        <h1>${esc(section)} — 20-mark questions</h1>
+        <p class="extnote">${ext.length} question${ext.length > 1 ? "s" : ""}. Plan and write these on separate paper.</p>
+        ${ext.map(q => {
+          const img = q.image ? dataUri(q.image) : null;
+          return `<article class="exti">
+            <div class="qhead">
+              <span class="qn">${numberOf.get(q.id)}.</span>
+              <span class="qlabel">${esc(q.number || "Question")}</span>
+              <span class="qsrc">${esc(q.sources.join(" · "))}</span>
+              <span class="qmarks">${q.marks != null ? q.marks + " marks" : "extended response"}</span>
+            </div>
+            ${img ? `<img class="scan tight" src="${img.uri}" alt="Question ${esc(q.number)} as printed in the exam paper">`
+                  : `<p class="qtext tight">${esc(q.text)}</p>` +
+                    (q.stimulus ? `<div class="stim tight"><b>Stimulus</b>${esc(q.stimulus)}</div>` : "")}
+          </article>`;
+        }).join("")}
+      </section>`;
     }
-    body += qs.map(q => questionHtml(q, numberOf.get(q.id))).join("");
-    if (also.length) body += `<p class="also">Also tested by question${also.length > 1 ? "s" : ""} ${also.join(", ")}.</p>`;
   }
 
   return `<!doctype html><html><head><meta charset="utf-8"><title>${esc(tax.label)}</title><style>
@@ -154,6 +178,13 @@ img.scan{display:block;width:100%;max-width:165mm;height:auto;margin:4pt auto 7p
 .mcq{font-size:10pt;color:#5d6673;font-weight:600;margin:6pt 0 4pt}
 .mcq .blank{display:inline-block;width:38mm;border-bottom:.9pt solid #7b8391}
 .empty,.also{font-size:9.5pt;color:#5d6673;font-style:italic;margin:5pt 0 2pt}
+.extpage{break-before:page}
+.extnote{font-size:9.5pt;color:#5d6673;font-style:italic;margin:4pt 0 10pt}
+.exti{break-inside:avoid;margin:0 0 11pt;padding-bottom:9pt;border-bottom:.5pt solid #e3e7ec}
+.exti:last-child{border-bottom:0}
+.qtext.tight{font-size:10.5pt;line-height:1.35;margin:3pt 0 4pt}
+.stim.tight{font-size:9pt;line-height:1.32;padding:5pt 7pt;margin:0}
+img.scan.tight{max-width:135mm;max-height:95mm;width:auto;margin:3pt 0 4pt}
 </style></head><body>
 <div class="cover">
   <div class="eyebrow">HSC Business Studies</div>

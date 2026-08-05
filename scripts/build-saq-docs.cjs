@@ -39,12 +39,15 @@ const RULE = "B9C0CA";
 
 // ---------------------------------------------------------------- helpers
 
+/** Extended responses (business reports, 20-mark essays) are written on
+ *  separate paper, so they are listed without answer space. */
+const isExtended = q => q.type === "extended-response" || (q.marks || 0) >= 15;
+
 /** Answer space, in ruled lines, for a question of this size. */
 function linesFor(q) {
   if (q.type === "multiple-choice") return 1;
   const m = q.marks || 2;
-  if (m >= 15) return 46;          // business report — roughly two pages
-  if (m >= 10) return 30;
+  if (m >= 10) return 26;
   return Math.max(4, m * 2 + 2);   // 2 marks -> 6 lines, 4 marks -> 10
 }
 
@@ -188,22 +191,53 @@ function plan(topic) {
     primary.get(own[0]).push(q);
   }
 
-  const bucket = q => q.type === "multiple-choice" ? 2 : q.type === "extended-response" ? 1 : 0;
-  let n = 0;
+  // Extended responses are answered on separate paper, so they are pulled out
+  // of the dot points and gathered at the end of the part they belong to.
+  const extendedBySection = new Map();
   for (const p of orderedPoints) {
-    const qs = (primary.get(p.id) || []).sort((a, b) =>
-      bucket(a) - bucket(b) || (a.marks || 0) - (b.marks || 0));
-    primary.set(p.id, qs);
-    for (const q of qs) {
+    const keep = [], ext = [];
+    for (const q of primary.get(p.id) || []) (isExtended(q) ? ext : keep).push(q);
+    primary.set(p.id, keep);
+    if (ext.length) {
+      if (!extendedBySection.has(p.section)) extendedBySection.set(p.section, []);
+      extendedBySection.get(p.section).push(...ext);
+    }
+  }
+
+  const sections = [...new Set(orderedPoints.map(p => p.section))];
+  const bucket = q => q.type === "multiple-choice" ? 1 : 0;
+
+  // Number straight through the booklet: each part's dot points first, then
+  // that part's extended responses.
+  let n = 0;
+  const noteAlso = (q, homeId) => {
+    for (const other of q.syllabusPoints) {
+      if (other === homeId || !rank.has(other)) continue;
+      if (!alsoAt.has(other)) alsoAt.set(other, []);
+      alsoAt.get(other).push(numberOf.get(q.id));
+    }
+  };
+
+  for (const section of sections) {
+    for (const p of orderedPoints.filter(x => x.section === section)) {
+      const qs = (primary.get(p.id) || []).sort((a, b) =>
+        bucket(a) - bucket(b) || (a.marks || 0) - (b.marks || 0));
+      primary.set(p.id, qs);
+      for (const q of qs) { numberOf.set(q.id, ++n); noteAlso(q, p.id); }
+    }
+    const ext = (extendedBySection.get(section) || []).sort((a, b) => (b.marks || 0) - (a.marks || 0));
+    extendedBySection.set(section, ext);
+    for (const q of ext) {
       numberOf.set(q.id, ++n);
+      // Cross-reference every dot point it touches, since it now sits outside them.
       for (const other of q.syllabusPoints) {
-        if (other === p.id || !rank.has(other)) continue;
+        if (!rank.has(other)) continue;
         if (!alsoAt.has(other)) alsoAt.set(other, []);
-        alsoAt.get(other).push(numberOf.get(q.id));
+        alsoAt.get(other).push(n);
       }
     }
   }
-  return { tax, mine, orderedPoints, primary, alsoAt, numberOf, total: n };
+  return { tax, mine, orderedPoints, sections, primary, extendedBySection, alsoAt, numberOf, total: n };
 }
 
 function buildTopic(topic) {
@@ -211,7 +245,7 @@ function buildTopic(topic) {
   const tax = DATA.taxonomy[key];
   const mine = DATA.questions.filter(q => q.topics.includes(key));
 
-  const { orderedPoints, primary, alsoAt, numberOf, total: n } = plan(topic);
+  const { orderedPoints, sections, primary, extendedBySection, alsoAt, numberOf, total: n } = plan(topic);
 
   const shots = mine.filter(q => q.image).length;
   const children = [];
@@ -274,58 +308,126 @@ function buildTopic(topic) {
   children.push(new Paragraph({ children: [new PageBreak()] }));
 
   // ---- body
-  lastSection = null;
   let sectionNo = 0;
-  for (const p of orderedPoints) {
-    const qs = primary.get(p.id) || [];
-    const also = alsoAt.get(p.id) || [];
-    if (!qs.length && !also.length) continue;
+  for (const section of sections) {
+    sectionNo++;
+    children.push(new Paragraph({
+      pageBreakBefore: sectionNo > 1,
+      spacing: { before: sectionNo > 1 ? 0 : 120, after: 40 },
+      children: [new TextRun({ text: `PART ${sectionNo}`, bold: true, size: 16, color: accent,
+        allCaps: true, characterSpacing: 50, font: "Aptos" })],
+    }));
+    children.push(new Paragraph({
+      heading: HeadingLevel.HEADING_1,
+      spacing: { before: 0, after: 200 },
+      border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: accent, space: 8 } },
+      children: [new TextRun({ text: section, bold: true, size: 34, color: INK, font: "Aptos" })],
+    }));
 
-    if (p.section !== lastSection) {
-      lastSection = p.section;
-      sectionNo++;
+    for (const p of orderedPoints.filter(x => x.section === section)) {
+      const qs = primary.get(p.id) || [];
+      const also = [...new Set(alsoAt.get(p.id) || [])].sort((a, b) => a - b);
+      if (!qs.length && !also.length) continue;
+
       children.push(new Paragraph({
-        pageBreakBefore: sectionNo > 1,
-        spacing: { before: sectionNo > 1 ? 0 : 120, after: 40 },
-        children: [new TextRun({ text: `PART ${sectionNo}`, bold: true, size: 16, color: accent,
-          allCaps: true, characterSpacing: 50, font: "Aptos" })],
+        heading: HeadingLevel.HEADING_2,
+        spacing: { before: 360, after: 60 },
+        keepNext: true,
+        children: [new TextRun({ text: p.label, bold: true, size: 24, color: accent, font: "Aptos" })],
+      }));
+
+      if (!qs.length) {
+        children.push(new Paragraph({
+          spacing: { after: 120 },
+          children: [new TextRun({
+            text: also.length
+              ? `No short-answer question of its own. Covered inside question${also.length > 1 ? "s" : ""} ${also.join(", ")}.`
+              : "No question in these papers examines this dot point.",
+            italics: true, size: 19, color: MUTED, font: "Aptos" })],
+        }));
+        continue;
+      }
+
+      qs.forEach(q => children.push(...questionBlock(q, accent, numberOf.get(q.id))));
+
+      if (also.length) {
+        children.push(new Paragraph({
+          spacing: { before: 260, after: 120 },
+          children: [new TextRun({
+            text: `Also tested by question${also.length > 1 ? "s" : ""} ${also.join(", ")}.`,
+            italics: true, size: 18, color: MUTED, font: "Aptos" })],
+        }));
+      }
+    }
+
+    // The part's 20-markers, gathered on their own page with no answer space.
+    const ext = extendedBySection.get(section) || [];
+    if (ext.length) {
+      children.push(new Paragraph({
+        pageBreakBefore: true,
+        spacing: { before: 0, after: 40 },
+        children: [new TextRun({ text: `PART ${sectionNo} · EXTENDED RESPONSE`, bold: true, size: 16,
+          color: accent, allCaps: true, characterSpacing: 50, font: "Aptos" })],
       }));
       children.push(new Paragraph({
         heading: HeadingLevel.HEADING_1,
-        spacing: { before: 0, after: 200 },
+        spacing: { before: 0, after: 60 },
         border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: accent, space: 8 } },
-        children: [new TextRun({ text: p.section, bold: true, size: 34, color: INK, font: "Aptos" })],
+        children: [new TextRun({ text: `${section} — 20-mark questions`, bold: true, size: 30, color: INK, font: "Aptos" })],
       }));
-    }
-
-    children.push(new Paragraph({
-      heading: HeadingLevel.HEADING_2,
-      spacing: { before: 360, after: 60 },
-      keepNext: true,
-      children: [new TextRun({ text: p.label, bold: true, size: 24, color: accent, font: "Aptos" })],
-    }));
-
-    if (!qs.length) {
       children.push(new Paragraph({
-        spacing: { after: 120 },
+        spacing: { before: 80, after: 200 },
         children: [new TextRun({
-          text: also.length
-            ? `No question of its own. Covered inside question${also.length > 1 ? "s" : ""} ${[...new Set(also.map(a => a.n))].join(", ")}.`
-            : "No question in these papers examines this dot point.",
-          italics: true, size: 19, color: MUTED, font: "Aptos" })],
-      }));
-      continue;
-    }
-
-    qs.forEach(q => children.push(...questionBlock(q, accent, numberOf.get(q.id))));
-
-    if (also.length) {
-      children.push(new Paragraph({
-        spacing: { before: 260, after: 120 },
-        children: [new TextRun({
-          text: `Also tested by question${also.length > 1 ? "s" : ""} ${[...new Set(also.map(a => a.n))].sort((a, b) => a - b).join(", ")}.`,
+          text: `${ext.length} question${ext.length > 1 ? "s" : ""}. Plan and write these on separate paper.`,
           italics: true, size: 18, color: MUTED, font: "Aptos" })],
       }));
+
+      for (const q of ext) {
+        children.push(new Paragraph({
+          spacing: { before: 200, after: 60 },
+          keepNext: true,
+          children: [
+            new TextRun({ text: `${numberOf.get(q.id)}. `, bold: true, size: 19, color: accent, font: "Aptos" }),
+            new TextRun({ text: `${q.number || "Question"}`, bold: true, size: 19, color: INK, font: "Aptos" }),
+            new TextRun({ text: `   ${q.sources.join(" · ")}`, size: 16, color: MUTED, font: "Aptos" }),
+            new TextRun({ children: [new PositionalTab({
+              alignment: PositionalTabAlignment.RIGHT, relativeTo: "margin",
+              leader: PositionalTabLeader.NONE })] }),
+            new TextRun({ text: q.marks != null ? `${q.marks} marks` : "extended response",
+              bold: true, size: 16, color: accent, font: "Aptos" }),
+          ],
+        }));
+
+        const meta = q.image ? imageMeta(q.image) : null;
+        if (meta) {
+          const scale = Math.min(1, (5.3 * 96) / meta.w, (3.7 * 96) / meta.h);
+          children.push(new Paragraph({
+            spacing: { before: 40, after: 100 },
+            children: [new ImageRun({ type: "png", data: meta.buf,
+              transformation: { width: Math.round(meta.w * scale), height: Math.round(meta.h * scale) } })],
+          }));
+        } else {
+          children.push(new Paragraph({
+            spacing: { before: 30, after: 80 },
+            children: [new TextRun({ text: q.text, size: 20, color: INK, font: "Cambria" })],
+          }));
+          if (q.stimulus) {
+            children.push(new Paragraph({
+              spacing: { before: 40, after: 100 },
+              indent: { left: convertInchesToTwip(0.25), right: convertInchesToTwip(0.25) },
+              shading: { type: ShadingType.CLEAR, fill: "F2F4F7" },
+              border: {
+                top: { style: BorderStyle.SINGLE, size: 6, color: accent, space: 6 },
+                bottom: { style: BorderStyle.SINGLE, size: 2, color: "DFE3E9", space: 6 },
+              },
+              children: [
+                new TextRun({ text: "Stimulus   ", bold: true, size: 14, color: MUTED, allCaps: true, font: "Aptos" }),
+                new TextRun({ text: q.stimulus, size: 17, color: INK, font: "Cambria" }),
+              ],
+            }));
+          }
+        }
+      }
     }
   }
 
@@ -373,7 +475,7 @@ function buildTopic(topic) {
   });
 }
 
-module.exports = { plan, TOPICS, linesFor, imageMeta };
+module.exports = { plan, TOPICS, linesFor, imageMeta, isExtended };
 
 // Only build when run directly — build-saq-pdf.cjs imports the plan from here
 // so both formats number their questions identically.

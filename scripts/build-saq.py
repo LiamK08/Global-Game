@@ -807,7 +807,9 @@ function paperBlock(q){
     return `<figure class="paper"><img loading="lazy" src="${src}"
       alt="Screenshot of question ${esc(q.number)} as printed in the exam paper"></figure>`;
   }
-  const lines = Math.min(14, Math.max(2, Math.round((q.marks || 2) * 1.6)));
+  // Extended responses are written on separate paper, so no ruled space.
+  const extended = q.type === "extended-response" || (q.marks || 0) >= 15;
+  const lines = extended ? 0 : Math.min(14, Math.max(2, Math.round((q.marks || 2) * 1.6)));
   return `<div class="paper typeset">
     <div class="ex-row">
       <span class="ex-num">${esc(q.number || "")}</span>
@@ -815,7 +817,7 @@ function paperBlock(q){
       ${q.marks!=null ? `<span class="ex-marks">${q.marks}</span>` : ""}
     </div>
     ${q.stimulus ? `<div class="ex-stim">${highlight(q.stimulus)}</div>` : ""}
-    <div class="ex-rules">${"<i></i>".repeat(lines)}</div>
+    ${lines ? `<div class="ex-rules">${"<i></i>".repeat(lines)}</div>` : ""}
   </div>`;
 }
 
