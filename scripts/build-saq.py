@@ -86,7 +86,7 @@ def load_questions(extracted_dir, valid_ids):
     return docs
 
 
-def build(extracted_dir, taxonomy_path):
+def build(extracted_dir, taxonomy_path, fragment_path=None):
     tax, valid_ids = load_taxonomy(taxonomy_path)
     docs = load_questions(extracted_dir, valid_ids)
 
@@ -187,6 +187,11 @@ def build(extracted_dir, taxonomy_path):
     with open(OUT_HTML, "w") as fh:
         fh.write(html)
 
+    if fragment_path:
+        with open(fragment_path, "w") as fh:
+            fh.write(to_fragment(html))
+        print(f"wrote {fragment_path}")
+
     uncovered = [pid for pid in valid_ids if counts.get(pid, 0) == 0]
     print(f"papers        : {len(docs)}")
     print(f"questions      : {len(questions)} ({dupes} cross-paper duplicates merged)")
@@ -205,6 +210,18 @@ def render(payload):
     return HTML_TEMPLATE.replace("/*__DATA__*/null", data)
 
 
+def to_fragment(full_html):
+    """Strip the document skeleton for publishing as an Artifact.
+
+    Artifacts supply their own <!doctype>/<html>/<head>/<body>, so the file has
+    to be title + style + body content only.
+    """
+    title = re.search(r"<title>.*?</title>", full_html, re.S).group(0)
+    style = re.search(r"<style>.*?</style>", full_html, re.S).group(0)
+    body = re.search(r"<body>(.*)</body>", full_html, re.S).group(1)
+    return f"{title}\n{style}\n{body.strip()}\n"
+
+
 HTML_TEMPLATE = r"""<!doctype html>
 <html lang="en">
 <head>
@@ -212,38 +229,67 @@ HTML_TEMPLATE = r"""<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HSC Business Studies — SAQ by Syllabus Point</title>
 <style>
+/* Colour carries exactly one meaning here: which business function you are in.
+   The four hues below are the only saturated colour on the page, and the
+   interface borrows the hue of whichever topic is open for its own selected
+   states — so the chrome always tells you where you are without a fifth
+   competing accent. Neutrals are biased slightly blue to sit under them. */
 :root{
-  --bg:#f6f7f9; --panel:#fff; --ink:#15181d; --muted:#5c6472; --line:#e2e5ea;
-  --accent:#2f5fd8; --accent-soft:#e8eefc; --chip:#eef0f4; --done:#15803d; --done-soft:#e7f6ec;
-  --ops:#0f766e; --mkt:#b45309; --fin:#1d4ed8; --hr:#9333ea;
-  --shadow:0 1px 2px rgba(16,24,40,.06),0 1px 3px rgba(16,24,40,.1);
+  --bg:#f5f6f9; --panel:#fff; --ink:#14171d; --muted:#596273; --line:#e1e4eb;
+  --chip:#eceff4; --done:#15803d; --done-soft:#e7f6ec;
+  --ops:#0f766e; --ops-soft:#ddf0ed;
+  --mkt:#a4530a; --mkt-soft:#fbeddc;
+  --fin:#1d4ed8; --fin-soft:#e4ebfd;
+  --hr:#8b2fd6;  --hr-soft:#f1e6fd;
+  --accent:var(--ink); --accent-soft:var(--chip);
+  --shadow:0 1px 2px rgba(16,24,40,.05),0 1px 3px rgba(16,24,40,.08);
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  /* Questions are set in a serif, the way they are printed on the real paper. */
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
 }
 @media (prefers-color-scheme:dark){
   :root{
-    --bg:#0f1216; --panel:#171b21; --ink:#e8eaee; --muted:#98a1af; --line:#282e37;
-    --accent:#7ea2ff; --accent-soft:#1b2439; --chip:#232932; --done:#4ade80; --done-soft:#14301f;
-    --ops:#5eead4; --mkt:#fbbf24; --fin:#93b4ff; --hr:#d8b4fe;
+    --bg:#0e1115; --panel:#161a20; --ink:#e7eaef; --muted:#949dac; --line:#272d36;
+    --chip:#222831; --done:#4ade80; --done-soft:#14301f;
+    --ops:#5eead4; --ops-soft:#0e2f2a;
+    --mkt:#fbbf24; --mkt-soft:#33270a;
+    --fin:#93b4ff; --fin-soft:#18213c;
+    --hr:#d8b4fe;  --hr-soft:#28183c;
     --shadow:none;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0f1216; --panel:#171b21; --ink:#e8eaee; --muted:#98a1af; --line:#282e37;
-  --accent:#7ea2ff; --accent-soft:#1b2439; --chip:#232932; --done:#4ade80; --done-soft:#14301f;
-  --ops:#5eead4; --mkt:#fbbf24; --fin:#93b4ff; --hr:#d8b4fe; --shadow:none;
+  --bg:#0e1115; --panel:#161a20; --ink:#e7eaef; --muted:#949dac; --line:#272d36;
+  --chip:#222831; --done:#4ade80; --done-soft:#14301f;
+  --ops:#5eead4; --ops-soft:#0e2f2a;
+  --mkt:#fbbf24; --mkt-soft:#33270a;
+  --fin:#93b4ff; --fin-soft:#18213c;
+  --hr:#d8b4fe;  --hr-soft:#28183c;
+  --shadow:none;
 }
 :root[data-theme="light"]{
-  --bg:#f6f7f9; --panel:#fff; --ink:#15181d; --muted:#5c6472; --line:#e2e5ea;
-  --accent:#2f5fd8; --accent-soft:#e8eefc; --chip:#eef0f4; --done:#15803d; --done-soft:#e7f6ec;
-  --ops:#0f766e; --mkt:#b45309; --fin:#1d4ed8; --hr:#9333ea;
-  --shadow:0 1px 2px rgba(16,24,40,.06),0 1px 3px rgba(16,24,40,.1);
+  --bg:#f5f6f9; --panel:#fff; --ink:#14171d; --muted:#596273; --line:#e1e4eb;
+  --chip:#eceff4; --done:#15803d; --done-soft:#e7f6ec;
+  --ops:#0f766e; --ops-soft:#ddf0ed;
+  --mkt:#a4530a; --mkt-soft:#fbeddc;
+  --fin:#1d4ed8; --fin-soft:#e4ebfd;
+  --hr:#8b2fd6;  --hr-soft:#f1e6fd;
+  --shadow:0 1px 2px rgba(16,24,40,.05),0 1px 3px rgba(16,24,40,.08);
 }
+/* Set by the topic tabs; must follow the theme blocks so it wins. */
+:root[data-topic="operations"]{--accent:var(--ops);--accent-soft:var(--ops-soft)}
+:root[data-topic="marketing"]{ --accent:var(--mkt);--accent-soft:var(--mkt-soft)}
+:root[data-topic="finance"]{   --accent:var(--fin);--accent-soft:var(--fin-soft)}
+:root[data-topic="hr"]{        --accent:var(--hr); --accent-soft:var(--hr-soft)}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
-  background:var(--bg); color:var(--ink); font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg); color:var(--ink); font:15px/1.55 var(--sans);
   -webkit-font-smoothing:antialiased;
 }
 a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 
 header.top{
   position:sticky; top:0; z-index:20; background:var(--panel); border-bottom:1px solid var(--line);
@@ -336,10 +382,11 @@ main{min-width:0}
   margin-left:auto;flex:none;font-size:12px;font-weight:650;background:var(--chip);border-radius:999px;padding:2px 10px;
   font-variant-numeric:tabular-nums;
 }
-.q-text{font-size:15px;line-height:1.6;white-space:pre-wrap}
+.q-text{font-family:var(--serif);font-size:16.5px;line-height:1.62;white-space:pre-wrap;max-width:74ch}
 .q-stim{
   margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);background:var(--accent-soft);
-  border-radius:0 8px 8px 0;font-size:13px;line-height:1.55;white-space:pre-wrap;
+  border-radius:0 8px 8px 0;font-size:13.5px;line-height:1.55;white-space:pre-wrap;
+  font-family:var(--serif);max-width:80ch;
 }
 .q-stim b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
 .q-foot{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
@@ -638,7 +685,10 @@ function renderHead(){
   }
 }
 
-function render(){ renderTabs(); renderTree(); renderHead(); renderFilterOptions(); renderList(); }
+function render(){
+  document.documentElement.setAttribute("data-topic", state.topic);
+  renderTabs(); renderTree(); renderHead(); renderFilterOptions(); renderList();
+}
 
 // ---- wiring --------------------------------------------------------------
 const search = document.getElementById("search");
@@ -676,5 +726,6 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--extracted", required=True, help="directory of per-paper extraction JSON")
     ap.add_argument("--taxonomy", required=True, help="syllabus taxonomy JSON")
+    ap.add_argument("--fragment", help="also write a head+body fragment for publishing as an Artifact")
     args = ap.parse_args()
-    build(args.extracted, args.taxonomy)
+    build(args.extracted, args.taxonomy, args.fragment)

@@ -532,6 +532,223 @@
  },
  "questions": [
   {
+   "id": "df0dd4a7df",
+   "number": "26",
+   "text": "Analyse how different sources of finance impact the financial objectives of a business.",
+   "marks": 20,
+   "verb": "analyse",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-role-objectives",
+    "fin-inf-internal",
+    "fin-inf-debt",
+    "fin-inf-equity"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
+   "id": "15cb5d9c50",
+   "number": "27",
+   "text": "Assess the importance of financial management strategies in achieving the objectives of financial management.",
+   "marks": 20,
+   "verb": "assess",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-role-objectives",
+    "fin-str-cashflow",
+    "fin-str-workingcapital",
+    "fin-str-profitability"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "2871748564",
+   "number": "26",
+   "text": "Assess the importance of marketing strategies in achieving the marketing objectives of market share and brand awareness.",
+   "marks": 20,
+   "verb": "assess",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-proc-objectives",
+    "mkt-str-product",
+    "mkt-str-promotion",
+    "mkt-str-price"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
+   "id": "782b43e81c",
+   "number": "26",
+   "text": "Assess the importance of operations strategies in enabling business to achieve the performance objectives.",
+   "marks": 20,
+   "verb": "assess",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-performance",
+    "ops-str-quality",
+    "ops-str-technology"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "51f16e10ab",
+   "number": "27",
+   "text": "Assess the importance of operations strategies in achieving the operations objectives of cost and quality.",
+   "marks": 20,
+   "verb": "assess",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-performance",
+    "ops-str-quality",
+    "ops-str-supplychain",
+    "ops-str-technology"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
+   "id": "5c9b3ad62b",
+   "number": "27",
+   "text": "Evaluate how a business has used strategies in human resource management to sustain a competitive advantage.",
+   "marks": 20,
+   "verb": "evaluate",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-role-strategic",
+    "hr-str-training",
+    "hr-eff-indicators"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "e67b9538ae",
+   "number": "26",
+   "text": "Evaluate the importance of operations strategies in achieving the strategic role of operations in a business.",
+   "marks": 20,
+   "verb": "evaluate",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-role-strategic",
+    "ops-str-performance",
+    "ops-str-quality"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "8ef92a246f",
+   "number": "27",
+   "text": "How do factors influencing customer choice impact the marketing strategies used by a business in achieving marketing objectives?",
+   "marks": 20,
+   "verb": "how",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-inf-psychological",
+    "mkt-inf-sociocultural",
+    "mkt-inf-economic",
+    "mkt-inf-government",
+    "mkt-proc-objectives",
+    "mkt-proc-strategies"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
+   "id": "c47a7306bd",
+   "number": "25",
+   "text": "Management of Marvels Metals has hired you as a consultant to write a report addressing:\n\u2022 Outline the strategic role of human resources management for this business.\n\u2022 Examine the interdependence between finance and human resources for this business.\n\u2022 Recommend ONE appropriate financial management strategy to address the business' financial problems.",
+   "marks": 20,
+   "verb": "recommend",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Marvel Metals manufactures metal products for the Australian building industry. Over the past few years, the business has experienced decreasing profitability and cash flow management problems. Rising inflation has affected a range of their costs such as raw materials, utilities and wages. They have also noticed significant delays in receiving payment from their customers. Management is looking to adopt new technology, which will result in job cuts and retraining for some staff. Employees are unhappy with this potential change and it is contributing to increasing rates of absenteeism and staff turnover.",
+   "topics": [
+    "finance",
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-role-strategic",
+    "hr-role-interdependence",
+    "fin-role-interdependence",
+    "fin-str-cashflow",
+    "fin-str-profitability"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
    "id": "95ab288353",
    "number": "25",
    "text": "The directors have asked you to write a business report in which you:\n\u2022 outline some of the challenges including the global factors of costs, skills and supply the business may need to consider in recruiting and retaining staff\n\u2022 compare the use of debt and equity as sources of finance\n\u2022 recommend ONE source of finance this business could use to fund its expansion.",
@@ -611,6 +828,81 @@
     "2023 HSC Business Studies"
    ],
    "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "1c85f794f0",
+   "number": "25",
+   "text": "You have been employed as a consultant by Boating and Floating Ltd. to prepare a report that will be given to their management team. In your report, you should:\n\u2022 Describe the advantages of outsourcing the human resource function in a global market for Boating and Floating Ltd.\n\u2022 Explain the importance of a situational analysis for Boating and Floating Ltd. as they plan their international expansion.\n\u2022 Analyse the implementation of global marketing strategies for Boating and Floating Ltd. to effectively launch their products on the global market.",
+   "marks": 20,
+   "verb": "analyse",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Boating and Floating Ltd. is an Australian manufacturer of boating accessory products that are made from sustainable plastics. The business is planning to launch their products onto the global market, using inputs and materials specific to the local global regions. Boating and Floating Ltd. is considering effective promotional strategies that could be implemented for the successful global launch of their products. In addition, Boating and Floating Ltd. is planning to outsource their human resource function to attain a competitive advantage. Response is to be written in the form of a business report; assessed on knowledge and understanding, applying the hypothetical business situation, and business terminology.",
+   "topics": [
+    "hr",
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "hr-role-outsourcing",
+    "mkt-proc-situational",
+    "mkt-str-global"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "b8646ef9e8",
+   "number": "25",
+   "text": "You have been hired as a consultant by Delicious Burgers to write a business report for the owners. In your report:\n- describe the influence of quality expectations as part of its operations function that Delicious Burgers must consider as it expands into new markets.\n- discuss the use of holding stock as part of their inventory management in each location.\n- assess the human resource management strategies of recruitment and performance management to help achieve its forecasted growth objectives.",
+   "marks": 20,
+   "verb": "assess",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Delicious Burgers is a successful Australian high-quality fast-food business which started in 2010 in Manly, Sydney and now operates in more than 30 locations in NSW and Queensland, employing 250 staff. It offers burgers and associated meals including desserts. Restaurants are fitted out so customers feel they are in a beach shack with a relaxed atmosphere. Key to its success has been experienced staff such as knowledgeable chefs and wait staff with excellent customer service skills; staff turnover is very low at 3% (industry average 20%). Delicious Burgers has always sourced the freshest ingredients available and every burger is made to order. The business is expanding to new locations in Western Australia and must hire 50 staff. It has forecast a revenue growth rate of 40% for the next financial year. Management is considering: quality expectations of its goods and service offering; whether to hold inventory in each location; and human resource strategies, specifically recruitment and performance management.",
+   "topics": [
+    "operations",
+    "hr"
+   ],
+   "syllabusPoints": [
+    "ops-inf-quality",
+    "ops-str-inventory",
+    "hr-str-recruitment",
+    "hr-str-performance"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
+   "id": "d3b055a47d",
+   "number": "25",
+   "text": "You have been hired as a consultant to write a report for Fly Well Airlines Ltd.\nIn your report:\n\u25aa Outline ONE advantage and ONE disadvantage of outsourcing aircraft servicing and maintenance.\n\u25aa Discuss issues involved in raising funds through both debt and equity finance and make a recommendation to management about which source of funding to use.\n\u25aa Explain TWO human resource strategies that could assist Fly Well Airlines Ltd to address management concerns and help achieve business success.",
+   "marks": 20,
+   "verb": "discuss",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Fly Well Airlines Ltd is a low-cost Australian based domestic airline that has been exploring options to expand globally. Its domestic customers in Australia typically tend to be business executives and budget conscious leisure travellers. The business intends to begin operating flights into the highly competitive Asian market in the latter part of 2023. To achieve this, the business will have to fund the purchase of new computerised ticketing and baggage facilities at its Sydney terminal. Management believes there is also opportunity for the airline to move all scheduled aircraft servicing and maintenance to a contractor in Singapore. Employees who belong to unions have indicated they will respond to this with industrial action. Management is also concerned about the best way to achieve a sustainable competitive advantage in their new overseas markets.",
+   "topics": [
+    "operations",
+    "finance",
+    "hr"
+   ],
+   "syllabusPoints": [
+    "ops-str-outsourcing",
+    "fin-proc-debtequity",
+    "hr-str-disputes",
+    "hr-str-training"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
    "year": 2023
   },
   {
@@ -909,6 +1201,52 @@
    "year": 2019
   },
   {
+   "id": "da03c854af",
+   "number": "22 (b)",
+   "text": "Analyse THREE steps in the marketing process required to develop a new marketing plan for this business.",
+   "marks": 6,
+   "verb": "analyse",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Spook is an exclusive luxury fashion retailer with a target market of high-income customers. Recently they have experienced a decrease in sales and profits due to an economic downturn. The business has decided to review their marketing plan in response to this change.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-proc-situational",
+    "mkt-proc-research",
+    "mkt-proc-strategies"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
+   "id": "4e7f9a89ff",
+   "number": "23 (b)",
+   "text": "Justify the use of rewards and leadership style as strategies to improve the effectiveness of human resource management for this business.",
+   "marks": 6,
+   "verb": "justify",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "HiFashion is a fast fashion retail store with 40 stores around Australia employing 200 staff. Management is concerned about a reduction in productivity and staff feedback; staff cited rewards, leadership style and dispute resolution methods as key to their dissatisfaction. Data extract: staff turnover 10% (2021) to 20% (2022); employee satisfaction 80% (2021) to 65% (2022); number of disputes 10 per year (2021) to 25 per year (2022).",
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-str-rewards",
+    "hr-str-leadership",
+    "hr-eff-indicators"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
    "id": "de37f01779",
    "number": "23 (c)",
    "text": "In recent times governments have imposed restrictions on businesses such as lockdowns, social distancing and the movement of people. As a result, businesses have changed the way their employees work and communicate with each other.\nDiscuss the possible implications of these influences on human resource management.",
@@ -955,6 +1293,70 @@
    "year": 2020
   },
   {
+   "id": "cc990f2fa2",
+   "number": "21 (c)",
+   "text": "Analyse the use of sale and leaseback as a financial management strategy for this business.",
+   "marks": 5,
+   "verb": "analyse",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Financial information for Playsmart Child Care Ltd (balance sheet extract). Current Assets: Cash $40 000; Accounts Receivable $100 000; Inventory $100 000. Non-Current Assets: Building $320 000; Delivery van $40 000; Goodwill $100 000. Current Liabilities: Accounts Payable $100 000; Bank overdraft $130 000. Non-Current Liabilities: Mortgage $300 000. Owners' Equity: Capital $150 000; Retained Profit $20 000. Additional information: Debt to equity ratio = Total Liabilities / Total Equity; gearing industry average 2:1.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-workingcapital"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
+   "id": "625c574d5b",
+   "number": "21 (c)",
+   "text": "Discuss the strategy of internal recruitment for Raj.",
+   "marks": 5,
+   "verb": "discuss",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Raj owns a business that designs security software. His business is rapidly expanding due to the increase in companies allowing their employees to work from home. Raj needs to increase his workforce to keep up with his demand. The work is complicated and requires excellent knowledge of coding and software design. Due to the expansion, Raj requires more employees in management roles.",
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-str-recruitment",
+    "hr-proc-acquisition"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "0582d6e65c",
+   "number": "24 (c)",
+   "text": "Evaluate the effectiveness of human resources management at this business.",
+   "marks": 5,
+   "verb": "evaluate",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Table of data for a business between 2022 and 2023: Absenteeism per employee 10 days (2022) rising to 15 days (2023); Staff turnover 15% rising to 18%; Training expenditure per employee $2 100 rising to $3 400; Accidents per 100 employees falling from 11 to 5.",
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-eff-indicators"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
    "id": "66f7b792cc",
    "number": "24 (c)",
    "text": "Explain TWO limitations of financial reports.",
@@ -976,6 +1378,28 @@
    "year": 2023
   },
   {
+   "id": "23b510183e",
+   "number": "23 (d)",
+   "text": "Explain how determining the target market of Sophie's Glamping Resort would assist the business to develop appropriate marketing strategies.",
+   "marks": 5,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Sophie's Glamping Resort, located in Northern Queensland, provides an upmarket camping experience of outstanding service and facilities for consumers of high socioeconomic status.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-proc-target",
+    "mkt-proc-strategies"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
    "id": "374daa72d5",
    "number": "23 (c)",
    "text": "Justify ONE global marketing strategy this cereal manufacturer could use to expand into the global market.",
@@ -994,6 +1418,28 @@
     "2023 HSC Business Studies"
    ],
    "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "56fce8d2a2",
+   "number": "22 (c)",
+   "text": "Recommend TWO global factors that HiTel should implement to meet cost and speed performance objectives.",
+   "marks": 5,
+   "verb": "recommend",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "HiTel is a leading Australian electronics company expanding rapidly in the Asia Pacific region. It is moving its Sydney-based manufacturing to India. The cost of the change is forecast at $40 million, it will take six months to implement, and 250 staff will be impacted.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-global",
+    "ops-str-performance"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
    "year": 2023
   },
   {
@@ -1081,6 +1527,349 @@
    ],
    "kind": "NESA HSC",
    "year": 2019
+  },
+  {
+   "id": "e4b306ecfc",
+   "number": "23 (b)",
+   "text": "A business has decided to expand its product range. Discuss the operational strategy of new product or service design and development for this business",
+   "marks": 4,
+   "verb": "discuss",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-newproduct"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "ca4ecc92d9",
+   "number": "22 (c)",
+   "text": "Assess the influence of cost-based competition on this business.",
+   "marks": 4,
+   "verb": "assess",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Tasty Bites Caf\u00e9 is a food-based business that aims to revitalise its competitive edge by expanding its menu to include a wider range of culinary offerings. By introducing innovative dishes in addition to their existing menu, the business aims to establish itself as a destination for delicious and satisfying dining experiences.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-inf-cost"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "d20f93f66f",
+   "number": "23 (a)",
+   "text": "Evaluate the owner's return on equity (net profit \u00f7 total equity).",
+   "marks": 4,
+   "verb": "evaluate",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Acme Kitchenware manufactures and sells pots and pans to department stores. Financial Information for Acme Kitchenware 2022 -- Current assets: Cash $125 000, Accounts receivable $60 500, Stock $110 000 (total current assets $295 500). Non-current assets: Vehicles $260 000, Equipment $216 580. Current liabilities: Accounts payable $120 000, Overdraft $120 780 (total current liabilities $240 780). Non-current liabilities: Mortgage $20 000. Owner's equity: Capital $430 800, Retained earnings $80 500 (total equity $511 300). Additional information: Net profit $75 000; industry average return on equity 18%. (Return on equity therefore works out at approximately 14.7%.)",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios",
+    "fin-proc-comparative"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
+   "id": "35bd4d7e8d",
+   "number": "24 (b)",
+   "text": "Explain TWO legal influences that QuadTel will need to consider in their marketing.",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "QuadTel is a US based business that sells innovative high quality drone technology to consumers. It is considering entering the Australian market and is currently reviewing the best way to market their products.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-inf-consumerlaws"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
+   "id": "741b51d378",
+   "number": "23 (a)",
+   "text": "Explain how HiFashion could implement TWO appropriate dispute resolution methods that would reduce the current number of disputes.",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "HiFashion is a fast fashion retail store with 40 stores around Australia employing 200 staff. Management is concerned about a reduction in productivity and staff feedback; staff cited rewards, leadership style and dispute resolution methods as key to their dissatisfaction. Data extract: staff turnover 10% (2021) to 20% (2022); employee satisfaction 80% (2021) to 65% (2022); number of disputes 10 per year (2021) to 25 per year (2022).",
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-str-disputes"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
+   "id": "6a6c88c2c1",
+   "number": "22 (b)",
+   "text": "Explain how the influence of volume could impact the transformation process for this business.",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Tasty Bites Caf\u00e9 is a food-based business that aims to revitalise its competitive edge by expanding its menu to include a wider range of culinary offerings. By introducing innovative dishes in addition to their existing menu, the business aims to establish itself as a destination for delicious and satisfying dining experiences.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-fourvs"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "c8c441a486",
+   "number": "24 (b)",
+   "text": "Explain the interdependence of marketing and operations for this business",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Tom is establishing a new business, 'Super Specs', that produces and sells sunglasses to consumers. The business has a wide range of products, differing in price and quality. After conducting extensive market research, he has determined that consumers would rather pay more for a higher quality product.",
+   "topics": [
+    "marketing",
+    "operations"
+   ],
+   "syllabusPoints": [
+    "mkt-role-interdependence",
+    "ops-role-interdependence"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "d823bdeca1",
+   "number": "23 (b)",
+   "text": "How could Acme Kitchenware improve their level of working capital?",
+   "marks": 4,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Acme Kitchenware manufactures and sells pots and pans to department stores. Financial Information for Acme Kitchenware 2022 -- Current assets: Cash $125 000, Accounts receivable $60 500, Stock $110 000 (total current assets $295 500). Non-current assets: Vehicles $260 000, Equipment $216 580. Current liabilities: Accounts payable $120 000, Overdraft $120 780 (total current liabilities $240 780). Non-current liabilities: Mortgage $20 000. Owner's equity: Capital $430 800, Retained earnings $80 500 (total equity $511 300). Additional information: Net profit $75 000; industry average return on equity 18%. (Working capital is therefore only $54 720, a current ratio of about 1.23:1.)",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-workingcapital"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
+   "id": "29ee537d3f",
+   "number": "22 (a)",
+   "text": "How do sociocultural influences affect the customer's choice for this business?",
+   "marks": 4,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Spook is an exclusive luxury fashion retailer with a target market of high-income customers. Recently they have experienced a decrease in sales and profits due to an economic downturn. The business has decided to review their marketing plan in response to this change.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-inf-sociocultural"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
+   "id": "0853d4ca6e",
+   "number": "24 (b)",
+   "text": "To what extent is human resources management effective in this business? Support your answer with examples from the data.",
+   "marks": 4,
+   "verb": "assess",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Table of data for a business, 2021 vs 2022. Human Resources costs: $2 600 000 (2021) vs $2 000 000 (2022). Training expenditure per employee: $1900 vs $1500. Absenteeism per employee: 10 days vs 14 days. Accidents per 1000 employees: 50 vs 30. Number of strike days: 2 vs 10. Staff turnover: 15% vs 10%.",
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-eff-indicators"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "282265ee1c",
+   "number": "24 (c)",
+   "text": "Using the data, analyse the interdependence between human resources management and financial management in this business.",
+   "marks": 4,
+   "verb": "analyse",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Table of data for a business, 2021 vs 2022. Human Resources costs: $2 600 000 (2021) vs $2 000 000 (2022). Training expenditure per employee: $1900 vs $1500. Absenteeism per employee: 10 days vs 14 days. Accidents per 1000 employees: 50 vs 30. Number of strike days: 2 vs 10. Staff turnover: 15% vs 10%.",
+   "topics": [
+    "hr",
+    "finance"
+   ],
+   "syllabusPoints": [
+    "hr-role-interdependence",
+    "fin-role-interdependence"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "b8de5201aa",
+   "number": "22 (b)",
+   "text": "Using the financial information provided, explain why solvency is an important objective for this business.",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Balance Sheet for Simon's Sporting Goods Pty Ltd (a large sporting goods retailer), as at 30 June 2023, figures in '000s. ASSETS: Cash at bank 800; Inventories 300; Accounts receivable 800 (current assets 1900); Plant & Equipment 500; Motor Vehicles 1200; Land & Buildings 4000 (non-current assets 5700); Total assets 7600. LIABILITIES: Accounts payable 1000; Overdraft 300 (current liabilities 1300); Two-year bank loan 1500; Mortgage 3000 (non-current liabilities 4500). OWNER'S EQUITY: Capital 1000; Retained Profit 800 (total equity 1800). Other information: Net profit for 2023 = $300 000; Return on Equity (net profit \u00f7 total equity) for 2022 = 20%. Industry Averages: Debt to Equity (total liabilities \u00f7 total equity) = 2:1; Current Ratio (current assets \u00f7 current liabilities) = 1:1.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-role-objectives",
+    "fin-proc-ratios"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "389f5605b2",
+   "number": "22 (c)",
+   "text": "Using the financial information provided, assess the recent financial performance of Simon's Sporting Goods Pty Ltd.",
+   "marks": 4,
+   "verb": "assess",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Balance Sheet for Simon's Sporting Goods Pty Ltd (a large sporting goods retailer), as at 30 June 2023, figures in '000s. ASSETS: Cash at bank 800; Inventories 300; Accounts receivable 800 (current assets 1900); Plant & Equipment 500; Motor Vehicles 1200; Land & Buildings 4000 (non-current assets 5700); Total assets 7600. LIABILITIES: Accounts payable 1000; Overdraft 300 (current liabilities 1300); Two-year bank loan 1500; Mortgage 3000 (non-current liabilities 4500). OWNER'S EQUITY: Capital 1000; Retained Profit 800 (total equity 1800). Other information: Net profit for 2023 = $300 000; Return on Equity (net profit \u00f7 total equity) for 2022 = 20%. Industry Averages: Debt to Equity (total liabilities \u00f7 total equity) = 2:1; Current Ratio (current assets \u00f7 current liabilities) = 1:1.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-comparative",
+    "fin-proc-ratios"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "17ca3b94b4",
+   "number": "24 (c)",
+   "text": "Why should this business adopt a production approach rather than a selling approach?",
+   "marks": 4,
+   "verb": "why",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Tom is establishing a new business, 'Super Specs', that produces and sells sunglasses to consumers. The business has a wide range of products, differing in price and quality. After conducting extensive market research, he has determined that consumers would rather pay more for a higher quality product.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-role-approaches"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "1fc25f6d72",
+   "number": "24 (c)",
+   "text": "Why should this business consider the use of both direct and indirect distribution channels?",
+   "marks": 4,
+   "verb": "why",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "QuadTel is a US based business that sells innovative high quality drone technology to consumers. It is considering entering the Australian market and is currently reviewing the best way to market their products.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-str-place"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
+   "id": "5df93e4dea",
+   "number": "21 (d)",
+   "text": "With reference to a business you have studied, discuss the impact of corporate social responsibility on the operations process.",
+   "marks": 4,
+   "verb": "discuss",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-inf-csr"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
   },
   {
    "id": "e913395023",
@@ -1404,6 +2193,48 @@
    "year": 2019
   },
   {
+   "id": "444beaab6b",
+   "number": "21 (b)",
+   "text": "Describe the role of grievance procedures in human resource management.",
+   "marks": 3,
+   "verb": "describe",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-str-disputes"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "0e1ff36d05",
+   "number": "21 (b)",
+   "text": "Explain ONE ethical issue related to financial reports for the stakeholders of this business.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Financial information for Playsmart Child Care Ltd (balance sheet extract). Current Assets: Cash $40 000; Accounts Receivable $100 000; Inventory $100 000. Non-Current Assets: Building $320 000; Delivery van $40 000; Goodwill $100 000. Current Liabilities: Accounts Payable $100 000; Bank overdraft $130 000. Non-Current Liabilities: Mortgage $300 000. Owners' Equity: Capital $150 000; Retained Profit $20 000. Additional information: Debt to equity ratio = Total Liabilities / Total Equity; gearing industry average 2:1.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ethical"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
    "id": "7c94bea7c4",
    "number": "24 (b)",
    "text": "Explain a possible conflict between ONE short-term and ONE long-term financial objective.",
@@ -1422,6 +2253,28 @@
     "2023 HSC Business Studies"
    ],
    "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "ee442ff94f",
+   "number": "21 (e)",
+   "text": "Explain how Bakers Dozen's current financial position impacts on the solvency of the business.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Balance sheet for Bakers Dozen Pty. Ltd. as at 30 June 2023. Current Assets: Cash $19 000, Debtors $2 500, Stock $34 000. Non-current Assets: Equipment $62 000, Buildings $318 000, Land $160 000. Total Assets $595 500. Current Liabilities: Overdraft $30 000. Non-current Liabilities: Debentures $94 000, Mortgage $291 500 (total liabilities $415 500). Owner's Equity: Capital $95 000, Retained profit $85 000 (total equity $180 000). Net profit for 2022-2023 was $160 000; industry average for liquidity is 2.5:1; industry gearing (total liabilities \u00f7 owner's equity) is 1:1. The business plans to expand nationally.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios",
+    "fin-role-objectives"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
    "year": 2023
   },
   {
@@ -1447,6 +2300,27 @@
    "year": 2023
   },
   {
+   "id": "ba6f2e926b",
+   "number": "22 (b)",
+   "text": "How could Gantt charts assist this business with the change?",
+   "marks": 3,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "HiTel is a leading Australian electronics company expanding rapidly in the Asia Pacific region. It is moving its Sydney-based manufacturing to India. The cost of the change is forecast at $40 million, it will take six months to implement, and 250 staff will be impacted.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-sequencing"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
    "id": "85c30d3b83",
    "number": "23 (b)",
    "text": "How could a niche market approach increase sales for this cereal manufacturer?",
@@ -1469,6 +2343,27 @@
    "year": 2023
   },
   {
+   "id": "7a3dfd344f",
+   "number": "23 (d)",
+   "text": "Recommend and justify an inventory management system this business should use",
+   "marks": 3,
+   "verb": "recommend",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Rebecca owns and operates a health food business. Due to an increase in competition from large retail chains, she needs to revise her operational strategies. A problem that her customers have identified is products that are consistently 'out of stock', as well as damaged goods in need of replacing.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-inventory"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
    "id": "0dbbbdedcc",
    "number": "22 (b)",
    "text": "The advertisement for a store manager is shown.\nOutline TWO human resource issues found in this advertisement.",
@@ -1488,6 +2383,27 @@
     "2023 HSC Business Studies"
    ],
    "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "8f20f7d31c",
+   "number": "24 (b)",
+   "text": "Why would a business outsource their human resource functions?",
+   "marks": 3,
+   "verb": "why",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-role-outsourcing"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
    "year": 2023
   },
   {
@@ -1857,6 +2773,176 @@
    "year": 2019
   },
   {
+   "id": "45cd8a7be3",
+   "number": "22 (a)",
+   "text": "Calculate and interpret the change in the return on equity (net profit \u00f7 total equity) for this business between 2022 and 2023.",
+   "marks": 2,
+   "verb": "calculate",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Balance Sheet for Simon's Sporting Goods Pty Ltd (a large sporting goods retailer), as at 30 June 2023, figures in '000s. ASSETS: Cash at bank 800; Inventories 300; Accounts receivable 800 (current assets 1900); Plant & Equipment 500; Motor Vehicles 1200; Land & Buildings 4000 (non-current assets 5700); Total assets 7600. LIABILITIES: Accounts payable 1000; Overdraft 300 (current liabilities 1300); Two-year bank loan 1500; Mortgage 3000 (non-current liabilities 4500). OWNER'S EQUITY: Capital 1000; Retained Profit 800 (total equity 1800). Other information: Net profit for 2023 = $300 000; Return on Equity (net profit \u00f7 total equity) for 2022 = 20%. Industry Averages: Debt to Equity (total liabilities \u00f7 total equity) = 2:1; Current Ratio (current assets \u00f7 current liabilities) = 1:1.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios",
+    "fin-proc-comparative"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "40fe82771e",
+   "number": "21 (b)",
+   "text": "Calculate the current ratio (current assets \u00f7 current liabilities) for Bakers Dozen and comment on their liquidity.",
+   "marks": 2,
+   "verb": "calculate",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Balance sheet for Bakers Dozen Pty. Ltd. as at 30 June 2023. Current Assets: Cash $19 000, Debtors $2 500, Stock $34 000 (total current assets $55 500). Non-current Assets: Equipment $62 000, Buildings $318 000, Land $160 000. Total Assets $595 500. Current Liabilities: Overdraft $30 000. Non-current Liabilities: Debentures $94 000, Mortgage $291 500. Owner's Equity: Capital $95 000, Retained profit $85 000 (total equity $180 000). Total Liabilities + Equity $595 500. Other information: Net profit for 2022-2023 was $160 000; industry average for liquidity is 2.5:1; industry gearing (total liabilities \u00f7 owner's equity) is 1:1.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios",
+    "fin-proc-comparative"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "1dfd6b2b05",
+   "number": "24 (a)",
+   "text": "Define corporate culture.",
+   "marks": 2,
+   "verb": "define",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-eff-indicators"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
+   "id": "a8772e00d3",
+   "number": "23 (c)",
+   "text": "Describe ONE ethical influence of marketing, of which this business should be aware.",
+   "marks": 2,
+   "verb": "describe",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Sophie's Glamping Resort, located in Northern Queensland, provides an upmarket camping experience of outstanding service and facilities for consumers of high socioeconomic status.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-inf-ethical"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "e810827d51",
+   "number": "21 (d)",
+   "text": "Describe how Australian Securities and Investment Commission impacts this business.",
+   "marks": 2,
+   "verb": "describe",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Bakers Dozen Pty. Ltd. Over the past two years the business has experienced remarkable success, with consistently strong profits and a devoted customer base. Fuelled by this growth, the owners' intentions are to expand nationally. Bakers Dozen's expansion aims to reach a wider audience while maintaining the same high-quality and personalised touch that secured such early success within their local community.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-inf-government"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "a7fec2025d",
+   "number": "21 (b)",
+   "text": "How does the volume of output influence the operations process?",
+   "marks": 2,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-fourvs"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
+   "id": "9be8f4a092",
+   "number": "21 (a)",
+   "text": "Identify TWO ways that leadership style can affect employee performance in a business.",
+   "marks": 2,
+   "verb": "identify",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-str-leadership"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "fd50339109",
+   "number": "21 (a)",
+   "text": "Outline ONE limitation of this financial report.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Financial information for Playsmart Child Care Ltd (balance sheet extract). Current Assets: Cash $40 000; Accounts Receivable $100 000; Inventory $100 000. Non-Current Assets: Building $320 000; Delivery van $40 000; Goodwill $100 000. Current Liabilities: Accounts Payable $100 000; Bank overdraft $130 000. Non-Current Liabilities: Mortgage $300 000. Owners' Equity: Capital $150 000; Retained Profit $20 000. Additional information: Debt to equity ratio = Total Liabilities / Total Equity; gearing industry average 2:1.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-limitations"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
    "id": "c98ad39858",
    "number": "21 (a)",
    "text": "Outline ONE potential issue this business could face in relation to both cost and quality of outputs.",
@@ -1879,6 +2965,69 @@
    "year": 2023
   },
   {
+   "id": "34045d2d21",
+   "number": "22 (a)",
+   "text": "Outline TWO reasons why management might be resistant to this change.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "HiTel is a leading Australian electronics company expanding rapidly in the Asia Pacific region. It is moving its Sydney-based manufacturing to India. The cost of the change is forecast at $40 million, it will take six months to implement, and 250 staff will be impacted.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-change"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
+   "id": "767fae077f",
+   "number": "23 (c)",
+   "text": "Outline how quality expectations could impact this business",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Rebecca owns and operates a health food business. Due to an increase in competition from large retail chains, she needs to revise her operational strategies. A problem that her customers have identified is products that are consistently 'out of stock', as well as damaged goods in need of replacing.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-inf-quality"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "6a77ebaef5",
+   "number": "23 (b)",
+   "text": "Outline how sociocultural factors can influence consumer choice for Sophie's Glamping Resort.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Sophie's Glamping Resort, located in Northern Queensland, provides an upmarket camping experience of outstanding service and facilities for consumers of high socioeconomic status.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-inf-sociocultural"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
    "id": "1d037b20ff",
    "number": "23 (a)",
    "text": "Outline the current product life cycle stage of this cereal.",
@@ -1897,6 +3046,132 @@
     "2023 HSC Business Studies"
    ],
    "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "6222785c6c",
+   "number": "21 (c)",
+   "text": "Outline the purpose of task design.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-tasklayout"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
+   "id": "e156087b64",
+   "number": "24 (a)",
+   "text": "Outline the strategic role of marketing for this business",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Tom is establishing a new business, 'Super Specs', that produces and sells sunglasses to consumers. The business has a wide range of products, differing in price and quality. After conducting extensive market research, he has determined that consumers would rather pay more for a higher quality product.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-role-strategic"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
+   "id": "c48833fcd2",
+   "number": "24 (a)",
+   "text": "Outline the strategic role of the human resource function.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-role-strategic"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "7ab9669c0f",
+   "number": "24 (a)",
+   "text": "Recommend ONE appropriate pricing method that QuadTel should use in Australia.",
+   "marks": 2,
+   "verb": "recommend",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "QuadTel is a US based business that sells innovative high quality drone technology to consumers. It is considering entering the Australian market and is currently reviewing the best way to market their products.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-str-price"
+   ],
+   "sources": [
+    "Knox Trial 2023"
+   ],
+   "kind": "Knox Trial",
+   "year": 2023
+  },
+  {
+   "id": "b1e9d641fb",
+   "number": "21 (c)",
+   "text": "Recommend a cash flow management strategy to improve Bakers Dozen's liquidity.",
+   "marks": 2,
+   "verb": "recommend",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Balance sheet for Bakers Dozen Pty. Ltd. as at 30 June 2023. Current Assets: Cash $19 000, Debtors $2 500, Stock $34 000 (total current assets $55 500). Current Liabilities: Overdraft $30 000. Non-current Liabilities: Debentures $94 000, Mortgage $291 500. Owner's Equity: Capital $95 000, Retained profit $85 000. Total Assets $595 500. Net profit for 2022-2023 was $160 000; industry average for liquidity is 2.5:1; industry gearing is 1:1. The business's current ratio is well below the industry average.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-cashflow"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "0cc59a3488",
+   "number": "21 (a)",
+   "text": "Using an example, distinguish between transformed and transforming resources.",
+   "marks": 2,
+   "verb": "distinguish",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-inputs"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
    "year": 2023
   },
   {
@@ -1939,6 +3214,48 @@
     "2023 HSC Business Studies"
    ],
    "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "ae3330f270",
+   "number": "23 (c)",
+   "text": "Why is efficiency a financial objective?",
+   "marks": 2,
+   "verb": "why",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-role-objectives"
+   ],
+   "sources": [
+    "Barker Trial 2023"
+   ],
+   "kind": "Barker Trial",
+   "year": 2023
+  },
+  {
+   "id": "89c82cccb2",
+   "number": "22 (a)",
+   "text": "With reference to this business, distinguish between transformed and transforming resources.",
+   "marks": 2,
+   "verb": "distinguish",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Tasty Bites Caf\u00e9 is a food-based business that aims to revitalise its competitive edge by expanding its menu to include a wider range of culinary offerings. By introducing innovative dishes in addition to their existing menu, the business aims to establish itself as a destination for delicious and satisfying dining experiences.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-inputs"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
    "year": 2023
   },
   {
@@ -2219,6 +3536,69 @@
    "year": 2019
   },
   {
+   "id": "f2fbd4e091",
+   "number": "21 (a)",
+   "text": "Calculate the return on owners' equity ratio (net profit \u00f7 total equity) for Bakers Dozen.",
+   "marks": 1,
+   "verb": "calculate",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Balance sheet for Bakers Dozen Pty. Ltd. as at 30 June 2023. Current Assets: Cash $19 000, Debtors $2 500, Stock $34 000 (total current assets $55 500). Non-current Assets: Equipment $62 000, Buildings $318 000, Land $160 000. Total Assets $595 500. Current Liabilities: Overdraft $30 000. Non-current Liabilities: Debentures $94 000, Mortgage $291 500. Owner's Equity: Capital $95 000, Retained profit $85 000 (total equity $180 000). Total Liabilities + Equity $595 500. Other information: Net profit for 2022-2023 was $160 000; industry average for liquidity is 2.5:1; industry gearing (total liabilities \u00f7 owner's equity) is 1:1.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "c4b0488d7c",
+   "number": "23 (a)",
+   "text": "Identify ONE illegal marketing practice under Australian Consumer Law.",
+   "marks": 1,
+   "verb": "identify",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-inf-consumerlaws"
+   ],
+   "sources": [
+    "Abbotsleigh Trial 2023"
+   ],
+   "kind": "Abbotsleigh Trial",
+   "year": 2023
+  },
+  {
+   "id": "9b94c6fe54",
+   "number": "23 (a)",
+   "text": "Identify one transforming resource",
+   "marks": 1,
+   "verb": "identify",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-inputs"
+   ],
+   "sources": [
+    "Newington Trial 2023"
+   ],
+   "kind": "Newington Trial",
+   "year": 2023
+  },
+  {
    "id": "75d544142f",
    "number": "24 (a)",
    "text": "Calculate the accounts receivable turnover ratio (sales \u00f7 accounts receivable) for this business.",
@@ -2241,89 +3621,101 @@
   }
  ],
  "counts": {
+  "fin-role-objectives": 7,
+  "fin-inf-internal": 1,
+  "fin-inf-debt": 3,
+  "fin-inf-equity": 3,
+  "fin-str-cashflow": 5,
+  "fin-str-workingcapital": 6,
+  "fin-str-profitability": 3,
+  "mkt-proc-objectives": 3,
+  "mkt-str-product": 2,
+  "mkt-str-promotion": 3,
+  "mkt-str-price": 3,
+  "ops-str-performance": 6,
+  "ops-str-quality": 6,
+  "ops-str-technology": 4,
+  "ops-str-supplychain": 2,
+  "hr-role-strategic": 3,
+  "hr-str-training": 5,
+  "hr-eff-indicators": 8,
+  "ops-role-strategic": 3,
+  "mkt-inf-psychological": 3,
+  "mkt-inf-sociocultural": 6,
+  "mkt-inf-economic": 3,
+  "mkt-inf-government": 3,
+  "mkt-proc-strategies": 5,
+  "hr-role-interdependence": 2,
+  "fin-role-interdependence": 3,
   "hr-str-global": 1,
-  "hr-proc-acquisition": 4,
+  "hr-proc-acquisition": 5,
   "hr-proc-maintenance": 2,
-  "fin-proc-debtequity": 6,
-  "fin-inf-debt": 2,
-  "fin-inf-equity": 2,
+  "fin-proc-debtequity": 7,
   "fin-proc-matching": 1,
-  "mkt-inf-psychological": 2,
-  "mkt-inf-sociocultural": 3,
-  "mkt-inf-economic": 2,
-  "mkt-inf-government": 2,
-  "mkt-inf-consumerlaws": 2,
-  "mkt-inf-ethical": 1,
+  "mkt-inf-consumerlaws": 4,
+  "mkt-inf-ethical": 2,
   "ops-inf-globalisation": 3,
   "ops-inf-technology": 3,
-  "ops-inf-quality": 1,
-  "ops-inf-cost": 2,
+  "ops-inf-quality": 3,
+  "ops-inf-cost": 3,
   "ops-inf-government": 1,
   "ops-inf-legal": 1,
   "ops-inf-envsus": 3,
-  "ops-inf-csr": 2,
-  "hr-str-disputes": 3,
-  "hr-eff-indicators": 3,
-  "hr-str-rewards": 3,
-  "ops-role-strategic": 2,
-  "ops-proc-fourvs": 3,
-  "ops-proc-tasklayout": 2,
+  "ops-inf-csr": 3,
+  "hr-role-outsourcing": 3,
+  "mkt-proc-situational": 5,
+  "mkt-str-global": 6,
+  "ops-str-inventory": 3,
+  "hr-str-recruitment": 5,
+  "hr-str-performance": 3,
+  "ops-str-outsourcing": 2,
+  "hr-str-disputes": 6,
+  "hr-str-rewards": 4,
+  "ops-proc-fourvs": 5,
+  "ops-proc-tasklayout": 3,
   "ops-proc-monitoring": 2,
-  "mkt-str-product": 1,
-  "mkt-str-global": 5,
-  "mkt-str-place": 2,
+  "mkt-str-place": 3,
   "fin-str-global": 2,
-  "mkt-proc-situational": 3,
-  "mkt-proc-strategies": 2,
-  "hr-str-recruitment": 3,
-  "ops-str-change": 2,
-  "hr-str-training": 3,
+  "ops-str-change": 3,
   "hr-proc-separation": 3,
-  "hr-str-performance": 2,
-  "fin-role-objectives": 2,
-  "fin-str-cashflow": 2,
-  "fin-str-workingcapital": 3,
-  "fin-str-profitability": 1,
-  "mkt-str-promotion": 2,
   "mkt-str-segmentation": 1,
-  "mkt-proc-target": 2,
-  "ops-str-performance": 2,
-  "ops-str-quality": 3,
-  "ops-str-supplychain": 1,
+  "mkt-proc-target": 3,
   "hr-proc-development": 1,
+  "mkt-proc-research": 2,
+  "hr-str-leadership": 2,
   "hr-inf-social": 3,
   "hr-inf-technological": 2,
   "hr-inf-stakeholders": 3,
-  "ops-str-technology": 2,
-  "fin-proc-limitations": 1,
-  "fin-proc-ratios": 7,
-  "fin-proc-comparative": 3,
-  "mkt-role-approaches": 1,
-  "ops-str-outsourcing": 1,
-  "ops-proc-sequencing": 1,
+  "fin-proc-limitations": 2,
+  "ops-str-global": 3,
+  "fin-proc-ratios": 14,
+  "fin-proc-comparative": 7,
+  "ops-str-newproduct": 1,
+  "mkt-role-interdependence": 2,
+  "ops-role-interdependence": 1,
+  "mkt-role-approaches": 2,
+  "ops-proc-sequencing": 2,
   "hr-inf-economic": 2,
   "hr-inf-legal-framework": 5,
-  "mkt-role-interdependence": 1,
-  "fin-role-interdependence": 1,
-  "mkt-proc-research": 1,
-  "ops-str-global": 2,
+  "fin-proc-ethical": 2,
   "mkt-role-markets": 1,
   "mkt-proc-implement": 1,
-  "mkt-proc-objectives": 1,
-  "ops-str-inventory": 1,
   "fin-proc-planning": 1,
-  "mkt-str-price": 1,
+  "fin-inf-government": 1,
+  "mkt-role-strategic": 1,
+  "ops-proc-inputs": 5,
   "hr-inf-discrimination": 1,
-  "fin-proc-statements": 2,
-  "ops-proc-inputs": 2,
-  "hr-role-outsourcing": 1,
-  "fin-proc-ethical": 1
+  "fin-proc-statements": 2
  },
  "sources": [
   "2019 HSC Business Studies",
   "2020 HSC Business Studies",
   "2021 HSC Business Studies",
   "2022 HSC Business Studies",
-  "2023 HSC Business Studies"
+  "2023 HSC Business Studies",
+  "Abbotsleigh Trial 2023",
+  "Barker Trial 2023",
+  "Knox Trial 2023",
+  "Newington Trial 2023"
  ]
 }
