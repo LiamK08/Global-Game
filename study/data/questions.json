@@ -1,0 +1,2329 @@
+{
+ "taxonomy": {
+  "operations": {
+   "label": "Operations",
+   "sections": {
+    "Role of operations management": [
+     {
+      "id": "ops-role-strategic",
+      "label": "Strategic role of operations management \u2014 cost leadership, good/service differentiation",
+      "short": "Strategic role of operations management"
+     },
+     {
+      "id": "ops-role-goods-services",
+      "label": "Goods and/or services in different industries (standardised/customised, perishable, intangible)",
+      "short": "Goods and/or services in different industries (standardised/customised, perishable, intangible)"
+     },
+     {
+      "id": "ops-role-interdependence",
+      "label": "Interdependence with other key business functions",
+      "short": "Interdependence with other key business functions"
+     }
+    ],
+    "Influences": [
+     {
+      "id": "ops-inf-globalisation",
+      "label": "Globalisation",
+      "short": "Globalisation"
+     },
+     {
+      "id": "ops-inf-technology",
+      "label": "Technology",
+      "short": "Technology"
+     },
+     {
+      "id": "ops-inf-quality",
+      "label": "Quality expectations",
+      "short": "Quality expectations"
+     },
+     {
+      "id": "ops-inf-cost",
+      "label": "Cost-based competition",
+      "short": "Cost-based competition"
+     },
+     {
+      "id": "ops-inf-government",
+      "label": "Government policies",
+      "short": "Government policies"
+     },
+     {
+      "id": "ops-inf-legal",
+      "label": "Legal regulation",
+      "short": "Legal regulation"
+     },
+     {
+      "id": "ops-inf-envsus",
+      "label": "Environmental sustainability",
+      "short": "Environmental sustainability"
+     },
+     {
+      "id": "ops-inf-csr",
+      "label": "Corporate social responsibility \u2014 legal compliance vs ethical responsibility; environmental sustainability & social responsibility",
+      "short": "Corporate social responsibility"
+     }
+    ],
+    "Operations processes": [
+     {
+      "id": "ops-proc-inputs",
+      "label": "Inputs \u2014 transformed resources (materials, information, customers); transforming resources (human resources, facilities)",
+      "short": "Inputs"
+     },
+     {
+      "id": "ops-proc-fourvs",
+      "label": "Transformation processes \u2014 influence of volume, variety, variation in demand, visibility",
+      "short": "Transformation processes"
+     },
+     {
+      "id": "ops-proc-sequencing",
+      "label": "Sequencing and scheduling \u2014 Gantt charts, critical path analysis",
+      "short": "Sequencing and scheduling"
+     },
+     {
+      "id": "ops-proc-tasklayout",
+      "label": "Technology, task design and process layout",
+      "short": "Technology, task design and process layout"
+     },
+     {
+      "id": "ops-proc-monitoring",
+      "label": "Monitoring, control and improvement",
+      "short": "Monitoring, control and improvement"
+     },
+     {
+      "id": "ops-proc-outputs",
+      "label": "Outputs \u2014 customer service, warranties",
+      "short": "Outputs"
+     }
+    ],
+    "Operations strategies": [
+     {
+      "id": "ops-str-performance",
+      "label": "Performance objectives \u2014 quality, speed, dependability, flexibility, customisation, cost",
+      "short": "Performance objectives"
+     },
+     {
+      "id": "ops-str-newproduct",
+      "label": "New product or service design and development",
+      "short": "New product or service design and development"
+     },
+     {
+      "id": "ops-str-supplychain",
+      "label": "Supply chain management \u2014 logistics, e-commerce, global sourcing",
+      "short": "Supply chain management"
+     },
+     {
+      "id": "ops-str-outsourcing",
+      "label": "Outsourcing \u2014 advantages and disadvantages",
+      "short": "Outsourcing"
+     },
+     {
+      "id": "ops-str-technology",
+      "label": "Technology \u2014 leading edge, established",
+      "short": "Technology \u2014 leading edge"
+     },
+     {
+      "id": "ops-str-inventory",
+      "label": "Inventory management \u2014 LIFO, FIFO, JIT",
+      "short": "Inventory management"
+     },
+     {
+      "id": "ops-str-quality",
+      "label": "Quality management \u2014 control, assurance, improvement",
+      "short": "Quality management"
+     },
+     {
+      "id": "ops-str-change",
+      "label": "Overcoming resistance to change \u2014 financial costs, inertia",
+      "short": "Overcoming resistance to change"
+     },
+     {
+      "id": "ops-str-global",
+      "label": "Global factors \u2014 global sourcing, economies of scale, scanning and learning, R&D",
+      "short": "Global factors"
+     }
+    ]
+   }
+  },
+  "marketing": {
+   "label": "Marketing",
+   "sections": {
+    "Role of marketing": [
+     {
+      "id": "mkt-role-strategic",
+      "label": "Strategic role of marketing goods and services",
+      "short": "Strategic role of marketing goods and services"
+     },
+     {
+      "id": "mkt-role-interdependence",
+      "label": "Interdependence with other key business functions",
+      "short": "Interdependence with other key business functions"
+     },
+     {
+      "id": "mkt-role-approaches",
+      "label": "Production, selling and marketing approaches",
+      "short": "Production, selling and marketing approaches"
+     },
+     {
+      "id": "mkt-role-markets",
+      "label": "Types of markets \u2014 resource, industrial, intermediate, consumer, mass, niche",
+      "short": "Types of markets"
+     }
+    ],
+    "Influences": [
+     {
+      "id": "mkt-inf-psychological",
+      "label": "Factors influencing customer choice \u2014 psychological",
+      "short": "Factors influencing customer choice \u2014 psychological"
+     },
+     {
+      "id": "mkt-inf-sociocultural",
+      "label": "Factors influencing customer choice \u2014 sociocultural",
+      "short": "Factors influencing customer choice \u2014 sociocultural"
+     },
+     {
+      "id": "mkt-inf-economic",
+      "label": "Factors influencing customer choice \u2014 economic",
+      "short": "Factors influencing customer choice \u2014 economic"
+     },
+     {
+      "id": "mkt-inf-government",
+      "label": "Factors influencing customer choice \u2014 government",
+      "short": "Factors influencing customer choice \u2014 government"
+     },
+     {
+      "id": "mkt-inf-consumerlaws",
+      "label": "Consumer laws \u2014 deceptive/misleading advertising, price discrimination, implied conditions, warranties",
+      "short": "Consumer laws"
+     },
+     {
+      "id": "mkt-inf-ethical",
+      "label": "Ethical \u2014 truth, accuracy and good taste in advertising; products that may damage health; fair competition; sugging",
+      "short": "Ethical"
+     }
+    ],
+    "Marketing process": [
+     {
+      "id": "mkt-proc-situational",
+      "label": "Situational analysis \u2014 SWOT, product life cycle",
+      "short": "Situational analysis"
+     },
+     {
+      "id": "mkt-proc-research",
+      "label": "Market research",
+      "short": "Market research"
+     },
+     {
+      "id": "mkt-proc-objectives",
+      "label": "Establishing market objectives",
+      "short": "Establishing market objectives"
+     },
+     {
+      "id": "mkt-proc-target",
+      "label": "Identifying target markets",
+      "short": "Identifying target markets"
+     },
+     {
+      "id": "mkt-proc-strategies",
+      "label": "Developing marketing strategies",
+      "short": "Developing marketing strategies"
+     },
+     {
+      "id": "mkt-proc-implement",
+      "label": "Implementation, monitoring and controlling \u2014 financial forecast, comparing actual and planned results, revising the marketing strategy",
+      "short": "Implementation, monitoring and controlling"
+     }
+    ],
+    "Marketing strategies": [
+     {
+      "id": "mkt-str-segmentation",
+      "label": "Market segmentation, product/service differentiation and positioning",
+      "short": "Market segmentation, product/service differentiation and positioning"
+     },
+     {
+      "id": "mkt-str-product",
+      "label": "Products \u2014 goods and/or services, branding, packaging",
+      "short": "Products"
+     },
+     {
+      "id": "mkt-str-price",
+      "label": "Price \u2014 pricing methods, pricing strategies, price and quality interaction",
+      "short": "Price"
+     },
+     {
+      "id": "mkt-str-promotion",
+      "label": "Promotion \u2014 promotion mix, communication process (opinion leaders, word of mouth)",
+      "short": "Promotion"
+     },
+     {
+      "id": "mkt-str-place",
+      "label": "Place/distribution \u2014 channels, channel choice, physical distribution issues",
+      "short": "Place/distribution"
+     },
+     {
+      "id": "mkt-str-ppp",
+      "label": "People, processes and physical evidence",
+      "short": "People, processes and physical evidence"
+     },
+     {
+      "id": "mkt-str-emarketing",
+      "label": "E-marketing",
+      "short": "E-marketing"
+     },
+     {
+      "id": "mkt-str-global",
+      "label": "Global marketing \u2014 global branding, standardisation, customisation, global pricing, competitive positioning",
+      "short": "Global marketing"
+     }
+    ]
+   }
+  },
+  "finance": {
+   "label": "Finance",
+   "sections": {
+    "Role of financial management": [
+     {
+      "id": "fin-role-strategic",
+      "label": "Strategic role of financial management",
+      "short": "Strategic role of financial management"
+     },
+     {
+      "id": "fin-role-objectives",
+      "label": "Objectives \u2014 profitability, growth, efficiency, liquidity, solvency; short-term and long-term",
+      "short": "Objectives"
+     },
+     {
+      "id": "fin-role-interdependence",
+      "label": "Interdependence with other key business functions",
+      "short": "Interdependence with other key business functions"
+     }
+    ],
+    "Influences on financial management": [
+     {
+      "id": "fin-inf-internal",
+      "label": "Internal sources of finance \u2014 retained profits",
+      "short": "Internal sources of finance"
+     },
+     {
+      "id": "fin-inf-debt",
+      "label": "External sources \u2014 debt (overdraft, commercial bills, factoring, mortgage, debentures, unsecured notes, leasing)",
+      "short": "External sources \u2014 debt"
+     },
+     {
+      "id": "fin-inf-equity",
+      "label": "External sources \u2014 equity (ordinary shares, new issues, rights issues, placements, share purchase plans, private equity)",
+      "short": "External sources \u2014 equity"
+     },
+     {
+      "id": "fin-inf-institutions",
+      "label": "Financial institutions \u2014 banks, investment banks, finance companies, superannuation funds, life insurance, unit trusts, ASX",
+      "short": "Financial institutions"
+     },
+     {
+      "id": "fin-inf-government",
+      "label": "Influence of government \u2014 ASIC, company taxation",
+      "short": "Influence of government"
+     },
+     {
+      "id": "fin-inf-global",
+      "label": "Global market influences \u2014 economic outlook, availability of funds, interest rates",
+      "short": "Global market influences"
+     }
+    ],
+    "Processes of financial management": [
+     {
+      "id": "fin-proc-planning",
+      "label": "Planning and implementing \u2014 financial needs, budgets, record systems, financial risks, financial controls",
+      "short": "Planning and implementing"
+     },
+     {
+      "id": "fin-proc-debtequity",
+      "label": "Debt and equity financing \u2014 advantages and disadvantages of each",
+      "short": "Debt and equity financing"
+     },
+     {
+      "id": "fin-proc-matching",
+      "label": "Matching the terms and source of finance to business purpose",
+      "short": "Matching the terms and source of finance to business purpose"
+     },
+     {
+      "id": "fin-proc-statements",
+      "label": "Monitoring and controlling \u2014 cash flow statement, income statement, balance sheet",
+      "short": "Monitoring and controlling"
+     },
+     {
+      "id": "fin-proc-ratios",
+      "label": "Financial ratios \u2014 liquidity, gearing, profitability, efficiency",
+      "short": "Financial ratios"
+     },
+     {
+      "id": "fin-proc-comparative",
+      "label": "Comparative ratio analysis \u2014 over time, against standards, similar businesses",
+      "short": "Comparative ratio analysis"
+     },
+     {
+      "id": "fin-proc-limitations",
+      "label": "Limitations of financial reports \u2014 normalised earnings, capitalising expenses, valuing assets, timing issues, debt repayments, notes to financial statements",
+      "short": "Limitations of financial reports"
+     },
+     {
+      "id": "fin-proc-ethical",
+      "label": "Ethical issues related to financial reports",
+      "short": "Ethical issues related to financial reports"
+     }
+    ],
+    "Financial management strategies": [
+     {
+      "id": "fin-str-cashflow",
+      "label": "Cash flow management \u2014 cash flow statements, distribution of payments, discounts for early payment, factoring",
+      "short": "Cash flow management"
+     },
+     {
+      "id": "fin-str-workingcapital",
+      "label": "Working capital management \u2014 control of current assets and current liabilities, leasing, sale and lease back",
+      "short": "Working capital management"
+     },
+     {
+      "id": "fin-str-profitability",
+      "label": "Profitability management \u2014 cost controls, revenue controls",
+      "short": "Profitability management"
+     },
+     {
+      "id": "fin-str-global",
+      "label": "Global financial management \u2014 exchange rates, interest rates, methods of international payment, hedging, derivatives",
+      "short": "Global financial management"
+     }
+    ]
+   }
+  },
+  "hr": {
+   "label": "Human Resources",
+   "sections": {
+    "Role of human resource management": [
+     {
+      "id": "hr-role-strategic",
+      "label": "Strategic role of human resource management",
+      "short": "Strategic role of human resource management"
+     },
+     {
+      "id": "hr-role-interdependence",
+      "label": "Interdependence with other key business functions",
+      "short": "Interdependence with other key business functions"
+     },
+     {
+      "id": "hr-role-outsourcing",
+      "label": "Outsourcing \u2014 HR functions, using contractors (domestic, global)",
+      "short": "Outsourcing"
+     }
+    ],
+    "Influences": [
+     {
+      "id": "hr-inf-stakeholders",
+      "label": "Stakeholders \u2014 employers, employees, employer associations, unions, government organisations, society",
+      "short": "Stakeholders"
+     },
+     {
+      "id": "hr-inf-legal-framework",
+      "label": "Legal \u2014 the employment contract, common law, minimum employment standards, awards, enterprise agreements",
+      "short": "Legal \u2014 the employment contract"
+     },
+     {
+      "id": "hr-inf-whs",
+      "label": "Legal \u2014 work health and safety and workers compensation",
+      "short": "Legal \u2014 work health and safety and workers compensation"
+     },
+     {
+      "id": "hr-inf-discrimination",
+      "label": "Legal \u2014 anti-discrimination and equal employment opportunity",
+      "short": "Legal \u2014 anti-discrimination and equal employment opportunity"
+     },
+     {
+      "id": "hr-inf-economic",
+      "label": "Economic influences",
+      "short": "Economic influences"
+     },
+     {
+      "id": "hr-inf-technological",
+      "label": "Technological influences",
+      "short": "Technological influences"
+     },
+     {
+      "id": "hr-inf-social",
+      "label": "Social influences \u2014 changing work patterns, living standards",
+      "short": "Social influences"
+     },
+     {
+      "id": "hr-inf-ethics",
+      "label": "Ethics and corporate social responsibility",
+      "short": "Ethics and corporate social responsibility"
+     }
+    ],
+    "Processes of human resource management": [
+     {
+      "id": "hr-proc-acquisition",
+      "label": "Acquisition",
+      "short": "Acquisition"
+     },
+     {
+      "id": "hr-proc-development",
+      "label": "Development",
+      "short": "Development"
+     },
+     {
+      "id": "hr-proc-maintenance",
+      "label": "Maintenance",
+      "short": "Maintenance"
+     },
+     {
+      "id": "hr-proc-separation",
+      "label": "Separation \u2014 voluntary and involuntary",
+      "short": "Separation"
+     }
+    ],
+    "Strategies in human resource management": [
+     {
+      "id": "hr-str-leadership",
+      "label": "Leadership style",
+      "short": "Leadership style"
+     },
+     {
+      "id": "hr-str-jobdesign",
+      "label": "Job design \u2014 general or specific tasks",
+      "short": "Job design"
+     },
+     {
+      "id": "hr-str-recruitment",
+      "label": "Recruitment \u2014 internal or external, general or specific skills",
+      "short": "Recruitment"
+     },
+     {
+      "id": "hr-str-training",
+      "label": "Training and development \u2014 current or future skills",
+      "short": "Training and development"
+     },
+     {
+      "id": "hr-str-performance",
+      "label": "Performance management \u2014 developmental or administrative",
+      "short": "Performance management"
+     },
+     {
+      "id": "hr-str-rewards",
+      "label": "Rewards \u2014 monetary and non-monetary, individual or group, performance pay",
+      "short": "Rewards"
+     },
+     {
+      "id": "hr-str-global",
+      "label": "Global \u2014 costs, competencies",
+      "short": "Global"
+     },
+     {
+      "id": "hr-str-disputes",
+      "label": "Workplace disputes \u2014 negotiation, mediation, grievance procedures, courts and tribunals",
+      "short": "Workplace disputes"
+     }
+    ],
+    "Effectiveness of human resource management": [
+     {
+      "id": "hr-eff-indicators",
+      "label": "Indicators \u2014 corporate culture, benchmarking key variables, changes in staff turnover, absenteeism, accidents, levels of disputation, worker satisfaction",
+      "short": "Indicators"
+     }
+    ]
+   }
+  }
+ },
+ "questions": [
+  {
+   "id": "95ab288353",
+   "number": "25",
+   "text": "The directors have asked you to write a business report in which you:\n\u2022 outline some of the challenges including the global factors of costs, skills and supply the business may need to consider in recruiting and retaining staff\n\u2022 compare the use of debt and equity as sources of finance\n\u2022 recommend ONE source of finance this business could use to fund its expansion.",
+   "marks": 20,
+   "verb": "recommend",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Future Century Gaming Pty Ltd operates an online gaming platform targeting players aged 18\u201340 in Australia. It has been in operation since 2012, providing subscription access to a variety of online games. The business is considering expanding into emerging global markets but is finding it challenging to recruit and retain skilled, qualified game designers and developers in Australia. It is considering international labour markets to overcome staff shortages. The business has decided to finance its expansion into global markets through external sources. Answer is to be presented as a business report.",
+   "topics": [
+    "hr",
+    "finance"
+   ],
+   "syllabusPoints": [
+    "hr-str-global",
+    "hr-proc-acquisition",
+    "hr-proc-maintenance",
+    "fin-proc-debtequity",
+    "fin-inf-debt",
+    "fin-inf-equity",
+    "fin-proc-matching"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "e0c06b3b40",
+   "number": "26",
+   "text": "To what extent do influences on marketing affect business success?",
+   "marks": 20,
+   "verb": "to what extent",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-inf-psychological",
+    "mkt-inf-sociocultural",
+    "mkt-inf-economic",
+    "mkt-inf-government",
+    "mkt-inf-consumerlaws",
+    "mkt-inf-ethical"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "113ad99af1",
+   "number": "27",
+   "text": "To what extent do influences on operations affect business success?",
+   "marks": 20,
+   "verb": "to what extent",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-inf-globalisation",
+    "ops-inf-technology",
+    "ops-inf-quality",
+    "ops-inf-cost",
+    "ops-inf-government",
+    "ops-inf-legal",
+    "ops-inf-envsus",
+    "ops-inf-csr"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "f259726aeb",
+   "number": "26",
+   "text": "Explain the importance to a business of having human resources strategies that reduce workplace disputes and increase worker satisfaction.",
+   "marks": 20,
+   "verb": "explain",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-str-disputes",
+    "hr-eff-indicators",
+    "hr-str-rewards"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "f63c83b750",
+   "number": "27",
+   "text": "Explain the importance to a business of having operations processes that can maintain a competitive advantage.",
+   "marks": 20,
+   "verb": "explain",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-role-strategic",
+    "ops-proc-fourvs",
+    "ops-proc-tasklayout",
+    "ops-proc-monitoring"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "26bce53600",
+   "number": "25",
+   "text": "You have been hired as a consultant by Bee Sticky Pty Ltd to write a business report for the owners. In your report:\n\u2022 describe branding and product strategies the business could use to expand into global markets\n\u2022 recommend a channel choice that would suit this business's expansion\n\u2022 analyse the global financial management strategies required for a successful expansion.",
+   "marks": 20,
+   "verb": "analyse",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Bee Sticky Pty Ltd is an established Australian manufacturing business that produces a wide range of high quality and premium organic honey. It is expanding into global markets and will lease warehouses in Malaysia and the USA. A recently completed SWOT analysis is provided. Strengths: high quality, premium and organic honey products; approved for consumption and medical uses; made by honeybees from Australian flora. Weaknesses: frequent breakage of product during transportation; lack of experience in foreign payment systems. Opportunities: expanding market for high quality honey in countries overseas; falling bee populations overseas; potential collaborations with up-market restaurants/chefs. Threats: established competition in foreign markets; fluctuations in the Australian dollar.",
+   "topics": [
+    "marketing",
+    "finance"
+   ],
+   "syllabusPoints": [
+    "mkt-str-product",
+    "mkt-str-global",
+    "mkt-str-place",
+    "fin-str-global"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "cf1fe574d6",
+   "number": "26",
+   "text": "Analyse how a situational analysis (SWOT, product life cycle) may affect marketing strategies.",
+   "marks": 20,
+   "verb": "analyse",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-proc-situational",
+    "mkt-proc-strategies"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "4c2490a616",
+   "number": "27",
+   "text": "Analyse how human resource management strategies can improve the process of employee acquisition and maintenance.",
+   "marks": 20,
+   "verb": "analyse",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-proc-acquisition",
+    "hr-proc-maintenance",
+    "hr-str-recruitment",
+    "hr-str-rewards"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "258b714717",
+   "number": "25",
+   "text": "You have been hired as a consultant by Ozzi Baby Food Pty Ltd to write a business report to the owners. In your report:\n- outline TWO operations influences affecting this business\n- discuss the use of retraining and redundancy payments to help overcome employee resistance to these changes\n- compare the use of a mortgage to a new issue of shares to fund the factory purchase.",
+   "marks": 20,
+   "verb": "discuss",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Hypothetical business: Ozzi Baby Food Pty Ltd has a trusted reputation in domestic and global markets due to its safe and sustainably-sourced product range, which has led to a significant increase in demand. It is considering purchasing a larger automated factory, which will lead to some job losses. External finance is required to fund the purchase, using either a mortgage or becoming a public company on the Australian Securities Exchange (ASX). The response must be presented as a business report.",
+   "topics": [
+    "operations",
+    "hr",
+    "finance"
+   ],
+   "syllabusPoints": [
+    "ops-inf-technology",
+    "ops-inf-globalisation",
+    "ops-inf-envsus",
+    "ops-str-change",
+    "hr-str-training",
+    "hr-proc-separation",
+    "fin-inf-debt",
+    "fin-inf-equity",
+    "fin-proc-debtequity"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "57ae697542",
+   "number": "27",
+   "text": "Evaluate human resource strategies used to achieve THREE indicators of effective human resource management.",
+   "marks": 20,
+   "verb": "evaluate",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-eff-indicators",
+    "hr-str-training",
+    "hr-str-rewards",
+    "hr-str-performance",
+    "hr-str-disputes"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "53de643207",
+   "number": "26",
+   "text": "Evaluate the effectiveness of financial management strategies used to achieve profit and growth objectives.",
+   "marks": 20,
+   "verb": "evaluate",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-role-objectives",
+    "fin-str-cashflow",
+    "fin-str-workingcapital",
+    "fin-str-profitability"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "37b87f7902",
+   "number": "25",
+   "text": "Icecreams R Us exclusively delivers ice-cream to homes in Newcastle. To increase market share, they are negotiating with a major service station chain, Eucafuels Ltd, to sell their brand of ice-cream throughout NSW.\nBefore they agree to sell the ice-cream, Eucafuels Ltd have a number of concerns over the ability of Icecreams R Us to:\n\u2022 deliver ice-cream to their outlets in NSW in a timely manner\n\u2022 create an awareness that the ice-cream will be sold at Eucafuels Ltd outlets\n\u2022 produce an increased volume of ice-cream while maintaining a quality product.\nTo address these concerns, you have been hired as a consultant by Icecreams R Us to write a report to their directors. In your report:\n\u2022 describe TWO physical distribution issues that the business needs to consider in the delivery of their product\n\u2022 justify ONE promotional strategy the business could use\n\u2022 recommend possible changes the business could make to their operations processes to address the volume and quality concerns of Eucafuels Ltd.",
+   "marks": 20,
+   "verb": "recommend",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Hypothetical business: Icecreams R Us, which currently delivers ice-cream only to homes in Newcastle. To increase market share it is negotiating with a major NSW service station chain, Eucafuels Ltd, to stock its ice-cream statewide. Eucafuels Ltd is concerned about Icecreams R Us's ability to deliver to NSW outlets in a timely manner, to create awareness that the ice-cream is sold at Eucafuels outlets, and to produce increased volume while maintaining quality. The response must take the form of a consultant's business report to the directors.",
+   "topics": [
+    "marketing",
+    "operations"
+   ],
+   "syllabusPoints": [
+    "mkt-str-place",
+    "mkt-str-promotion",
+    "ops-proc-fourvs",
+    "ops-proc-monitoring"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "19cd648768",
+   "number": "26",
+   "text": "Analyse the relationship between market segmentation and marketing strategies.",
+   "marks": 20,
+   "verb": "analyse",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-str-segmentation",
+    "mkt-proc-target",
+    "mkt-proc-strategies"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "a981e0cfaa",
+   "number": "27",
+   "text": "Analyse the relationship between performance objectives and operations strategies.",
+   "marks": 20,
+   "verb": "analyse",
+   "type": "extended-response",
+   "section": "IV",
+   "stimulus": null,
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-performance",
+    "ops-str-quality",
+    "ops-str-supplychain"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "c2fe0e2523",
+   "number": "25",
+   "text": "You have been hired as a consultant to write a report for the owners. In your report:\n\u2022 discuss methods this business could use in the acquisition and development of staff\n\u2022 recommend TWO appropriate working capital management strategies for this business.",
+   "marks": 20,
+   "verb": "discuss",
+   "type": "extended-response",
+   "section": "III",
+   "stimulus": "Business report scenario: Roo's Outback Eatery Pty Ltd is opening an additional restaurant in NSW. They plan to position the restaurant as an exclusive restaurant specialising in modern Australian food with quality customer service. The owners require assistance with the following: the acquisition and development of suitable staff; additional funds for the day-to-day running of the business; the close monitoring of working capital. The response must be written in the form of a business report applying the hypothetical business situation.",
+   "topics": [
+    "hr",
+    "finance"
+   ],
+   "syllabusPoints": [
+    "hr-proc-acquisition",
+    "hr-proc-development",
+    "hr-str-recruitment",
+    "hr-str-training",
+    "fin-str-workingcapital"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "de37f01779",
+   "number": "23 (c)",
+   "text": "In recent times governments have imposed restrictions on businesses such as lockdowns, social distancing and the movement of people. As a result, businesses have changed the way their employees work and communicate with each other.\nDiscuss the possible implications of these influences on human resource management.",
+   "marks": 6,
+   "verb": "discuss",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Scenario: governments have recently imposed restrictions on businesses such as lockdowns, social distancing and limits on the movement of people, and as a result businesses have changed the way their employees work and communicate with each other.",
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-social",
+    "hr-inf-technological",
+    "hr-inf-stakeholders"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "f06d3cae6d",
+   "number": "23 (b)",
+   "text": "Analyse operations strategies that could be used to address TWO operations influences affecting this business.",
+   "marks": 6,
+   "verb": "analyse",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A denim jeans clothing store is concerned about declining sales. It has identified that the lower sales are a result of: outdated store presentation; increased foreign competition; and a reluctance to adopt modern in-store payment methods.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-inf-technology",
+    "ops-inf-globalisation",
+    "ops-str-technology"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "66f7b792cc",
+   "number": "24 (c)",
+   "text": "Explain TWO limitations of financial reports.",
+   "marks": 5,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-limitations"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "374daa72d5",
+   "number": "23 (c)",
+   "text": "Justify ONE global marketing strategy this cereal manufacturer could use to expand into the global market.",
+   "marks": 5,
+   "verb": "justify",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A cereal manufacturer has decided to change the packaging of its product in an attempt to reverse a drop in sales and remain competitive with existing businesses. It is also considering growing its target market by catering for health-conscious consumers in Australia and eventually expanding into the global market.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-str-global"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "ce198e6c25",
+   "number": "21 (c)",
+   "text": "The owners of the tyre manufacturing business have purchased leading-edge technology to help achieve economies of scale.\nExplain why both staff and management might be resistant to this change.",
+   "marks": 5,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "An Australian tyre manufacturer is expanding its business, sourcing rubber from the global market to reduce operating costs and increase sales and profit, while wanting to maintain quality outputs and achieve economies of scale. The owners have purchased leading-edge technology to help achieve economies of scale.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-change",
+    "ops-str-technology"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "8c706bfb24",
+   "number": "22 (c)",
+   "text": "The table shows labour force participation rates for males and females in Australia, 1981\u20132021.\nExplain the social influences that have contributed to the changing labour force participation rates in the period 1981\u20132021.",
+   "marks": 5,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Table of Australian labour force participation rates by gender: 1981 \u2014 males 78%, females 44%; 2001 \u2014 males 73%, females 55%; 2021 \u2014 males 71%, females 62%.",
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-social"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "b6c8c20d79",
+   "number": "22 (c)",
+   "text": "Account for the changes in this business's current and forecast profitability and gearing.",
+   "marks": 5,
+   "verb": "account",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Ratio table for the luxury Australian handbag business (which is borrowing US$30 million to buy retail properties in Australia), comparing Current (before loan) with Forecast (12 months after loan): Gross profit 65% to 70%; Net profit 21% to 18%; Debt to equity 0.85:1 (85%) to 1.5:1 (150%).",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios",
+    "fin-proc-comparative"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "e19036eb8c",
+   "number": "23 (c)",
+   "text": "Assess the impact of ONE social influence on human resource management.",
+   "marks": 5,
+   "verb": "assess",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-social"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "e913395023",
+   "number": "21 (c)",
+   "text": "Compare each layout in terms of efficiency and profitability.",
+   "marks": 4,
+   "verb": "compare",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Scenario: Michael would like to open a new burger restaurant. Lead-in: \"Michael is considering which process layout would be the most efficient for this restaurant.\" Two floor-plan diagrams are provided. Both options contain the same stations - stove, burger assembly station, raw meat refrigerator, finished burgers, seating area, cash registers and entrance - but arranged in a different order, so the flow of raw meat to the assembly station and of finished burgers through to the cash registers and seating area differs between the two layouts.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-tasklayout"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "bd080f6552",
+   "number": "24 (c)",
+   "text": "Why should this business adopt a marketing approach instead of a selling approach?",
+   "marks": 4,
+   "verb": "why",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Scenario: A business wishes to introduce new products into the market.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-role-approaches"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "f0ad31df15",
+   "number": "21 (c)",
+   "text": "Explain TWO quality management strategies that could be used to ensure the quality of the outsourced work.",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A building company has been contracted to build a new home for a customer, to be completed within six months and within budget. The operations manager will need to outsource certain elements of the construction process.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-quality",
+    "ops-str-outsourcing"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "12ea528b4f",
+   "number": "21 (b)",
+   "text": "How could a Gantt chart help the building company meet the terms of the contract?",
+   "marks": 4,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A building company has been contracted to build a new home for a customer. The contract requires the home to be completed within six months and within budget.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-sequencing"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "fdbe5d49b0",
+   "number": "24 (c)",
+   "text": "How might aspects of this advertisement breach Australian consumer laws?",
+   "marks": 4,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A printed advertisement for a fridge headed 'Be the envy of your neighbours' and claiming 'The best quality fridge in the market'. It promotes a limited-time 30% off store offer, 'Comes with a massive 6-month warranty***' and '**Zero carbon emissions'. Small-print disclaimers state: *30% off not applicable to this product; **Zero carbon emissions only in houses that are zero carbon powered; ***No repairs or returns will be considered after 6 months.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-inf-consumerlaws"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "a1a845a321",
+   "number": "21 (b)",
+   "text": "Distinguish between voluntary and involuntary separation.",
+   "marks": 4,
+   "verb": "distinguish",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-proc-separation"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "145e133307",
+   "number": "24 (d)",
+   "text": "Explain TWO ways in which comparative ratio analysis can be used by this business to assess its financial position.",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Financial information for a robotics company: Sales $225 000; Cost of goods sold $105 000; Selling expenses $8 500; Administration expenses $6 000; Financial expenses $4 000; Accounts receivable $30 000; company credit policy 30 days; industry expense ratio 10%.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-comparative"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "d065a23b5e",
+   "number": "21 (c)",
+   "text": "Explain how technological influences and globalisation can lead to a company reducing staff numbers. Support your answer with relevant examples.",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-technological",
+    "hr-inf-economic",
+    "hr-proc-separation"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "6d87f1d296",
+   "number": "23 (a)",
+   "text": "How could the strategic role of operations management assist this business?",
+   "marks": 4,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A denim jeans clothing store is concerned about declining sales. It has identified that the lower sales are a result of: outdated store presentation; increased foreign competition; and a reluctance to adopt modern in-store payment methods.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-role-strategic"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "026ad40a55",
+   "number": "22 (c)",
+   "text": "Justify this business's decision to adopt a standardised marketing strategy.",
+   "marks": 4,
+   "verb": "justify",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A popular Australian guitar manufacturer is about to enter the US market using a standardised marketing strategy.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-str-global"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "cafefc8a27",
+   "number": "23 (b)",
+   "text": "Distinguish between awards and enterprise agreements.",
+   "marks": 4,
+   "verb": "distinguish",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-legal-framework"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "ba85128418",
+   "number": "21 (b)",
+   "text": "Explain the interdependence between marketing and finance for this business.",
+   "marks": 4,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Question 21 scenario: A business sells luxury cars. The cars are stylish, high performance and include advanced safety features integrating leading edge technology.",
+   "topics": [
+    "marketing",
+    "finance"
+   ],
+   "syllabusPoints": [
+    "mkt-role-interdependence",
+    "fin-role-interdependence"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "7f96cf91d3",
+   "number": "24 (b)",
+   "text": "How does variety impact the transformation process of this business?",
+   "marks": 4,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Question 24 scenario: A juice bar is operating in a shopping centre. The juice is served to customers in plastic cups with plastic straws. The high sales volume and quick turnover demand an efficient operations process.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-fourvs"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "b98e878cc8",
+   "number": "21 (c)",
+   "text": "Why is it important for this business to conduct market research?",
+   "marks": 4,
+   "verb": "why",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Question 21 scenario: A business sells luxury cars. The cars are stylish, high performance and include advanced safety features integrating leading edge technology.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-proc-research"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "587e4de3f8",
+   "number": "24 (c)",
+   "text": "Why might this business be reluctant to become more socially responsible?",
+   "marks": 4,
+   "verb": "why",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Question 24 scenario: A juice bar is operating in a shopping centre. The juice is served to customers in plastic cups with plastic straws. The high sales volume and quick turnover demand an efficient operations process. (Single-use plastic cups and straws are the environmental/social responsibility issue.)",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-inf-csr",
+    "ops-inf-envsus"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "7c94bea7c4",
+   "number": "24 (b)",
+   "text": "Explain a possible conflict between ONE short-term and ONE long-term financial objective.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-role-objectives"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "e727272d01",
+   "number": "21 (b)",
+   "text": "Explain the benefits of achieving economies of scale for both the business and consumers.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "An Australian tyre manufacturer is expanding its business. In order to reduce operating costs and increase sales and profit, rubber will be sourced from the global market. The business wants to: maintain quality outputs; achieve economies of scale.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-global",
+    "ops-inf-cost"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "85c30d3b83",
+   "number": "23 (b)",
+   "text": "How could a niche market approach increase sales for this cereal manufacturer?",
+   "marks": 3,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A cereal manufacturer has decided to change the packaging of its product in an attempt to reverse a drop in sales and remain competitive with existing businesses. It is also considering growing its target market by catering for health-conscious consumers in Australia and eventually expanding into the global market.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-role-markets",
+    "mkt-proc-target"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "0dbbbdedcc",
+   "number": "22 (b)",
+   "text": "The advertisement for a store manager is shown.\nOutline TWO human resource issues found in this advertisement.",
+   "marks": 3,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A job advertisement from 'Teddy Bear Store' (Est. 1990), a business that aims to bring joy to children, seeking a Store Manager. Role: manage a team of 8 staff members; manage day-to-day operations. Responsibilities: organise inventory; train staff; assist customers. General information: $65 000 salary; union membership not permitted; no superannuation included.",
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-legal-framework",
+    "hr-inf-stakeholders"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "e333ed562c",
+   "number": "23 (b)",
+   "text": "Explain how the expense ratio can help this business determine their efficiency.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A gifts and homewares business sells goods such as candles, bags, cushions, soaps and jewellery. Financial information provided: Operating income (revenue) $1 500 000; Gross profit $1 100 000; Expenses $600 000; Total liabilities $2 000 000; Net profit $500 000; Owner's equity $1 800 000.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "0c989f9e42",
+   "number": "22 (d)",
+   "text": "Explain the importance of carrying out an induction program for new employees.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-proc-acquisition"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "0c67657494",
+   "number": "22 (c)",
+   "text": "How are performance appraisals of employees beneficial to employers?",
+   "marks": 3,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-str-performance"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "333471dea9",
+   "number": "24 (b)",
+   "text": "How will the business know that their marketing plan has been successful for a new product range?",
+   "marks": 3,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Scenario: A business wishes to introduce new products into the market.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-proc-implement",
+    "mkt-proc-objectives"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "b3850a4a94",
+   "number": "22 (b)",
+   "text": "Outline how the minimum employment standards protect employees in Australia. Use examples in your answer.",
+   "marks": 3,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-legal-framework"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "8edbd412f9",
+   "number": "21 (b)",
+   "text": "Recommend an appropriate inventory management strategy for this business.",
+   "marks": 3,
+   "verb": "recommend",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Scenario: Michael would like to open a new burger restaurant.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-inventory"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "7c6a1409bd",
+   "number": "23 (d)",
+   "text": "Using the financial information provided, explain why the business should use debt finance to acquire the two new stores.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A gifts and homewares business sells goods such as candles, bags, cushions, soaps and jewellery. Financial information: Operating income (revenue) $1 500 000; Gross profit $1 100 000; Expenses $600 000; Total liabilities $2 000 000; Net profit $500 000; Owner's equity $1 800 000 (return on owner's equity 27.8%). The family-owned business is considering expansion by opening two new stores. Their bank has given approval to borrow $3 000 000 at 4% interest to finance their expansion.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-debtequity",
+    "fin-proc-ratios"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "ee58d5d688",
+   "number": "23 (c)",
+   "text": "Why is the level of gearing an important consideration for the lender to this business?",
+   "marks": 3,
+   "verb": "why",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A gifts and homewares business sells goods such as candles, bags, cushions, soaps and jewellery. Financial information: Operating income (revenue) $1 500 000; Gross profit $1 100 000; Expenses $600 000; Total liabilities $2 000 000; Net profit $500 000; Owner's equity $1 800 000. The family-owned business is considering expansion by opening two new stores. Their bank has given approval to borrow $3 000 000 at 4% interest to finance their expansion.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios",
+    "fin-proc-debtequity"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "f4e9bc3f9e",
+   "number": "22 (b)",
+   "text": "Explain a financial risk associated with borrowing funds from the USA.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A luxury Australian handbag business is going to expand. They intend to borrow 30 million US dollars to buy several new retail properties across Australia.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-global",
+    "fin-proc-planning"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "5bae8c556c",
+   "number": "24 (a)",
+   "text": "Explain the benefits of customisation as a global marketing strategy.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-str-global"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "6f6be66b42",
+   "number": "24 (b)",
+   "text": "How does this advertisement use sociocultural factors to influence customer choice?",
+   "marks": 3,
+   "verb": "how",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A printed advertisement for a fridge headed 'Be the envy of your neighbours' and claiming 'The best quality fridge in the market'. It promotes a limited-time 30% off store offer, 'Comes with a massive 6-month warranty***' and '**Zero carbon emissions'. Small-print disclaimers state: *30% off not applicable to this product; **Zero carbon emissions only in houses that are zero carbon powered; ***No repairs or returns will be considered after 6 months.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-inf-sociocultural"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "5309d2b363",
+   "number": "22 (a)",
+   "text": "Clarify the purpose of a SWOT analysis for this business.",
+   "marks": 3,
+   "verb": "clarify",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A popular Australian guitar manufacturer is about to enter the US market using a standardised marketing strategy.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-proc-situational"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "dfe0d6efa9",
+   "number": "24 (c)",
+   "text": "Recommend ONE financial strategy this business could implement to improve efficiency in the collection of accounts receivable.",
+   "marks": 3,
+   "verb": "recommend",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Financial information for a robotics company: Sales $225 000; Cost of goods sold $105 000; Selling expenses $8 500; Administration expenses $6 000; Financial expenses $4 000; Accounts receivable $30 000; company credit policy 30 days; industry expense ratio 10%.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-str-cashflow",
+    "fin-str-workingcapital"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "9c29b18f55",
+   "number": "22 (b)",
+   "text": "Recommend a pricing method this business could adopt for the US market.",
+   "marks": 3,
+   "verb": "recommend",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A popular Australian guitar manufacturer is about to enter the US market using a standardised marketing strategy.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-str-price",
+    "mkt-str-global"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "a898c2afbc",
+   "number": "21 (a)",
+   "text": "Describe ONE factor influencing customer choice for this business.",
+   "marks": 3,
+   "verb": "describe",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Question 21 scenario: A business sells luxury cars. The cars are stylish, high performance and include advanced safety features integrating leading edge technology.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-inf-psychological",
+    "mkt-inf-sociocultural",
+    "mkt-inf-economic",
+    "mkt-inf-government"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "a2f49b8f07",
+   "number": "22 (b)",
+   "text": "Explain ONE advantage of debt financing.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-debtequity"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "39535a18f6",
+   "number": "22 (c)",
+   "text": "Explain ONE disadvantage of equity financing.",
+   "marks": 3,
+   "verb": "explain",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-debtequity"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "c98ad39858",
+   "number": "21 (a)",
+   "text": "Outline ONE potential issue this business could face in relation to both cost and quality of outputs.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "An Australian tyre manufacturer is expanding its business. In order to reduce operating costs and increase sales and profit, rubber will be sourced from the global market. The business wants to: maintain quality outputs; achieve economies of scale.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-global",
+    "ops-str-quality"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "1d037b20ff",
+   "number": "23 (a)",
+   "text": "Outline the current product life cycle stage of this cereal.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A cereal manufacturer has decided to change the packaging of its product in an attempt to reverse a drop in sales and remain competitive with existing businesses. It is also considering growing its target market by catering for health-conscious consumers in Australia and eventually expanding into the global market.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-proc-situational"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "64f3db0bfb",
+   "number": "22 (a)",
+   "text": "What is the purpose of Equal Employment Opportunity (EEO) legislation?",
+   "marks": 2,
+   "verb": "what",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-discrimination"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "d84acf9ff8",
+   "number": "24 (a)",
+   "text": "What is the purpose of a cash flow statement?",
+   "marks": 2,
+   "verb": "what",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-statements"
+   ],
+   "sources": [
+    "2023 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2023
+  },
+  {
+   "id": "5654e3df5b",
+   "number": "23 (a)",
+   "text": "Calculate the efficiency (total expenses \u00f7 total sales) of this business.",
+   "marks": 2,
+   "verb": "calculate",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A gifts and homewares business sells goods such as candles, bags, cushions, soaps and jewellery. Financial information provided: Operating income (revenue) $1 500 000; Gross profit $1 100 000; Expenses $600 000; Total liabilities $2 000 000; Net profit $500 000; Owner's equity $1 800 000.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "fe908d6344",
+   "number": "24 (a)",
+   "text": "Outline ONE promotion strategy this business could use to launch the new product range.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Scenario: A business wishes to introduce new products into the market.",
+   "topics": [
+    "marketing"
+   ],
+   "syllabusPoints": [
+    "mkt-str-promotion"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "0da9d6d641",
+   "number": "21 (a)",
+   "text": "Outline a performance objective relevant to this business.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Scenario: Michael would like to open a new burger restaurant.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-str-performance"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "90b57d34f6",
+   "number": "22 (a)",
+   "text": "Outline how an increase in the minimum wage rate could affect business.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-economic",
+    "hr-inf-legal-framework"
+   ],
+   "sources": [
+    "2022 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2022
+  },
+  {
+   "id": "ac15d07cc7",
+   "number": "22 (a)",
+   "text": "Identify where the business could record the loan and the properties on its balance sheet.",
+   "marks": 2,
+   "verb": "identify",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A luxury Australian handbag business is going to expand. They intend to borrow 30 million US dollars to buy several new retail properties across Australia.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-statements"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "b45e6216cf",
+   "number": "23 (a)",
+   "text": "Outline how corporate culture can affect staff turnover.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-eff-indicators"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "6562bec038",
+   "number": "21 (a)",
+   "text": "Outline how this customer can be considered an input in the construction of the new home.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "A building company has been contracted to build a new home for a customer. The contract requires the home to be completed within six months and within budget.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-inputs"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "4bbe8170d5",
+   "number": "23 (b)",
+   "text": "Why might a business use a contractor to recruit staff?",
+   "marks": 2,
+   "verb": "why",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-role-outsourcing",
+    "hr-str-recruitment"
+   ],
+   "sources": [
+    "2021 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2021
+  },
+  {
+   "id": "f4df218567",
+   "number": "24 (b)",
+   "text": "Interpret this business's expense ratio (total expenses \u00f7 sales).",
+   "marks": 2,
+   "verb": "interpret",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Financial information for a robotics company: Sales $225 000; Cost of goods sold $105 000; Selling expenses $8 500; Administration expenses $6 000; Financial expenses $4 000; Accounts receivable $30 000; company credit policy 30 days; industry expense ratio 10%.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios",
+    "fin-proc-comparative"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "85dea02f64",
+   "number": "21 (a)",
+   "text": "Outline the role of ONE external stakeholder who represents the interests of employees in workplace disputes.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-stakeholders",
+    "hr-str-disputes"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  },
+  {
+   "id": "1f60c0975e",
+   "number": "24 (a)",
+   "text": "Identify TWO transforming resources used in this business.",
+   "marks": 2,
+   "verb": "identify",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Question 24 scenario: A juice bar is operating in a shopping centre. The juice is served to customers in plastic cups with plastic straws. The high sales volume and quick turnover demand an efficient operations process.",
+   "topics": [
+    "operations"
+   ],
+   "syllabusPoints": [
+    "ops-proc-inputs"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "977e577e13",
+   "number": "23 (a)",
+   "text": "Outline ONE employer obligation in an employment contract.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "hr"
+   ],
+   "syllabusPoints": [
+    "hr-inf-legal-framework"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "8419a30343",
+   "number": "22 (a)",
+   "text": "Outline ONE ethical issue related to the preparation of financial reports.",
+   "marks": 2,
+   "verb": "outline",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": null,
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ethical"
+   ],
+   "sources": [
+    "2019 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2019
+  },
+  {
+   "id": "75d544142f",
+   "number": "24 (a)",
+   "text": "Calculate the accounts receivable turnover ratio (sales \u00f7 accounts receivable) for this business.",
+   "marks": 1,
+   "verb": "calculate",
+   "type": "short-answer",
+   "section": "II",
+   "stimulus": "Financial information for a robotics company: Sales $225 000; Cost of goods sold $105 000; Selling expenses $8 500; Administration expenses $6 000; Financial expenses $4 000; Accounts receivable $30 000; company credit policy 30 days; industry expense ratio 10%.",
+   "topics": [
+    "finance"
+   ],
+   "syllabusPoints": [
+    "fin-proc-ratios"
+   ],
+   "sources": [
+    "2020 HSC Business Studies"
+   ],
+   "kind": "NESA HSC",
+   "year": 2020
+  }
+ ],
+ "counts": {
+  "hr-str-global": 1,
+  "hr-proc-acquisition": 4,
+  "hr-proc-maintenance": 2,
+  "fin-proc-debtequity": 6,
+  "fin-inf-debt": 2,
+  "fin-inf-equity": 2,
+  "fin-proc-matching": 1,
+  "mkt-inf-psychological": 2,
+  "mkt-inf-sociocultural": 3,
+  "mkt-inf-economic": 2,
+  "mkt-inf-government": 2,
+  "mkt-inf-consumerlaws": 2,
+  "mkt-inf-ethical": 1,
+  "ops-inf-globalisation": 3,
+  "ops-inf-technology": 3,
+  "ops-inf-quality": 1,
+  "ops-inf-cost": 2,
+  "ops-inf-government": 1,
+  "ops-inf-legal": 1,
+  "ops-inf-envsus": 3,
+  "ops-inf-csr": 2,
+  "hr-str-disputes": 3,
+  "hr-eff-indicators": 3,
+  "hr-str-rewards": 3,
+  "ops-role-strategic": 2,
+  "ops-proc-fourvs": 3,
+  "ops-proc-tasklayout": 2,
+  "ops-proc-monitoring": 2,
+  "mkt-str-product": 1,
+  "mkt-str-global": 5,
+  "mkt-str-place": 2,
+  "fin-str-global": 2,
+  "mkt-proc-situational": 3,
+  "mkt-proc-strategies": 2,
+  "hr-str-recruitment": 3,
+  "ops-str-change": 2,
+  "hr-str-training": 3,
+  "hr-proc-separation": 3,
+  "hr-str-performance": 2,
+  "fin-role-objectives": 2,
+  "fin-str-cashflow": 2,
+  "fin-str-workingcapital": 3,
+  "fin-str-profitability": 1,
+  "mkt-str-promotion": 2,
+  "mkt-str-segmentation": 1,
+  "mkt-proc-target": 2,
+  "ops-str-performance": 2,
+  "ops-str-quality": 3,
+  "ops-str-supplychain": 1,
+  "hr-proc-development": 1,
+  "hr-inf-social": 3,
+  "hr-inf-technological": 2,
+  "hr-inf-stakeholders": 3,
+  "ops-str-technology": 2,
+  "fin-proc-limitations": 1,
+  "fin-proc-ratios": 7,
+  "fin-proc-comparative": 3,
+  "mkt-role-approaches": 1,
+  "ops-str-outsourcing": 1,
+  "ops-proc-sequencing": 1,
+  "hr-inf-economic": 2,
+  "hr-inf-legal-framework": 5,
+  "mkt-role-interdependence": 1,
+  "fin-role-interdependence": 1,
+  "mkt-proc-research": 1,
+  "ops-str-global": 2,
+  "mkt-role-markets": 1,
+  "mkt-proc-implement": 1,
+  "mkt-proc-objectives": 1,
+  "ops-str-inventory": 1,
+  "fin-proc-planning": 1,
+  "mkt-str-price": 1,
+  "hr-inf-discrimination": 1,
+  "fin-proc-statements": 2,
+  "ops-proc-inputs": 2,
+  "hr-role-outsourcing": 1,
+  "fin-proc-ethical": 1
+ },
+ "sources": [
+  "2019 HSC Business Studies",
+  "2020 HSC Business Studies",
+  "2021 HSC Business Studies",
+  "2022 HSC Business Studies",
+  "2023 HSC Business Studies"
+ ]
+}

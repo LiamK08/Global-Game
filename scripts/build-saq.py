@@ -32,14 +32,43 @@ def norm_text(s):
     return s
 
 
+def short_label(label, collides):
+    """Chip-sized version of a syllabus point label.
+
+    Most labels read "Heading — detail, detail". The heading alone is enough,
+    except where several points in a topic share one (Legal —, External
+    sources —), in which case the first clause of the detail disambiguates.
+    """
+    base, _, rest = label.partition(" — ")
+    if not collides or not rest:
+        return base
+    detail = re.split(r"[,(]", rest)[0].strip()
+    return f"{base} — {detail}" if detail else base
+
+
 def load_taxonomy(path):
     with open(path) as fh:
         tax = json.load(fh)
+
+    # A heading is ambiguous when two points in the same topic share it.
+    heads = Counter()
+    for topic, tdata in tax.items():
+        for points in tdata["sections"].values():
+            for p in points:
+                heads[(topic, p["label"].partition(" — ")[0])] += 1
+
     valid = {}
     for topic, tdata in tax.items():
         for section, points in tdata["sections"].items():
             for p in points:
-                valid[p["id"]] = {"topic": topic, "section": section, "label": p["label"]}
+                head = p["label"].partition(" — ")[0]
+                p["short"] = short_label(p["label"], heads[(topic, head)] > 1)
+                valid[p["id"]] = {
+                    "topic": topic,
+                    "section": section,
+                    "label": p["label"],
+                    "short": p["short"],
+                }
     return tax, valid
 
 
@@ -315,7 +344,8 @@ main{min-width:0}
 .q-stim b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
 .q-foot{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
 .chip{font-size:11.5px;background:var(--chip);color:var(--muted);border-radius:999px;padding:2px 9px}
-.chip.tag{cursor:pointer}
+.chip.tag{cursor:pointer;border-left:3px solid var(--tc,var(--line));padding-left:8px}
+.chip.tag b{color:var(--tc);font-weight:650}
 .chip.tag:hover{background:var(--accent-soft);color:var(--accent)}
 .donebtn{
   margin-left:auto;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;
@@ -346,7 +376,7 @@ footer{max-width:1400px;margin:0 auto;padding:8px 16px 40px;color:var(--muted);f
     <div class="tabs" id="tabs" role="tablist"></div>
     <div class="spacer"></div>
     <input class="search" id="search" type="search" placeholder="Search all questions…" autocomplete="off">
-    <button class="iconbtn" id="themebtn" title="Toggle light / dark">◐</button>
+    <button class="iconbtn" id="themebtn" title="Toggle light / dark">Theme</button>
     <button class="iconbtn" id="printbtn" title="Print the questions currently shown">Print</button>
   </div>
 </header>
@@ -399,7 +429,8 @@ const SHORT = {operations:"Operations",marketing:"Marketing",finance:"Finance",h
 const POINT = {};
 for (const t of TOPIC_ORDER){
   const sections = DATA.taxonomy[t].sections;
-  for (const sec in sections) for (const p of sections[sec]) POINT[p.id] = {topic:t, section:sec, label:p.label};
+  for (const sec in sections) for (const p of sections[sec])
+    POINT[p.id] = {topic:t, section:sec, label:p.label, short:p.short || p.label.split(" — ")[0]};
 }
 
 const state = {
@@ -525,8 +556,15 @@ function renderFilterOptions(){
 
 function card(q){
   const isDone = done.has(q.id);
-  const tags = q.syllabusPoints.filter(p => POINT[p]).map(p =>
-    `<span class="chip tag" data-goto="${p}" title="Jump to this syllabus point">${esc(POINT[p].label.split(" — ")[0])}</span>`).join("");
+  // Tags are ordered so the topic you are currently reading comes first.
+  const pts = q.syllabusPoints.filter(p => POINT[p])
+    .sort((a,b) => (POINT[a].topic===state.topic?0:1) - (POINT[b].topic===state.topic?0:1));
+  const tags = pts.map(p => {
+    const t = POINT[p].topic;
+    const cross = t !== state.topic && !state.q;
+    return `<span class="chip tag" data-goto="${p}" style="--tc:${TOPIC_COLOR[t]}"
+      title="${esc(SHORT[t])} › ${esc(POINT[p].label)} — click to jump">${cross?`<b>${esc(SHORT[t])}</b> `:""}${esc(POINT[p].short)}</span>`;
+  }).join("");
   return `<article class="q ${isDone?"is-done":""}" data-id="${q.id}">
     <div class="q-top">
       <span class="q-num">${esc(q.number || "Question")}</span>
