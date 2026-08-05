@@ -1789,28 +1789,6 @@
    "year": 2021
   },
   {
-   "id": "fa90160ee9",
-   "number": "2018 HSC Question 26",
-   "text": "Explain the influence of global markets on financial management of businesses.",
-   "marks": 20,
-   "verb": "explain",
-   "type": "extended-response",
-   "section": "IV",
-   "stimulus": null,
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-inf-global",
-    "fin-str-global"
-   ],
-   "sources": [
-    "2021 Finance Practice HSC Questions"
-   ],
-   "kind": "Question bank",
-   "year": 2021
-  },
-  {
    "id": "7108750317",
    "number": "2012 HSC Question 27",
    "text": "How can different sources of funds help a business achieve its financial objectives?",
@@ -2268,7 +2246,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image22.png"
+   "image": "image22.png",
+   "imageHasRules": false
   },
   {
    "id": "aed2553739",
@@ -2292,7 +2271,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image48.png"
+   "image": "image48.png",
+   "imageHasRules": false
   },
   {
    "id": "b68add6591",
@@ -2315,7 +2295,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image25.png"
+   "image": "image25.png",
+   "imageHasRules": false
   },
   {
    "id": "e758d6ba26",
@@ -2339,7 +2320,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image24.png"
+   "image": "image24.png",
+   "imageHasRules": false
   },
   {
    "id": "a885ab3e06",
@@ -2363,7 +2345,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image23.png"
+   "image": "image23.png",
+   "imageHasRules": false
   },
   {
    "id": "17371e3d85",
@@ -2465,7 +2448,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image4.png"
+   "image": "image4.png",
+   "imageHasRules": true
   },
   {
    "id": "9b542c9572",
@@ -2475,7 +2459,7 @@
    "verb": null,
    "type": "short-answer",
    "section": null,
-   "stimulus": null,
+   "stimulus": "Financial Information for robotics company ($): Sales 225 000; Cost of goods sold 105 000; Selling expenses 8 500; Administration expenses 6 000; Financial expenses 4 000; Accounts receivable 30 000; Robotics company credit policy 30 days; Industry expense ratio 10%.",
    "topics": [
     "finance"
    ],
@@ -2485,11 +2469,13 @@
     "fin-proc-comparative"
    ],
    "sources": [
-    "2021 Finance Practice HSC Questions"
+    "2021 Finance Practice HSC Questions",
+    "2020 HSC Business Studies"
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image27.png"
+   "image": "image27.png",
+   "imageHasRules": true
   },
   {
    "id": "da03c854af",
@@ -2647,7 +2633,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image12.png"
+   "image": "image12.png",
+   "imageHasRules": true
   },
   {
    "id": "7343afd063",
@@ -3149,7 +3136,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image16.png"
+   "image": "image16.png",
+   "imageHasRules": true
   },
   {
    "id": "5ab8b3c92d",
@@ -3171,7 +3159,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image50.png"
+   "image": "image50.png",
+   "imageHasRules": true
   },
   {
    "id": "b1f554388d",
@@ -3194,7 +3183,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image17.png"
+   "image": "image17.png",
+   "imageHasRules": true
   },
   {
    "id": "6c00a6090b",
@@ -3562,29 +3552,6 @@
     "Reddam Trial 2024"
    ],
    "kind": "Reddam Trial",
-   "year": 2024
-  },
-  {
-   "id": "3462d3f667",
-   "number": "23 (c)",
-   "text": "Explain TWO global influences on the financial management of this business.",
-   "marks": 4,
-   "verb": "explain",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": "Food Plus Pty Ltd is a health food grocery store, operating successfully in NSW for the last 10 years. Management is now aiming to expand overseas by opening three stores in the USA in the next two years. There are a number of global market influences which Food Plus Pty Ltd needs to consider in relation to this global expansion.",
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-inf-global",
-    "fin-str-global"
-   ],
-   "sources": [
-    "Independent Trial 2024",
-    "Newington Trial 2024"
-   ],
-   "kind": "Independent Trial",
    "year": 2024
   },
   {
@@ -4430,27 +4397,6 @@
    "year": 2022
   },
   {
-   "id": "366e6a6b6c",
-   "number": "2014 HSC Question 24 (c)",
-   "text": "Discuss factoring as a strategy for cash flow management.",
-   "marks": 4,
-   "verb": "discuss",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": null,
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-str-cashflow"
-   ],
-   "sources": [
-    "2021 Finance Practice HSC Questions"
-   ],
-   "kind": "Question bank",
-   "year": 2021
-  },
-  {
    "id": "f0ad31df15",
    "number": "21 (c)",
    "text": "Explain TWO quality management strategies that could be used to ensure the quality of the outsourced work.",
@@ -4825,19 +4771,24 @@
    "verb": null,
    "type": "short-answer",
    "section": null,
-   "stimulus": null,
+   "stimulus": "Food Plus Pty Ltd is a health food grocery store, operating successfully in NSW for the last 10 years. Management is now aiming to expand overseas by opening three stores in the USA in the next two years. There are a number of global market influences which Food Plus Pty Ltd needs to consider in relation to this global expansion.",
    "topics": [
     "finance"
    ],
    "syllabusPoints": [
-    "fin-inf-government"
+    "fin-inf-government",
+    "fin-inf-global",
+    "fin-str-global"
    ],
    "sources": [
-    "2021 Finance Practice HSC Questions"
+    "2021 Finance Practice HSC Questions",
+    "Independent Trial 2024",
+    "Newington Trial 2024"
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image10.png"
+   "image": "image10.png",
+   "imageHasRules": true
   },
   {
    "id": "31f4d3306e",
@@ -4922,7 +4873,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image51.png"
+   "image": "image51.png",
+   "imageHasRules": true
   },
   {
    "id": "fcbfe79fbf",
@@ -4965,7 +4917,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image29.png"
+   "image": "image29.png",
+   "imageHasRules": true
   },
   {
    "id": "1df62c4ff0",
@@ -5482,27 +5435,6 @@
    "year": 2023
   },
   {
-   "id": "7c94bea7c4",
-   "number": "24 (b)",
-   "text": "Explain a possible conflict between ONE short-term and ONE long-term financial objective.",
-   "marks": 3,
-   "verb": "explain",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": null,
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-role-objectives"
-   ],
-   "sources": [
-    "2023 HSC Business Studies"
-   ],
-   "kind": "NESA HSC",
-   "year": 2023
-  },
-  {
    "id": "ee442ff94f",
    "number": "21 (e)",
    "text": "Explain how Bakers Dozen's current financial position impacts on the solvency of the business.",
@@ -5867,50 +5799,6 @@
    "year": 2021
   },
   {
-   "id": "a2f49b8f07",
-   "number": "2019 HSC Question 22 (b)",
-   "text": "Explain ONE advantage of debt financing.",
-   "marks": 3,
-   "verb": "explain",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": null,
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-proc-debtequity"
-   ],
-   "sources": [
-    "2021 Finance Practice HSC Questions",
-    "2019 HSC Business Studies"
-   ],
-   "kind": "Question bank",
-   "year": 2021
-  },
-  {
-   "id": "39535a18f6",
-   "number": "2019 HSC Question 22 (c)",
-   "text": "Explain ONE disadvantage of equity financing.",
-   "marks": 3,
-   "verb": "explain",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": null,
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-proc-debtequity"
-   ],
-   "sources": [
-    "2021 Finance Practice HSC Questions",
-    "2019 HSC Business Studies"
-   ],
-   "kind": "Question bank",
-   "year": 2021
-  },
-  {
    "id": "57647bb5a3",
    "number": "2015 HSC Question 24 (a)",
    "text": "Explain ONE possible limitation of this financial report.",
@@ -5975,28 +5863,6 @@
    "year": 2021
   },
   {
-   "id": "e17db3cf06",
-   "number": "2018 HSC Question 24 (b)",
-   "text": "How could a business improve management of its accounts receivable turnover?",
-   "marks": 3,
-   "verb": "how",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": null,
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-str-cashflow",
-    "fin-str-workingcapital"
-   ],
-   "sources": [
-    "2021 Finance Practice HSC Questions"
-   ],
-   "kind": "Question bank",
-   "year": 2021
-  },
-  {
    "id": "6f6be66b42",
    "number": "24 (b)",
    "text": "How does this advertisement use sociocultural factors to influence customer choice?",
@@ -6015,29 +5881,6 @@
     "2021 HSC Business Studies"
    ],
    "kind": "NESA HSC",
-   "year": 2021
-  },
-  {
-   "id": "dfe0d6efa9",
-   "number": "2020 HSC Question 24 (c)",
-   "text": "Recommend ONE financial strategy this business could implement to improve efficiency in the collection of accounts receivable.",
-   "marks": 3,
-   "verb": "recommend",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": "Financial Information for robotics company ($): Sales 225 000; Cost of goods sold 105 000; Selling expenses 8 500; Administration expenses 6 000; Financial expenses 4 000; Accounts receivable 30 000; Robotics company credit policy 30 days; Industry expense ratio 10%.",
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-str-cashflow",
-    "fin-str-workingcapital"
-   ],
-   "sources": [
-    "2021 Finance Practice HSC Questions",
-    "2020 HSC Business Studies"
-   ],
-   "kind": "Question bank",
    "year": 2021
   },
   {
@@ -6128,7 +5971,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image28.png"
+   "image": "image28.png",
+   "imageHasRules": true
   },
   {
    "id": "d4f3ea52ef",
@@ -6147,11 +5991,13 @@
     "fin-inf-equity"
    ],
    "sources": [
-    "2021 Finance Practice HSC Questions"
+    "2021 Finance Practice HSC Questions",
+    "2019 HSC Business Studies"
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image47.png"
+   "image": "image47.png",
+   "imageHasRules": true
   },
   {
    "id": "0ed9f119bd",
@@ -6190,11 +6036,13 @@
     "fin-role-objectives"
    ],
    "sources": [
-    "2021 Finance Practice HSC Questions"
+    "2021 Finance Practice HSC Questions",
+    "2023 HSC Business Studies"
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image3.png"
+   "image": "image3.png",
+   "imageHasRules": true
   },
   {
    "id": "e3f72765ea",
@@ -6262,7 +6110,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image26.png"
+   "image": "image26.png",
+   "imageHasRules": false
   },
   {
    "id": "67ca91dd2f",
@@ -6284,7 +6133,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image49.png"
+   "image": "image49.png",
+   "imageHasRules": true
   },
   {
    "id": "4798b04654",
@@ -7836,48 +7686,6 @@
    "year": 2022
   },
   {
-   "id": "b4f2efda80",
-   "number": "2012 HSC Question 22 (a)",
-   "text": "Calculate the current ratio (current assets \u00f7 current liabilities) of this business. Show all working.",
-   "marks": 2,
-   "verb": "calculate",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": "Balance Sheet for Chalker Pty Ltd as at year ending 30 June 2012. Current Assets: Cash $8 000; Receivables $12 000; Inventories $15 000 (total current assets $35 000). Non-Current Assets: Property, Plant and Equipment $33 000. Total Assets $68 000. Current Liabilities: Creditors $14 000. Non-Current Liabilities: Loan $20 000. Owners Equity: Capital $15 000; Retained Net Profit $19 000 (total $34 000). Total Liabilities and Owners Equity $68 000.",
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-proc-ratios"
-   ],
-   "sources": [
-    "2021 Finance Practice HSC Questions"
-   ],
-   "kind": "Question bank",
-   "year": 2021
-  },
-  {
-   "id": "aa78bf4058",
-   "number": "2012 HSC Question 22 (b)",
-   "text": "Calculate the debt to equity ratio (total liabilities \u00f7 total equity) of this business. Show all working.",
-   "marks": 2,
-   "verb": "calculate",
-   "type": "short-answer",
-   "section": "II",
-   "stimulus": "Balance Sheet for Chalker Pty Ltd as at year ending 30 June 2012. Current Assets: Cash $8 000; Receivables $12 000; Inventories $15 000 (total current assets $35 000). Non-Current Assets: Property, Plant and Equipment $33 000. Total Assets $68 000. Current Liabilities: Creditors $14 000. Non-Current Liabilities: Loan $20 000. Owners Equity: Capital $15 000; Retained Net Profit $19 000 (total $34 000). Total Liabilities and Owners Equity $68 000.",
-   "topics": [
-    "finance"
-   ],
-   "syllabusPoints": [
-    "fin-proc-ratios"
-   ],
-   "sources": [
-    "2021 Finance Practice HSC Questions"
-   ],
-   "kind": "Question bank",
-   "year": 2021
-  },
-  {
    "id": "84f6b57749",
    "number": "2017 HSC Question 24 (a)",
    "text": "How will an appreciation of the Australian dollar affect the competitive position of this business?",
@@ -8113,7 +7921,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image44.png"
+   "image": "image44.png",
+   "imageHasRules": false
   },
   {
    "id": "6f69471d0e",
@@ -8123,7 +7932,7 @@
    "verb": null,
    "type": "short-answer",
    "section": null,
-   "stimulus": null,
+   "stimulus": "Balance Sheet for Chalker Pty Ltd as at year ending 30 June 2012. Current Assets: Cash $8 000; Receivables $12 000; Inventories $15 000 (total current assets $35 000). Non-Current Assets: Property, Plant and Equipment $33 000. Total Assets $68 000. Current Liabilities: Creditors $14 000. Non-Current Liabilities: Loan $20 000. Owners Equity: Capital $15 000; Retained Net Profit $19 000 (total $34 000). Total Liabilities and Owners Equity $68 000.",
    "topics": [
     "finance"
    ],
@@ -8135,7 +7944,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image31.png"
+   "image": "image31.png",
+   "imageHasRules": true
   },
   {
    "id": "3df870c28e",
@@ -8157,7 +7967,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image52.png"
+   "image": "image52.png",
+   "imageHasRules": true
   },
   {
    "id": "806ecb0c55",
@@ -8242,7 +8053,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image30.png"
+   "image": "image30.png",
+   "imageHasRules": true
   },
   {
    "id": "4e649bcf6f",
@@ -8306,7 +8118,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image2.png"
+   "image": "image2.png",
+   "imageHasRules": true
   },
   {
    "id": "3237be09ca",
@@ -8521,7 +8334,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image33.png"
+   "image": "image33.png",
+   "imageHasRules": false
   },
   {
    "id": "3a98fc3ee2",
@@ -8544,7 +8358,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image35.png"
+   "image": "image35.png",
+   "imageHasRules": false
   },
   {
    "id": "ca56824e33",
@@ -8566,7 +8381,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image5.png"
+   "image": "image5.png",
+   "imageHasRules": false
   },
   {
    "id": "92db7ecf9e",
@@ -8589,7 +8405,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image14.png"
+   "image": "image14.png",
+   "imageHasRules": false
   },
   {
    "id": "9c399999b9",
@@ -8611,7 +8428,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image8.png"
+   "image": "image8.png",
+   "imageHasRules": false
   },
   {
    "id": "55b1c8156e",
@@ -8634,7 +8452,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image46.png"
+   "image": "image46.png",
+   "imageHasRules": false
   },
   {
    "id": "cbcc911815",
@@ -8677,7 +8496,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image20.png"
+   "image": "image20.png",
+   "imageHasRules": false
   },
   {
    "id": "71b303165d",
@@ -8699,7 +8519,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image54.png"
+   "image": "image54.png",
+   "imageHasRules": false
   },
   {
    "id": "12615f9899",
@@ -8873,7 +8694,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image15.png"
+   "image": "image15.png",
+   "imageHasRules": false
   },
   {
    "id": "3ef4ba45d8",
@@ -8895,7 +8717,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image19.png"
+   "image": "image19.png",
+   "imageHasRules": false
   },
   {
    "id": "b4f02424df",
@@ -8917,7 +8740,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image18.png"
+   "image": "image18.png",
+   "imageHasRules": false
   },
   {
    "id": "cb31099439",
@@ -8939,7 +8763,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image40.png"
+   "image": "image40.png",
+   "imageHasRules": false
   },
   {
    "id": "9d77456a59",
@@ -8961,7 +8786,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image43.png"
+   "image": "image43.png",
+   "imageHasRules": false
   },
   {
    "id": "5c94cc5061",
@@ -8984,7 +8810,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image7.png"
+   "image": "image7.png",
+   "imageHasRules": false
   },
   {
    "id": "c92c43430b",
@@ -9006,7 +8833,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image38.png"
+   "image": "image38.png",
+   "imageHasRules": true
   },
   {
    "id": "89c34faebc",
@@ -9029,7 +8857,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image34.png"
+   "image": "image34.png",
+   "imageHasRules": false
   },
   {
    "id": "438db54907",
@@ -9053,7 +8882,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image36.png"
+   "image": "image36.png",
+   "imageHasRules": true
   },
   {
    "id": "e9f76be56c",
@@ -9076,7 +8906,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image37.png"
+   "image": "image37.png",
+   "imageHasRules": false
   },
   {
    "id": "9f4b7f7179",
@@ -9098,7 +8929,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image39.png"
+   "image": "image39.png",
+   "imageHasRules": false
   },
   {
    "id": "1db8b09f95",
@@ -9121,7 +8953,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image32.png"
+   "image": "image32.png",
+   "imageHasRules": false
   },
   {
    "id": "63c7700c6a",
@@ -9144,7 +8977,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image42.png"
+   "image": "image42.png",
+   "imageHasRules": false
   },
   {
    "id": "da3c98c23e",
@@ -9167,7 +9001,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image6.png"
+   "image": "image6.png",
+   "imageHasRules": false
   },
   {
    "id": "7fe1353ea9",
@@ -9189,7 +9024,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image11.png"
+   "image": "image11.png",
+   "imageHasRules": false
   },
   {
    "id": "d8d2b680dd",
@@ -9211,7 +9047,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image9.png"
+   "image": "image9.png",
+   "imageHasRules": false
   },
   {
    "id": "4e1728c486",
@@ -9233,7 +9070,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image45.png"
+   "image": "image45.png",
+   "imageHasRules": false
   },
   {
    "id": "c3fb62f819",
@@ -9255,7 +9093,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image53.png"
+   "image": "image53.png",
+   "imageHasRules": false
   },
   {
    "id": "92e8499edd",
@@ -9277,7 +9116,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image13.png"
+   "image": "image13.png",
+   "imageHasRules": false
   },
   {
    "id": "ee29e9c228",
@@ -9299,7 +9139,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image21.png"
+   "image": "image21.png",
+   "imageHasRules": false
   },
   {
    "id": "e08ac91062",
@@ -9321,7 +9162,8 @@
    ],
    "kind": "Question bank (scanned)",
    "year": null,
-   "image": "image41.png"
+   "image": "image41.png",
+   "imageHasRules": false
   },
   {
    "id": "b8266472bc",
@@ -9495,11 +9337,11 @@
   }
  ],
  "counts": {
-  "fin-str-cashflow": 23,
+  "fin-str-cashflow": 20,
   "fin-str-profitability": 19,
-  "fin-str-workingcapital": 26,
-  "fin-role-objectives": 17,
-  "fin-str-global": 20,
+  "fin-str-workingcapital": 24,
+  "fin-role-objectives": 16,
+  "fin-str-global": 19,
   "hr-eff-indicators": 17,
   "hr-str-rewards": 10,
   "hr-str-training": 11,
@@ -9510,7 +9352,7 @@
   "fin-inf-debt": 16,
   "fin-inf-equity": 12,
   "fin-inf-government": 5,
-  "fin-inf-global": 5,
+  "fin-inf-global": 4,
   "mkt-str-product": 7,
   "mkt-str-price": 11,
   "mkt-str-promotion": 11,
@@ -9556,7 +9398,7 @@
   "fin-role-interdependence": 5,
   "hr-str-global": 3,
   "hr-proc-maintenance": 4,
-  "fin-proc-debtequity": 15,
+  "fin-proc-debtequity": 13,
   "fin-proc-matching": 9,
   "ops-inf-globalisation": 9,
   "ops-inf-technology": 6,
@@ -9578,7 +9420,7 @@
   "hr-inf-discrimination": 5,
   "hr-inf-stakeholders": 7,
   "mkt-proc-research": 7,
-  "fin-proc-ratios": 45,
+  "fin-proc-ratios": 43,
   "fin-proc-comparative": 25,
   "ops-role-interdependence": 5,
   "fin-proc-ethical": 4,

@@ -88,6 +88,76 @@ def load_questions(extracted_dir, valid_ids):
     return docs
 
 
+def detect_rules(img_path):
+    """Does this crop already show the paper's own ruled answer lines?
+
+    Guessing from the image height was wrong — a tall crop is often a stimulus
+    graph with no writing space at all. Instead look for the lines: rows of
+    mostly-dark pixels spanning the width, repeating down the page. Works for
+    dotted rules too, which is what most of these papers print.
+    """
+    try:
+        from PIL import Image
+    except ImportError:
+        return False
+    try:
+        im = Image.open(img_path).convert("L")
+    except Exception:
+        return False
+
+    w, h = im.size
+    if w < 80 or h < 80:
+        return False
+    px = im.load()
+    step = max(1, w // 300)          # sample columns for speed
+    cols = list(range(0, w, step))
+    ncols = len(cols)
+
+    def dark_fraction(y):
+        return sum(1 for x in cols if px[x, y] < 170) / ncols
+
+    # Candidate rows reach across the width. The threshold is low because most
+    # of these papers print dotted rules, which are only part-dark.
+    rows = [y for y in range(h) if dark_fraction(y) > 0.22]
+    if len(rows) < 4:
+        return False
+
+    # Group adjacent rows into runs, and keep only thin ones: an answer rule is
+    # a couple of pixels tall, whereas a row of text is ten or more.
+    runs, start, prev = [], rows[0], rows[0]
+    for y in rows[1:] + [None]:
+        if y is None or y - prev > 2:
+            runs.append((start, prev))
+            start = y
+        prev = y
+    lines = [(a + b) // 2 for a, b in runs if (b - a + 1) <= 5]
+    if len(lines) < 4:
+        return False
+
+    gaps = [b - a for a, b in zip(lines, lines[1:])]
+    gaps.sort()
+    median = gaps[len(gaps) // 2]
+    if not (14 <= median <= 130):
+        return False
+
+    # Answer rules repeat at a steady pitch; box borders and table rows do not.
+    even = sum(1 for g in gaps if abs(g - median) <= max(4, median * 0.25))
+    if even < max(3, int(len(gaps) * 0.6)):
+        return False
+
+    # And the space between them is blank — that is where you write.
+    blanks = 0
+    for a, b in zip(lines, lines[1:]):
+        if b - a < 8:
+            continue
+        mid = range(a + 3, b - 2)
+        if not mid:
+            continue
+        if max(dark_fraction(y) for y in mid) < 0.12:
+            blanks += 1
+    return blanks >= 3
+
+
 def load_crops(path, valid_ids):
     """Screenshots cropped from a scanned paper, catalogued by reading them.
 
@@ -120,10 +190,27 @@ def load_crops(path, valid_ids):
             "topics": sorted({valid_ids[p]["topic"] for p in points}),
             "syllabusPoints": points,
             "image": r.get("image"),
+            "imageHasRules": detect_rules(os.path.join(IMG_DIR, r["image"])) if r.get("image") else False,
             "verb": None,
             "legible": r.get("legible", True),
         })
     return out
+
+
+def closest_crop(key, crop_keys):
+    """Match a retyped question to the same question captured as a screenshot.
+
+    Wording recovered from a scan never matches the text PDF character for
+    character, so an exact key misses and the question prints twice — once as
+    an image and once as text.
+    """
+    import difflib
+    best, score = None, 0.0
+    for ck in crop_keys:
+        r = difflib.SequenceMatcher(None, key[:160], ck[:160]).ratio()
+        if r > score:
+            best, score = ck, r
+    return best if score >= 0.78 else None
 
 
 def build(extracted_dir, taxonomy_path, fragment_path=None, crops_path=None):
@@ -137,6 +224,7 @@ def build(extracted_dir, taxonomy_path, fragment_path=None, crops_path=None):
     dupes = 0
 
     # Crops go in first so a screenshot always wins over the retyped version.
+    crop_keys = []
     for c in crops:
         key = norm_text(c["text"])[:220]
         rec = OrderedDict()
@@ -154,8 +242,10 @@ def build(extracted_dir, taxonomy_path, fragment_path=None, crops_path=None):
         rec["kind"] = "Question bank (scanned)"
         rec["year"] = None
         rec["image"] = c["image"]
+        rec["imageHasRules"] = c["imageHasRules"]
         questions.append(rec)
         seen[key] = rec
+        crop_keys.append(key)
 
     for name, doc in docs:
         src_title = doc.get("title") or doc.get("slug") or name
@@ -184,6 +274,10 @@ def build(extracted_dir, taxonomy_path, fragment_path=None, crops_path=None):
                 continue
 
             key = norm_text(text)[:220]
+            if key not in seen:
+                near = closest_crop(key, crop_keys)
+                if near:
+                    key = near
             if key in seen:
                 prev = seen[key]
                 # Same question appears in several papers: keep one card, list
