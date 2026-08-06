@@ -4,9 +4,15 @@
 Print the result double-sided on A3, flipping on the SHORT edge, then fold the
 stack in half — the pages land in reading order.
 
-    python3 scripts/impose-a3.py in.pdf out.pdf [notes-page.pdf]
+    python3 scripts/impose-a3.py in.pdf out.pdf [notes-page.pdf] [--signature N]
+
+A booklet thicker than about eight sheets cannot be folded and stapled at
+home, and the inner pages creep out past the edge. --signature splits it into
+groups of N sheets, each folded on its own and then stacked — the way a real
+book is bound.
 """
-import sys
+import argparse
+import os
 
 import pypdf
 from pypdf import PageObject, Transformation
@@ -30,7 +36,7 @@ def booklet_order(n_pages):
     return order
 
 
-def impose(src_path, out_path, pad_path=None):
+def impose(src_path, out_path, pad_path=None, signature=0):
     reader = pypdf.PdfReader(src_path)
     writer = pypdf.PdfWriter()
     pages = list(reader.pages)
@@ -51,12 +57,28 @@ def impose(src_path, out_path, pad_path=None):
                     width=float(box.width), height=float(box.height)))
     n = len(pages)
 
-    for left, right in booklet_order(n):
+    # Each signature is imposed on its own, so every one folds independently.
+    # Sizes are balanced rather than greedy: 11 sheets at a max of 5 becomes
+    # 4/4/3, not 5/5/1, which would leave a loose single sheet at the back.
+    total_sheets = n // 4
+    if signature and total_sheets > signature:
+        k = -(-total_sheets // signature)
+        base, extra = divmod(total_sheets, k)
+        sizes = [base + (1 if i < extra else 0) for i in range(k)]
+    else:
+        sizes = [total_sheets]
+    groups, at = [], 0
+    for sz in sizes:
+        groups.append((at, at + sz * 4))
+        at += sz * 4
+
+    for start, end in groups:
+      for left, right in booklet_order(end - start):
         sheet = PageObject.create_blank_page(width=A3_W, height=A3_H)
         for slot, num in ((0, left), (1, right)):
             if num is None:
                 continue
-            page = pages[num - 1]
+            page = pages[start + num - 1]
             box = page.mediabox
             pw, ph = float(box.width), float(box.height)
             # Centre each source page inside its half of the sheet, scaling only
@@ -71,14 +93,19 @@ def impose(src_path, out_path, pad_path=None):
 
     with open(out_path, "wb") as fh:
         writer.write(fh)
-    sheets = len(writer.pages)
-    print(f"{src_path}: {n_real} A4 pages"
-          f"{f' + {short} notes' if short else ''} -> {sheets} A3 sides "
-          f"({sheets // 2} sheet{'s' if sheets // 2 != 1 else ''} of paper); "
-          f"outer sheet = page {n} beside page 1")
+    sheets = len(writer.pages) // 2
+    counts = [(e - s) // 4 for s, e in groups]
+    how = (f"{len(groups)} signatures of {'/'.join(map(str, counts))} sheets"
+           if len(groups) > 1 else f"one fold of {sheets} sheets")
+    print(f"{os.path.basename(src_path):<52} {n_real:>3} pp"
+          f"{f' +{short} notes' if short else '        '} -> {sheets:>2} A3 sheets, {how}")
 
 
 if __name__ == "__main__":
-    if len(sys.argv) not in (3, 4):
-        sys.exit(__doc__)
-    impose(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) == 4 else None)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("src")
+    ap.add_argument("out")
+    ap.add_argument("pad", nargs="?", default=None, help="PDF whose first page pads to a multiple of four")
+    ap.add_argument("--signature", type=int, default=0, help="sheets per signature; 0 = a single fold")
+    a = ap.parse_args()
+    impose(a.src, a.out, a.pad, a.signature)
