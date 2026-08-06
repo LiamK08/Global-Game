@@ -218,7 +218,7 @@ img.scan{display:block;width:100%;max-width:165mm;height:auto;margin:4pt auto 7p
   <div class="eyebrow">HSC Business Studies</div>
   <h1>${esc(title)}</h1>
   <div class="sub">${esc(sub)}</div>
-  <div class="stat"><b>${total} short-answer questions</b> across ${sections.reduce((a, s) => a + s.groups.length, 0)} syllabus points in four topics</div>
+  <div class="stat"><b>${total} short-answer questions</b> across ${sections.reduce((a, s) => a + s.groups.length, 0)} syllabus points${sections.length > 1 ? ` in ${sections.length} topics` : ""}</div>
   <div class="prov">Drawn from NESA HSC 2019–2023, school trial papers 2023–24, and topic question banks.</div>
   <h3>How to use this booklet</h3>
   <ul>
@@ -254,7 +254,8 @@ function focusDocx({ placed, alsoAt, numberOf, total, key, sections }, title, su
       children: [new TextRun({ text: sub, size: 25, color: INK, font: "Cambria" })],
     }),
     new Paragraph({ spacing: { after: 80 }, children: [new TextRun({
-      text: `${total} short-answer questions across ${sections.reduce((a, s) => a + s.groups.length, 0)} syllabus points in four topics`,
+      text: `${total} short-answer questions across ${sections.reduce((a, s) => a + s.groups.length, 0)} syllabus points`
+            + (sections.length > 1 ? ` in ${sections.length} topics` : ""),
       size: 20, color: INK, font: "Aptos" })] }),
     new Paragraph({ spacing: { after: 300 }, children: [new TextRun({
       text: "Drawn from NESA HSC 2019–2023, school trial papers 2023–24, and topic question banks.",
@@ -425,9 +426,27 @@ async function emit(browser, sections, slug, title, sub) {
   return { slug, total: p.total, pdf };
 }
 
+const NOTES_HTML = `<!doctype html><html><head><meta charset="utf-8"><title>Notes</title><style>
+@page { size: A4; margin: 16mm 15mm 14mm; }
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font:11pt/1.5 "Aptos","Segoe UI",Helvetica,Arial,sans-serif;color:#14171d;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h2{font-size:12.5pt;color:#5d6673;margin:0 0 10pt;text-transform:uppercase;letter-spacing:.12em;font-size:9.5pt}
+.rules i{display:block;border-bottom:.75pt solid #b9c0ca;height:8.2mm}
+</style></head><body><h2>Notes</h2><div class="rules">${"<i></i>".repeat(30)}</div></body></html>`;
+
+async function emitNotesPage(browser, file) {
+  const page = await browser.newPage();
+  await page.setContent(NOTES_HTML, { waitUntil: "load" });
+  await page.emulateMedia({ media: "print" });
+  await page.pdf({ path: file, format: "A4", printBackground: true,
+    margin: { top: "16mm", bottom: "14mm", left: "15mm", right: "15mm" } });
+  await page.close();
+}
+
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
   const browser = await chromium.launch({ executablePath: CHROME });
+  await emitNotesPage(browser, path.join(OUT, "_notes-page-a4.pdf"));
 
   const made = [];
   for (const sec of FOCUS) {
