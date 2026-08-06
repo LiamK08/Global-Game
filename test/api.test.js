@@ -16,6 +16,13 @@ test('API: full happy-path plumbing', async (t) => {
   const { base, close } = await startServer();
   t.after(close);
 
+  /** A game of its own, so one subtest cannot end the game another relies on. */
+  async function newGame() {
+    const res = await fetch(`${base}/api/games`, { method: 'POST' });
+    assert.equal(res.status, 201);
+    return (await res.json()).gameId;
+  }
+
   await t.test('health reports counts', async () => {
     const res = await fetch(`${base}/api/health`);
     assert.equal(res.status, 200);
@@ -61,7 +68,7 @@ test('API: full happy-path plumbing', async (t) => {
   });
 
   await t.test('an unknown country is rejected with 400', async () => {
-    const res = await fetch(`${base}/api/games/${gameId}/guesses`, {
+    const res = await fetch(`${base}/api/games/${await newGame()}/guesses`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ guess: 'Wakanda' }),
@@ -72,7 +79,7 @@ test('API: full happy-path plumbing', async (t) => {
   });
 
   await t.test('an empty guess is rejected with 400', async () => {
-    const res = await fetch(`${base}/api/games/${gameId}/guesses`, {
+    const res = await fetch(`${base}/api/games/${await newGame()}/guesses`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ guess: '   ' }),
@@ -90,7 +97,7 @@ test('API: full happy-path plumbing', async (t) => {
   });
 
   await t.test('give up reveals the answer', async () => {
-    const res = await fetch(`${base}/api/games/${gameId}/giveup`, { method: 'POST' });
+    const res = await fetch(`${base}/api/games/${await newGame()}/giveup`, { method: 'POST' });
     assert.equal(res.status, 200);
     const body = await res.json();
     assert.equal(body.status, 'gaveup');
