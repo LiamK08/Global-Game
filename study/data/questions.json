@@ -7,138 +7,164 @@
      {
       "id": "ops-role-strategic",
       "label": "Strategic role of operations management \u2014 cost leadership, good/service differentiation",
-      "short": "Strategic role of operations management"
+      "short": "Strategic role of operations management",
+      "heading": "Strategic role of operations management"
      },
      {
       "id": "ops-role-goods-services",
       "label": "Goods and/or services in different industries (standardised/customised, perishable, intangible)",
-      "short": "Goods and/or services in different industries (standardised/customised, perishable, intangible)"
+      "short": "Goods and/or services in different industries (standardised/customised, perishable, intangible)",
+      "heading": "Goods and/or services in different industries"
      },
      {
       "id": "ops-role-interdependence",
       "label": "Interdependence with other key business functions",
-      "short": "Interdependence with other key business functions"
+      "short": "Interdependence with other key business functions",
+      "heading": "Interdependence with other key business functions"
      }
     ],
     "Influences": [
      {
       "id": "ops-inf-globalisation",
       "label": "Globalisation",
-      "short": "Globalisation"
+      "short": "Globalisation",
+      "heading": "Globalisation"
      },
      {
       "id": "ops-inf-technology",
       "label": "Technology",
-      "short": "Technology"
+      "short": "Technology",
+      "heading": "Technology"
      },
      {
       "id": "ops-inf-quality",
       "label": "Quality expectations",
-      "short": "Quality expectations"
+      "short": "Quality expectations",
+      "heading": "Quality expectations"
      },
      {
       "id": "ops-inf-cost",
       "label": "Cost-based competition",
-      "short": "Cost-based competition"
+      "short": "Cost-based competition",
+      "heading": "Cost-based competition"
      },
      {
       "id": "ops-inf-government",
       "label": "Government policies",
-      "short": "Government policies"
+      "short": "Government policies",
+      "heading": "Government policies"
      },
      {
       "id": "ops-inf-legal",
       "label": "Legal regulation",
-      "short": "Legal regulation"
+      "short": "Legal regulation",
+      "heading": "Legal regulation"
      },
      {
       "id": "ops-inf-envsus",
       "label": "Environmental sustainability",
-      "short": "Environmental sustainability"
+      "short": "Environmental sustainability",
+      "heading": "Environmental sustainability"
      },
      {
       "id": "ops-inf-csr",
       "label": "Corporate social responsibility \u2014 legal compliance vs ethical responsibility; environmental sustainability & social responsibility",
-      "short": "Corporate social responsibility"
+      "short": "Corporate social responsibility",
+      "heading": "Corporate social responsibility"
      }
     ],
     "Operations processes": [
      {
       "id": "ops-proc-inputs",
       "label": "Inputs \u2014 transformed resources (materials, information, customers); transforming resources (human resources, facilities)",
-      "short": "Inputs"
+      "short": "Inputs",
+      "heading": "Inputs"
      },
      {
       "id": "ops-proc-fourvs",
       "label": "Transformation processes \u2014 influence of volume, variety, variation in demand, visibility",
-      "short": "Transformation processes"
+      "short": "Transformation processes",
+      "heading": "Transformation processes"
      },
      {
       "id": "ops-proc-sequencing",
       "label": "Sequencing and scheduling \u2014 Gantt charts, critical path analysis",
-      "short": "Sequencing and scheduling"
+      "short": "Sequencing and scheduling",
+      "heading": "Sequencing and scheduling"
      },
      {
       "id": "ops-proc-tasklayout",
       "label": "Technology, task design and process layout",
-      "short": "Technology, task design and process layout"
+      "short": "Technology, task design and process layout",
+      "heading": "Technology, task design and process layout"
      },
      {
       "id": "ops-proc-monitoring",
       "label": "Monitoring, control and improvement",
-      "short": "Monitoring, control and improvement"
+      "short": "Monitoring, control and improvement",
+      "heading": "Monitoring, control and improvement"
      },
      {
       "id": "ops-proc-outputs",
       "label": "Outputs \u2014 customer service, warranties",
-      "short": "Outputs"
+      "short": "Outputs",
+      "heading": "Outputs"
      }
     ],
     "Operations strategies": [
      {
       "id": "ops-str-performance",
       "label": "Performance objectives \u2014 quality, speed, dependability, flexibility, customisation, cost",
-      "short": "Performance objectives"
+      "short": "Performance objectives",
+      "heading": "Performance objectives"
      },
      {
       "id": "ops-str-newproduct",
       "label": "New product or service design and development",
-      "short": "New product or service design and development"
+      "short": "New product or service design and development",
+      "heading": "New product or service design and development"
      },
      {
       "id": "ops-str-supplychain",
       "label": "Supply chain management \u2014 logistics, e-commerce, global sourcing",
-      "short": "Supply chain management"
+      "short": "Supply chain management",
+      "heading": "Supply chain management"
      },
      {
       "id": "ops-str-outsourcing",
       "label": "Outsourcing \u2014 advantages and disadvantages",
-      "short": "Outsourcing"
+      "short": "Outsourcing",
+      "heading": "Outsourcing"
      },
      {
       "id": "ops-str-technology",
       "label": "Technology \u2014 leading edge, established",
-      "short": "Technology \u2014 leading edge"
+      "short": "Technology \u2014 leading edge",
+      "heading": "Technology"
      },
      {
       "id": "ops-str-inventory",
       "label": "Inventory management \u2014 LIFO, FIFO, JIT",
-      "short": "Inventory management"
+      "short": "Inventory management",
+      "heading": "Inventory management"
      },
      {
       "id": "ops-str-quality",
       "label": "Quality management \u2014 control, assurance, improvement",
-      "short": "Quality management"
+      "short": "Quality management",
+      "heading": "Quality management"
      },
      {
       "id": "ops-str-change",
       "label": "Overcoming resistance to change \u2014 financial costs, inertia",
-      "short": "Overcoming resistance to change"
+      "short": "Overcoming resistance to change",
+      "heading": "Overcoming resistance to change"
      },
      {
       "id": "ops-str-global",
       "label": "Global factors \u2014 global sourcing, economies of scale, scanning and learning, R&D",
-      "short": "Global factors"
+      "short": "Global factors",
+      "heading": "Global factors"
      }
     ]
    }
@@ -150,128 +176,152 @@
      {
       "id": "mkt-role-strategic",
       "label": "Strategic role of marketing goods and services",
-      "short": "Strategic role of marketing goods and services"
+      "short": "Strategic role of marketing goods and services",
+      "heading": "Strategic role of marketing goods and services"
      },
      {
       "id": "mkt-role-interdependence",
       "label": "Interdependence with other key business functions",
-      "short": "Interdependence with other key business functions"
+      "short": "Interdependence with other key business functions",
+      "heading": "Interdependence with other key business functions"
      },
      {
       "id": "mkt-role-approaches",
       "label": "Production, selling and marketing approaches",
-      "short": "Production, selling and marketing approaches"
+      "short": "Production, selling and marketing approaches",
+      "heading": "Production, selling and marketing approaches"
      },
      {
       "id": "mkt-role-markets",
       "label": "Types of markets \u2014 resource, industrial, intermediate, consumer, mass, niche",
-      "short": "Types of markets"
+      "short": "Types of markets",
+      "heading": "Types of markets"
      }
     ],
     "Influences": [
      {
       "id": "mkt-inf-psychological",
       "label": "Factors influencing customer choice \u2014 psychological",
-      "short": "Factors influencing customer choice \u2014 psychological"
+      "short": "Factors influencing customer choice \u2014 psychological",
+      "heading": "Factors influencing customer choice \u2014 psychological"
      },
      {
       "id": "mkt-inf-sociocultural",
       "label": "Factors influencing customer choice \u2014 sociocultural",
-      "short": "Factors influencing customer choice \u2014 sociocultural"
+      "short": "Factors influencing customer choice \u2014 sociocultural",
+      "heading": "Factors influencing customer choice \u2014 sociocultural"
      },
      {
       "id": "mkt-inf-economic",
       "label": "Factors influencing customer choice \u2014 economic",
-      "short": "Factors influencing customer choice \u2014 economic"
+      "short": "Factors influencing customer choice \u2014 economic",
+      "heading": "Factors influencing customer choice \u2014 economic"
      },
      {
       "id": "mkt-inf-government",
       "label": "Factors influencing customer choice \u2014 government",
-      "short": "Factors influencing customer choice \u2014 government"
+      "short": "Factors influencing customer choice \u2014 government",
+      "heading": "Factors influencing customer choice \u2014 government"
      },
      {
       "id": "mkt-inf-consumerlaws",
       "label": "Consumer laws \u2014 deceptive/misleading advertising, price discrimination, implied conditions, warranties",
-      "short": "Consumer laws"
+      "short": "Consumer laws",
+      "heading": "Consumer laws"
      },
      {
       "id": "mkt-inf-ethical",
       "label": "Ethical \u2014 truth, accuracy and good taste in advertising; products that may damage health; fair competition; sugging",
-      "short": "Ethical"
+      "short": "Ethical",
+      "heading": "Ethical"
      }
     ],
     "Marketing process": [
      {
       "id": "mkt-proc-situational",
       "label": "Situational analysis \u2014 SWOT, product life cycle",
-      "short": "Situational analysis"
+      "short": "Situational analysis",
+      "heading": "Situational analysis"
      },
      {
       "id": "mkt-proc-research",
       "label": "Market research",
-      "short": "Market research"
+      "short": "Market research",
+      "heading": "Market research"
      },
      {
       "id": "mkt-proc-objectives",
       "label": "Establishing market objectives",
-      "short": "Establishing market objectives"
+      "short": "Establishing market objectives",
+      "heading": "Establishing market objectives"
      },
      {
       "id": "mkt-proc-target",
       "label": "Identifying target markets",
-      "short": "Identifying target markets"
+      "short": "Identifying target markets",
+      "heading": "Identifying target markets"
      },
      {
       "id": "mkt-proc-strategies",
       "label": "Developing marketing strategies",
-      "short": "Developing marketing strategies"
+      "short": "Developing marketing strategies",
+      "heading": "Developing marketing strategies"
      },
      {
       "id": "mkt-proc-implement",
       "label": "Implementation, monitoring and controlling \u2014 financial forecast, comparing actual and planned results, revising the marketing strategy",
-      "short": "Implementation, monitoring and controlling"
+      "short": "Implementation, monitoring and controlling",
+      "heading": "Implementation, monitoring and controlling"
      }
     ],
     "Marketing strategies": [
      {
       "id": "mkt-str-segmentation",
       "label": "Market segmentation, product/service differentiation and positioning",
-      "short": "Market segmentation, product/service differentiation and positioning"
+      "short": "Market segmentation, product/service differentiation and positioning",
+      "heading": "Market segmentation, product/service differentiation and positioning"
      },
      {
       "id": "mkt-str-product",
       "label": "Products \u2014 goods and/or services, branding, packaging",
-      "short": "Products"
+      "short": "Products",
+      "heading": "Products"
      },
      {
       "id": "mkt-str-price",
       "label": "Price \u2014 pricing methods, pricing strategies, price and quality interaction",
-      "short": "Price"
+      "short": "Price",
+      "heading": "Price"
      },
      {
       "id": "mkt-str-promotion",
       "label": "Promotion \u2014 promotion mix, communication process (opinion leaders, word of mouth)",
-      "short": "Promotion"
+      "short": "Promotion",
+      "heading": "Promotion"
      },
      {
       "id": "mkt-str-place",
       "label": "Place/distribution \u2014 channels, channel choice, physical distribution issues",
-      "short": "Place/distribution"
+      "short": "Place/distribution",
+      "heading": "Place/distribution"
      },
      {
       "id": "mkt-str-ppp",
       "label": "People, processes and physical evidence",
-      "short": "People, processes and physical evidence"
+      "short": "People, processes and physical evidence",
+      "heading": "People, processes and physical evidence"
      },
      {
       "id": "mkt-str-emarketing",
       "label": "E-marketing",
-      "short": "E-marketing"
+      "short": "E-marketing",
+      "heading": "E-marketing"
      },
      {
       "id": "mkt-str-global",
       "label": "Global marketing \u2014 global branding, standardisation, customisation, global pricing, competitive positioning",
-      "short": "Global marketing"
+      "short": "Global marketing",
+      "heading": "Global marketing"
      }
     ]
    }
@@ -283,113 +333,134 @@
      {
       "id": "fin-role-strategic",
       "label": "Strategic role of financial management",
-      "short": "Strategic role of financial management"
+      "short": "Strategic role of financial management",
+      "heading": "Strategic role of financial management"
      },
      {
       "id": "fin-role-objectives",
       "label": "Objectives \u2014 profitability, growth, efficiency, liquidity, solvency; short-term and long-term",
-      "short": "Objectives"
+      "short": "Objectives",
+      "heading": "Objectives"
      },
      {
       "id": "fin-role-interdependence",
       "label": "Interdependence with other key business functions",
-      "short": "Interdependence with other key business functions"
+      "short": "Interdependence with other key business functions",
+      "heading": "Interdependence with other key business functions"
      }
     ],
     "Influences on financial management": [
      {
       "id": "fin-inf-internal",
       "label": "Internal sources of finance \u2014 retained profits",
-      "short": "Internal sources of finance"
+      "short": "Internal sources of finance",
+      "heading": "Internal sources of finance"
      },
      {
       "id": "fin-inf-debt",
       "label": "External sources \u2014 debt (overdraft, commercial bills, factoring, mortgage, debentures, unsecured notes, leasing)",
-      "short": "External sources \u2014 debt"
+      "short": "External sources \u2014 debt",
+      "heading": "External sources \u2014 debt"
      },
      {
       "id": "fin-inf-equity",
       "label": "External sources \u2014 equity (ordinary shares, new issues, rights issues, placements, share purchase plans, private equity)",
-      "short": "External sources \u2014 equity"
+      "short": "External sources \u2014 equity",
+      "heading": "External sources \u2014 equity"
      },
      {
       "id": "fin-inf-institutions",
       "label": "Financial institutions \u2014 banks, investment banks, finance companies, superannuation funds, life insurance, unit trusts, ASX",
-      "short": "Financial institutions"
+      "short": "Financial institutions",
+      "heading": "Financial institutions"
      },
      {
       "id": "fin-inf-government",
       "label": "Influence of government \u2014 ASIC, company taxation",
-      "short": "Influence of government"
+      "short": "Influence of government",
+      "heading": "Influence of government"
      },
      {
       "id": "fin-inf-global",
       "label": "Global market influences \u2014 economic outlook, availability of funds, interest rates",
-      "short": "Global market influences"
+      "short": "Global market influences",
+      "heading": "Global market influences"
      }
     ],
     "Processes of financial management": [
      {
       "id": "fin-proc-planning",
       "label": "Planning and implementing \u2014 financial needs, budgets, record systems, financial risks, financial controls",
-      "short": "Planning and implementing"
+      "short": "Planning and implementing",
+      "heading": "Planning and implementing"
      },
      {
       "id": "fin-proc-debtequity",
       "label": "Debt and equity financing \u2014 advantages and disadvantages of each",
-      "short": "Debt and equity financing"
+      "short": "Debt and equity financing",
+      "heading": "Debt and equity financing"
      },
      {
       "id": "fin-proc-matching",
       "label": "Matching the terms and source of finance to business purpose",
-      "short": "Matching the terms and source of finance to business purpose"
+      "short": "Matching the terms and source of finance to business purpose",
+      "heading": "Matching the terms and source of finance to business purpose"
      },
      {
       "id": "fin-proc-statements",
       "label": "Monitoring and controlling \u2014 cash flow statement, income statement, balance sheet",
-      "short": "Monitoring and controlling"
+      "short": "Monitoring and controlling",
+      "heading": "Monitoring and controlling"
      },
      {
       "id": "fin-proc-ratios",
       "label": "Financial ratios \u2014 liquidity, gearing, profitability, efficiency",
-      "short": "Financial ratios"
+      "short": "Financial ratios",
+      "heading": "Financial ratios"
      },
      {
       "id": "fin-proc-comparative",
       "label": "Comparative ratio analysis \u2014 over time, against standards, similar businesses",
-      "short": "Comparative ratio analysis"
+      "short": "Comparative ratio analysis",
+      "heading": "Comparative ratio analysis"
      },
      {
       "id": "fin-proc-limitations",
       "label": "Limitations of financial reports \u2014 normalised earnings, capitalising expenses, valuing assets, timing issues, debt repayments, notes to financial statements",
-      "short": "Limitations of financial reports"
+      "short": "Limitations of financial reports",
+      "heading": "Limitations of financial reports"
      },
      {
       "id": "fin-proc-ethical",
       "label": "Ethical issues related to financial reports",
-      "short": "Ethical issues related to financial reports"
+      "short": "Ethical issues related to financial reports",
+      "heading": "Ethical issues related to financial reports"
      }
     ],
     "Financial management strategies": [
      {
       "id": "fin-str-cashflow",
       "label": "Cash flow management \u2014 cash flow statements, distribution of payments, discounts for early payment, factoring",
-      "short": "Cash flow management"
+      "short": "Cash flow management",
+      "heading": "Cash flow management"
      },
      {
       "id": "fin-str-workingcapital",
       "label": "Working capital management \u2014 control of current assets and current liabilities, leasing, sale and lease back",
-      "short": "Working capital management"
+      "short": "Working capital management",
+      "heading": "Working capital management"
      },
      {
       "id": "fin-str-profitability",
       "label": "Profitability management \u2014 cost controls, revenue controls",
-      "short": "Profitability management"
+      "short": "Profitability management",
+      "heading": "Profitability management"
      },
      {
       "id": "fin-str-global",
       "label": "Global financial management \u2014 exchange rates, interest rates, methods of international payment, hedging, derivatives",
-      "short": "Global financial management"
+      "short": "Global financial management",
+      "heading": "Global financial management"
      }
     ]
    }
@@ -401,130 +472,154 @@
      {
       "id": "hr-role-strategic",
       "label": "Strategic role of human resource management",
-      "short": "Strategic role of human resource management"
+      "short": "Strategic role of human resource management",
+      "heading": "Strategic role of human resource management"
      },
      {
       "id": "hr-role-interdependence",
       "label": "Interdependence with other key business functions",
-      "short": "Interdependence with other key business functions"
+      "short": "Interdependence with other key business functions",
+      "heading": "Interdependence with other key business functions"
      },
      {
       "id": "hr-role-outsourcing",
       "label": "Outsourcing \u2014 HR functions, using contractors (domestic, global)",
-      "short": "Outsourcing"
+      "short": "Outsourcing",
+      "heading": "Outsourcing"
      }
     ],
     "Influences": [
      {
       "id": "hr-inf-stakeholders",
       "label": "Stakeholders \u2014 employers, employees, employer associations, unions, government organisations, society",
-      "short": "Stakeholders"
+      "short": "Stakeholders",
+      "heading": "Stakeholders"
      },
      {
       "id": "hr-inf-legal-framework",
       "label": "Legal \u2014 the employment contract, common law, minimum employment standards, awards, enterprise agreements",
-      "short": "Legal \u2014 the employment contract"
+      "short": "Legal \u2014 the employment contract",
+      "heading": "Legal \u2014 the employment contract"
      },
      {
       "id": "hr-inf-whs",
       "label": "Legal \u2014 work health and safety and workers compensation",
-      "short": "Legal \u2014 work health and safety and workers compensation"
+      "short": "Legal \u2014 work health and safety and workers compensation",
+      "heading": "Legal \u2014 work health and safety and workers compensation"
      },
      {
       "id": "hr-inf-discrimination",
       "label": "Legal \u2014 anti-discrimination and equal employment opportunity",
-      "short": "Legal \u2014 anti-discrimination and equal employment opportunity"
+      "short": "Legal \u2014 anti-discrimination and equal employment opportunity",
+      "heading": "Legal \u2014 anti-discrimination and equal employment opportunity"
      },
      {
       "id": "hr-inf-economic",
       "label": "Economic influences",
-      "short": "Economic influences"
+      "short": "Economic influences",
+      "heading": "Economic influences"
      },
      {
       "id": "hr-inf-technological",
       "label": "Technological influences",
-      "short": "Technological influences"
+      "short": "Technological influences",
+      "heading": "Technological influences"
      },
      {
       "id": "hr-inf-social",
       "label": "Social influences \u2014 changing work patterns, living standards",
-      "short": "Social influences"
+      "short": "Social influences",
+      "heading": "Social influences"
      },
      {
       "id": "hr-inf-ethics",
       "label": "Ethics and corporate social responsibility",
-      "short": "Ethics and corporate social responsibility"
+      "short": "Ethics and corporate social responsibility",
+      "heading": "Ethics and corporate social responsibility"
      }
     ],
     "Processes of human resource management": [
      {
       "id": "hr-proc-acquisition",
       "label": "Acquisition",
-      "short": "Acquisition"
+      "short": "Acquisition",
+      "heading": "Acquisition"
      },
      {
       "id": "hr-proc-development",
       "label": "Development",
-      "short": "Development"
+      "short": "Development",
+      "heading": "Development"
      },
      {
       "id": "hr-proc-maintenance",
       "label": "Maintenance",
-      "short": "Maintenance"
+      "short": "Maintenance",
+      "heading": "Maintenance"
      },
      {
       "id": "hr-proc-separation",
       "label": "Separation \u2014 voluntary and involuntary",
-      "short": "Separation"
+      "short": "Separation",
+      "heading": "Separation"
      }
     ],
     "Strategies in human resource management": [
      {
       "id": "hr-str-leadership",
       "label": "Leadership style",
-      "short": "Leadership style"
+      "short": "Leadership style",
+      "heading": "Leadership style"
      },
      {
       "id": "hr-str-jobdesign",
       "label": "Job design \u2014 general or specific tasks",
-      "short": "Job design"
+      "short": "Job design",
+      "heading": "Job design"
      },
      {
       "id": "hr-str-recruitment",
       "label": "Recruitment \u2014 internal or external, general or specific skills",
-      "short": "Recruitment"
+      "short": "Recruitment",
+      "heading": "Recruitment"
      },
      {
       "id": "hr-str-training",
       "label": "Training and development \u2014 current or future skills",
-      "short": "Training and development"
+      "short": "Training and development",
+      "heading": "Training and development"
      },
      {
       "id": "hr-str-performance",
       "label": "Performance management \u2014 developmental or administrative",
-      "short": "Performance management"
+      "short": "Performance management",
+      "heading": "Performance management"
      },
      {
       "id": "hr-str-rewards",
       "label": "Rewards \u2014 monetary and non-monetary, individual or group, performance pay",
-      "short": "Rewards"
+      "short": "Rewards",
+      "heading": "Rewards"
      },
      {
       "id": "hr-str-global",
       "label": "Global \u2014 costs, competencies",
-      "short": "Global"
+      "short": "Global",
+      "heading": "Global"
      },
      {
       "id": "hr-str-disputes",
       "label": "Workplace disputes \u2014 negotiation, mediation, grievance procedures, courts and tribunals",
-      "short": "Workplace disputes"
+      "short": "Workplace disputes",
+      "heading": "Workplace disputes"
      }
     ],
     "Effectiveness of human resource management": [
      {
       "id": "hr-eff-indicators",
       "label": "Indicators \u2014 corporate culture, benchmarking key variables, changes in staff turnover, absenteeism, accidents, levels of disputation, worker satisfaction",
-      "short": "Indicators"
+      "short": "Indicators",
+      "heading": "Indicators"
      }
     ]
    }

@@ -286,6 +286,7 @@ function buildTopic(topic) {
   let lastSection = null;
   for (const p of orderedPoints) {
     const count = (primary.get(p.id) || []).length;
+    const xref = new Set(alsoAt.get(p.id) || []).size;
     if (p.section !== lastSection) {
       lastSection = p.section;
       children.push(new Paragraph({
@@ -297,11 +298,13 @@ function buildTopic(topic) {
       spacing: { after: 20 },
       indent: { left: convertInchesToTwip(0.22) },
       children: [
-        new TextRun({ text: p.short, size: 18, color: count ? INK : MUTED, font: "Aptos" }),
+        new TextRun({ text: p.heading, size: 18, color: count ? INK : MUTED, font: "Aptos" }),
         new TextRun({ children: [new PositionalTab({
           alignment: PositionalTabAlignment.RIGHT, relativeTo: "margin",
           leader: PositionalTabLeader.DOT })] }),
-        new TextRun({ text: count ? String(count) : "—", size: 18, color: count ? accent : MUTED, bold: !!count, font: "Aptos" }),
+        new TextRun({
+          text: count ? String(count) : xref ? `\u2197${xref}` : "\u2014",
+          size: count ? 18 : 16, color: count ? accent : MUTED, bold: !!count, font: "Aptos" }),
       ],
     }));
   }
@@ -333,7 +336,7 @@ function buildTopic(topic) {
         heading: HeadingLevel.HEADING_2,
         spacing: { before: 360, after: 60 },
         keepNext: true,
-        children: [new TextRun({ text: p.label, bold: true, size: 24, color: accent, font: "Aptos" })],
+        children: [new TextRun({ text: p.heading, bold: true, size: 24, color: accent, font: "Aptos" })],
       }));
 
       if (!qs.length) {

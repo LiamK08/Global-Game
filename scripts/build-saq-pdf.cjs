@@ -82,8 +82,10 @@ function topicHtml(topic) {
     let last = null, out = "";
     for (const p of orderedPoints) {
       const c = (primary.get(p.id) || []).length;
+      const xref = new Set(alsoAt.get(p.id) || []).size;
       if (p.section !== last) { last = p.section; out += `<div class="csec">${esc(p.section)}</div>`; }
-      out += `<div class="crow ${c ? "" : "none"}"><span>${esc(p.short)}</span><span class="dots"></span><b>${c || "—"}</b></div>`;
+      const tally = c ? String(c) : xref ? `\u2197${xref}` : "\u2014";
+      out += `<div class="crow ${c ? "" : xref ? "xref" : "none"}"><span>${esc(p.heading)}</span><span class="dots"></span><b>${tally}</b></div>`;
     }
     return out;
   })();
@@ -100,7 +102,7 @@ function topicHtml(topic) {
       const also = [...new Set(alsoAt.get(p.id) || [])].sort((a, b) => a - b);
       if (!qs.length && !also.length) continue;
 
-      body += `<h2>${esc(p.label)}</h2>`;
+      body += `<h2>${esc(p.heading)}</h2>`;
       if (!qs.length) {
         body += `<p class="empty">${also.length
           ? `No short-answer question of its own. Covered inside question${also.length > 1 ? "s" : ""} ${also.join(", ")}.`
@@ -158,6 +160,7 @@ body{font:11pt/1.5 "Aptos","Segoe UI",Helvetica,Arial,sans-serif;color:#14171d;-
 .crow .dots{flex:1;border-bottom:1px dotted #b9c0ca;transform:translateY(-3px)}
 .crow b{color:${accent};font-variant-numeric:tabular-nums}
 .crow.none{color:#8d95a2}.crow.none b{color:#8d95a2;font-weight:400}
+.crow.xref b{font-weight:400;font-size:8.5pt}
 .part{break-before:auto}
 .part.brk{break-before:page}
 .parteyebrow{font-size:9pt;letter-spacing:.2em;text-transform:uppercase;color:${accent};font-weight:700}

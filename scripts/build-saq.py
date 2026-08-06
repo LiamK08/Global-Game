@@ -54,10 +54,15 @@ def load_taxonomy(path):
 
     # A heading is ambiguous when two points in the same topic share it.
     heads = Counter()
+    # ...but inside a booklet each point sits under its section heading, so
+    # only a clash within one section actually needs telling apart.
+    heads_in_section = Counter()
     for topic, tdata in tax.items():
-        for points in tdata["sections"].values():
+        for section, points in tdata["sections"].items():
             for p in points:
-                heads[(topic, p["label"].partition(" — ")[0])] += 1
+                head = p["label"].partition(" — ")[0]
+                heads[(topic, head)] += 1
+                heads_in_section[(topic, section, head)] += 1
 
     valid = {}
     for topic, tdata in tax.items():
@@ -65,11 +70,18 @@ def load_taxonomy(path):
             for p in points:
                 head = p["label"].partition(" — ")[0]
                 p["short"] = short_label(p["label"], heads[(topic, head)] > 1)
+                # The booklet heading names the point and stops there: listing
+                # what sits under it would answer the question of which tool to
+                # reach for before the student has thought about it.
+                p["heading"] = re.sub(
+                    r"\s*\([^)]*\)\s*$", "",
+                    short_label(p["label"], heads_in_section[(topic, section, head)] > 1))
                 valid[p["id"]] = {
                     "topic": topic,
                     "section": section,
                     "label": p["label"],
                     "short": p["short"],
+                    "heading": p["heading"],
                 }
     return tax, valid
 
