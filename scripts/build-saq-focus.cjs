@@ -61,6 +61,8 @@ const FOCUS = [
   ] },
 ];
 
+const A4_DOCX = { width: 11906, height: 16838 };   // twips
+
 /** Short answer only: no multiple choice, no 20-mark extended responses. */
 const isShortAnswer = q => q.type === "short-answer" && (q.marks || 0) < 15;
 
@@ -75,14 +77,14 @@ function linesFor(q) {
  * Word file and the PDF agree. A question testing two flagged points is
  * printed under the first and cross-referenced from the other.
  */
-function plan() {
+function plan(sections) {
   const placed = new Map();   // "topic/group" -> [questions]
   const alsoAt = new Map();   // "topic/group" -> [numbers]
   const numberOf = new Map();
   const taken = new Set();
   const key = (t, g) => `${t}/${g}`;
 
-  for (const sec of FOCUS) {
+  for (const sec of sections) {
     for (const g of sec.groups) {
       const pts = new Set(g.points);
       const qs = DATA.questions.filter(q =>
@@ -95,13 +97,13 @@ function plan() {
   }
 
   let n = 0;
-  for (const sec of FOCUS)
+  for (const sec of sections)
     for (const g of sec.groups)
       for (const q of placed.get(key(sec.topic, g.name))) numberOf.set(q.id, ++n);
 
   // Now that everything has a number, point each group at the questions that
   // test it but print elsewhere.
-  for (const sec of FOCUS) {
+  for (const sec of sections) {
     for (const g of sec.groups) {
       const pts = new Set(g.points);
       const mine = new Set(placed.get(key(sec.topic, g.name)).map(q => q.id));
@@ -113,7 +115,7 @@ function plan() {
       if (refs.length) alsoAt.set(key(sec.topic, g.name), [...new Set(refs)]);
     }
   }
-  return { placed, alsoAt, numberOf, total: n, key };
+  return { placed, alsoAt, numberOf, total: n, key, sections };
 }
 
 // ------------------------------------------------------------------- PDF
@@ -130,9 +132,9 @@ function dataUri(name) {
   return uriCache.get(name);
 }
 
-function focusHtml({ placed, alsoAt, numberOf, total, key }) {
+function focusHtml({ placed, alsoAt, numberOf, total, key, sections }, title, sub) {
   const rows = [];
-  for (const sec of FOCUS) {
+  for (const sec of sections) {
     rows.push(`<div class="csec" style="--a:#${sec.accent}">${esc(sec.label)}</div>`);
     for (const g of sec.groups) {
       const c = placed.get(key(sec.topic, g.name)).length;
@@ -143,7 +145,7 @@ function focusHtml({ placed, alsoAt, numberOf, total, key }) {
   }
 
   let body = "";
-  for (const sec of FOCUS) {
+  for (const sec of sections) {
     body += `<section class="part" style="--a:#${sec.accent}">
       <div class="eyebrow">Topic</div><h1>${esc(sec.label)}</h1></section>`;
     for (const g of sec.groups) {
@@ -177,8 +179,8 @@ function focusHtml({ placed, alsoAt, numberOf, total, key }) {
     }
   }
 
-  return `<!doctype html><html><head><meta charset="utf-8"><title>Exam focus</title><style>
-@page { size: Letter; margin: 16mm 16mm 14mm; }
+  return `<!doctype html><html><head><meta charset="utf-8"><title>${esc(title)}</title><style>
+@page { size: A4; margin: 16mm 15mm 14mm; }
 *{box-sizing:border-box} html,body{margin:0;padding:0}
 body{font:11pt/1.5 "Aptos","Segoe UI",Helvetica,Arial,sans-serif;color:#14171d;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .cover{min-height:238mm;display:flex;flex-direction:column;justify-content:center;page-break-after:always}
@@ -214,9 +216,9 @@ img.scan{display:block;width:100%;max-width:165mm;height:auto;margin:4pt auto 7p
 </style></head><body>
 <div class="cover">
   <div class="eyebrow">HSC Business Studies</div>
-  <h1>Exam focus</h1>
-  <div class="sub">Short-answer practice on the points you flagged</div>
-  <div class="stat"><b>${total} short-answer questions</b> across ${FOCUS.reduce((a, s) => a + s.groups.length, 0)} syllabus points in four topics</div>
+  <h1>${esc(title)}</h1>
+  <div class="sub">${esc(sub)}</div>
+  <div class="stat"><b>${total} short-answer questions</b> across ${sections.reduce((a, s) => a + s.groups.length, 0)} syllabus points in four topics</div>
   <div class="prov">Drawn from NESA HSC 2019–2023, school trial papers 2023–24, and topic question banks.</div>
   <h3>How to use this booklet</h3>
   <ul>
@@ -237,7 +239,7 @@ const ruleP = () => new Paragraph({
   border: { bottom: { style: BorderStyle.SINGLE, size: 4, space: 1, color: RULE } },
 });
 
-function focusDocx({ placed, alsoAt, numberOf, total, key }) {
+function focusDocx({ placed, alsoAt, numberOf, total, key, sections }, title, sub) {
   const children = [];
 
   children.push(
@@ -245,14 +247,14 @@ function focusDocx({ placed, alsoAt, numberOf, total, key }) {
       text: "HSC BUSINESS STUDIES", bold: true, size: 19, color: MUTED, allCaps: true,
       characterSpacing: 60, font: "Aptos" })] }),
     new Paragraph({ spacing: { before: 120 }, children: [new TextRun({
-      text: "Exam focus", bold: true, size: 76, color: INK, font: "Aptos" })] }),
+      text: title, bold: true, size: 68, color: INK, font: "Aptos" })] }),
     new Paragraph({
       spacing: { before: 200, after: 260 },
       border: { bottom: { style: BorderStyle.SINGLE, size: 10, color: INK, space: 8 } },
-      children: [new TextRun({ text: "Short-answer practice on the points you flagged", size: 26, color: INK, font: "Cambria" })],
+      children: [new TextRun({ text: sub, size: 25, color: INK, font: "Cambria" })],
     }),
     new Paragraph({ spacing: { after: 80 }, children: [new TextRun({
-      text: `${total} short-answer questions across ${FOCUS.reduce((a, s) => a + s.groups.length, 0)} syllabus points in four topics`,
+      text: `${total} short-answer questions across ${sections.reduce((a, s) => a + s.groups.length, 0)} syllabus points in four topics`,
       size: 20, color: INK, font: "Aptos" })] }),
     new Paragraph({ spacing: { after: 300 }, children: [new TextRun({
       text: "Drawn from NESA HSC 2019–2023, school trial papers 2023–24, and topic question banks.",
@@ -269,7 +271,7 @@ function focusDocx({ placed, alsoAt, numberOf, total, key }) {
   // Contents
   children.push(new Paragraph({ spacing: { after: 100 }, children: [new TextRun({
     text: "CONTENTS", bold: true, size: 15, color: MUTED, allCaps: true, characterSpacing: 24, font: "Aptos" })] }));
-  for (const sec of FOCUS) {
+  for (const sec of sections) {
     children.push(new Paragraph({
       spacing: { before: 220, after: 40 },
       border: { bottom: { style: BorderStyle.SINGLE, size: 4, color: sec.accent, space: 4 } },
@@ -291,7 +293,7 @@ function focusDocx({ placed, alsoAt, numberOf, total, key }) {
     }
   }
 
-  for (const sec of FOCUS) {
+  for (const sec of sections) {
     children.push(new Paragraph({
       pageBreakBefore: true, spacing: { before: 0, after: 40 },
       children: [new TextRun({ text: "TOPIC", bold: true, size: 16, color: sec.accent,
@@ -375,12 +377,12 @@ function focusDocx({ placed, alsoAt, numberOf, total, key }) {
 
   return new Document({
     creator: "HSC Business Studies practice booklets",
-    title: "HSC Business Studies — Exam focus",
+    title: `HSC Business Studies — ${title}`,
     description: "Short-answer past-paper questions on selected syllabus points, with answer space.",
     styles: { default: { document: { run: { font: "Aptos", size: 21, color: INK } } } },
     sections: [{
       properties: { page: {
-        size: { width: 12240, height: 15840 },
+        size: A4_DOCX,
         margin: {
           top: convertInchesToTwip(0.85), bottom: convertInchesToTwip(0.7),
           left: convertInchesToTwip(0.9), right: convertInchesToTwip(0.9),
@@ -389,7 +391,7 @@ function focusDocx({ placed, alsoAt, numberOf, total, key }) {
       } },
       headers: { default: new Header({ children: [new Paragraph({
         border: { bottom: { style: BorderStyle.SINGLE, size: 4, color: "DDE1E7", space: 6 } },
-        children: [new TextRun({ text: "HSC Business Studies · Exam focus", size: 16, color: MUTED, font: "Aptos" })],
+        children: [new TextRun({ text: `HSC Business Studies · ${title}`, size: 16, color: MUTED, font: "Aptos" })],
       })] }) },
       footers: { default: new Footer({ children: [new Paragraph({
         alignment: AlignmentType.RIGHT,
@@ -400,33 +402,42 @@ function focusDocx({ placed, alsoAt, numberOf, total, key }) {
   });
 }
 
-(async () => {
-  fs.mkdirSync(OUT, { recursive: true });
-  const p = plan();
+async function emit(browser, sections, slug, title, sub) {
+  const p = plan(sections);
+  const docx = path.join(OUT, `${slug}.docx`);
+  fs.writeFileSync(docx, await Packer.toBuffer(focusDocx(p, title, sub)));
 
-  const docx = path.join(OUT, "HSC-Business-Studies-Exam-Focus-SAQ.docx");
-  fs.writeFileSync(docx, await Packer.toBuffer(focusDocx(p)));
-
-  const browser = await chromium.launch({ executablePath: CHROME });
   const page = await browser.newPage();
   const errs = [];
   page.on("pageerror", e => errs.push(e.message));
-  await page.setContent(focusHtml(p), { waitUntil: "load" });
+  await page.setContent(focusHtml(p, title, sub), { waitUntil: "load" });
   await page.emulateMedia({ media: "print" });
-  const pdf = path.join(OUT, "HSC-Business-Studies-Exam-Focus-SAQ.pdf");
+  const pdf = path.join(OUT, `${slug}.pdf`);
   await page.pdf({
-    path: pdf, format: "Letter", printBackground: true,
-    margin: { top: "16mm", bottom: "14mm", left: "16mm", right: "16mm" },
+    path: pdf, format: "A4", printBackground: true,
+    margin: { top: "16mm", bottom: "14mm", left: "15mm", right: "15mm" },
     displayHeaderFooter: true,
-    headerTemplate: `<div style="font:8pt 'Aptos',sans-serif;color:#8d95a2;width:100%;padding:0 16mm;">HSC Business Studies · Exam focus</div>`,
-    footerTemplate: `<div style="font:8pt 'Aptos',sans-serif;color:#8d95a2;width:100%;padding:0 16mm;text-align:right;">Page <span class="pageNumber"></span> of <span class="totalPages"></span></div>`,
+    headerTemplate: `<div style="font:8pt 'Aptos',sans-serif;color:#8d95a2;width:100%;padding:0 15mm;">HSC Business Studies · ${title}</div>`,
+    footerTemplate: `<div style="font:8pt 'Aptos',sans-serif;color:#8d95a2;width:100%;padding:0 15mm;text-align:right;">Page <span class="pageNumber"></span> of <span class="totalPages"></span></div>`,
   });
-  await browser.close();
+  await page.close();
+  if (errs.length) console.error(`  ! ${slug}: ${errs.join("; ")}`);
+  return { slug, total: p.total, pdf };
+}
 
-  for (const sec of FOCUS)
-    for (const g of sec.groups)
-      console.log(`${sec.label.padEnd(16)} ${g.name.padEnd(46)} ${String(p.placed.get(p.key(sec.topic, g.name)).length).padStart(3)}`);
-  console.log(`\ntotal ${p.total} questions${errs.length ? "  ERRORS: " + errs.join("; ") : ""}`);
-  console.log("wrote", docx);
-  console.log("wrote", pdf);
+(async () => {
+  fs.mkdirSync(OUT, { recursive: true });
+  const browser = await chromium.launch({ executablePath: CHROME });
+
+  const made = [];
+  for (const sec of FOCUS) {
+    made.push(await emit(browser, [sec], `HSC-BS-Exam-Focus-${sec.label.replace(/ /g, "-")}`,
+      `${sec.label} — exam focus`, "Short-answer practice on the points you flagged"));
+  }
+  made.push(await emit(browser, FOCUS, "HSC-BS-Exam-Focus-All-Topics",
+    "Exam focus", "Short-answer practice on the points you flagged, all four topics"));
+
+  await browser.close();
+  for (const m of made) console.log(`${m.slug.padEnd(44)} ${String(m.total).padStart(3)} questions`);
+  console.log("wrote", OUT);
 })();

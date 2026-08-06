@@ -450,7 +450,7 @@ function buildTopic(topic) {
     sections: [{
       properties: {
         page: {
-          size: { width: 12240, height: 15840 },          // US Letter
+          size: { width: 11906, height: 16838 },          // A4
           margin: {
             top: convertInchesToTwip(0.85), bottom: convertInchesToTwip(0.7),
             left: convertInchesToTwip(0.9), right: convertInchesToTwip(0.9),

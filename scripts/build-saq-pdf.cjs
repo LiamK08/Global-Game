@@ -140,7 +140,7 @@ function topicHtml(topic) {
   }
 
   return `<!doctype html><html><head><meta charset="utf-8"><title>${esc(tax.label)}</title><style>
-@page { size: Letter; margin: 16mm 16mm 14mm; }
+@page { size: A4; margin: 16mm 15mm 14mm; }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{font:11pt/1.5 "Aptos","Segoe UI",Helvetica,Arial,sans-serif;color:#14171d;-webkit-print-color-adjust:exact;print-color-adjust:exact}
@@ -219,12 +219,12 @@ ${body}
     await page.emulateMedia({ media: "print" });
     const file = path.join(OUT, `HSC-Business-Studies-${t.file}-SAQ-Booklet.pdf`);
     await page.pdf({
-      path: file, format: "Letter", printBackground: true,
-      margin: { top: "16mm", bottom: "14mm", left: "16mm", right: "16mm" },
+      path: file, format: "A4", printBackground: true,
+      margin: { top: "16mm", bottom: "14mm", left: "15mm", right: "15mm" },
       displayHeaderFooter: true,
-      headerTemplate: `<div style="font:8pt 'Aptos',sans-serif;color:#8d95a2;width:100%;padding:0 16mm;">
+      headerTemplate: `<div style="font:8pt 'Aptos',sans-serif;color:#8d95a2;width:100%;padding:0 15mm;">
         HSC Business Studies · ${t.file.replace(/-/g, " ")}</div>`,
-      footerTemplate: `<div style="font:8pt 'Aptos',sans-serif;color:#8d95a2;width:100%;padding:0 16mm;text-align:right;">
+      footerTemplate: `<div style="font:8pt 'Aptos',sans-serif;color:#8d95a2;width:100%;padding:0 15mm;text-align:right;">
         Page <span class="pageNumber"></span> of <span class="totalPages"></span></div>`,
     });
     await page.close();
