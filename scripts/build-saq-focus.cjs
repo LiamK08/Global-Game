@@ -20,7 +20,11 @@ const { imageMeta } = require("./build-saq-docs.cjs");
 const ROOT = path.dirname(__dirname);
 const DATA = JSON.parse(fs.readFileSync(path.join(ROOT, "study/data/questions.json"), "utf8"));
 const IMG_DIR = path.join(ROOT, "study/img");
-const CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome";
+/** Let Playwright find its own browser; only override for a pinned sandbox build. */
+function launchOptions() {
+  const pinned = process.env.CHROME_PATH || "/opt/pw-browsers/chromium-1194/chrome-linux/chrome";
+  return fs.existsSync(pinned) ? { executablePath: pinned } : {};
+}
 const OUT = (() => {
   const i = process.argv.indexOf("--out");
   return i > -1 ? process.argv[i + 1] : path.join(ROOT, "study/booklets");
@@ -445,7 +449,7 @@ async function emitNotesPage(browser, file) {
 
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
-  const browser = await chromium.launch({ executablePath: CHROME });
+  const browser = await chromium.launch(launchOptions());
   await emitNotesPage(browser, path.join(OUT, "_notes-page-a4.pdf"));
 
   const made = [];
