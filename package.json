@@ -1,0 +1,29 @@
+{
+  "name": "my-globle",
+  "version": "1.0.0",
+  "description": "An unlimited Globle-style country guessing game on an interactive 3D globe.",
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test",
+    "build:vendor": "node scripts/copy-vendor.js",
+    "build:standalone": "node scripts/build-standalone.js"
+  },
+  "keywords": [
+    "geography",
+    "game",
+    "globe",
+    "countries",
+    "globle"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.8.1",
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Build inputs (the slim data/countries.geojson artifact IS committed; this is
+# just the large raw Natural Earth source, which build-data.js can re-fetch).
+data/.raw/
+
+# Logs & misc
+*.log
+.DS_Store
+.env
+__pycache__/

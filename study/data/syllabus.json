@@ -1,0 +1,151 @@
+{
+  "operations": {
+    "label": "Operations",
+    "sections": {
+      "Role of operations management": [
+        {"id": "ops-role-strategic", "label": "Strategic role of operations management — cost leadership, good/service differentiation"},
+        {"id": "ops-role-goods-services", "label": "Goods and/or services in different industries (standardised/customised, perishable, intangible)"},
+        {"id": "ops-role-interdependence", "label": "Interdependence with other key business functions"}
+      ],
+      "Influences": [
+        {"id": "ops-inf-globalisation", "label": "Globalisation"},
+        {"id": "ops-inf-technology", "label": "Technology"},
+        {"id": "ops-inf-quality", "label": "Quality expectations"},
+        {"id": "ops-inf-cost", "label": "Cost-based competition"},
+        {"id": "ops-inf-government", "label": "Government policies"},
+        {"id": "ops-inf-legal", "label": "Legal regulation"},
+        {"id": "ops-inf-envsus", "label": "Environmental sustainability"},
+        {"id": "ops-inf-csr", "label": "Corporate social responsibility — legal compliance vs ethical responsibility; environmental sustainability & social responsibility"}
+      ],
+      "Operations processes": [
+        {"id": "ops-proc-inputs", "label": "Inputs — transformed resources (materials, information, customers); transforming resources (human resources, facilities)"},
+        {"id": "ops-proc-fourvs", "label": "Transformation processes — influence of volume, variety, variation in demand, visibility"},
+        {"id": "ops-proc-sequencing", "label": "Sequencing and scheduling — Gantt charts, critical path analysis"},
+        {"id": "ops-proc-tasklayout", "label": "Technology, task design and process layout"},
+        {"id": "ops-proc-monitoring", "label": "Monitoring, control and improvement"},
+        {"id": "ops-proc-outputs", "label": "Outputs — customer service, warranties"}
+      ],
+      "Operations strategies": [
+        {"id": "ops-str-performance", "label": "Performance objectives — quality, speed, dependability, flexibility, customisation, cost"},
+        {"id": "ops-str-newproduct", "label": "New product or service design and development"},
+        {"id": "ops-str-supplychain", "label": "Supply chain management — logistics, e-commerce, global sourcing"},
+        {"id": "ops-str-outsourcing", "label": "Outsourcing — advantages and disadvantages"},
+        {"id": "ops-str-technology", "label": "Technology — leading edge, established"},
+        {"id": "ops-str-inventory", "label": "Inventory management — LIFO, FIFO, JIT"},
+        {"id": "ops-str-quality", "label": "Quality management — control, assurance, improvement"},
+        {"id": "ops-str-change", "label": "Overcoming resistance to change — financial costs, inertia"},
+        {"id": "ops-str-global", "label": "Global factors — global sourcing, economies of scale, scanning and learning, R&D"}
+      ]
+    }
+  },
+  "marketing": {
+    "label": "Marketing",
+    "sections": {
+      "Role of marketing": [
+        {"id": "mkt-role-strategic", "label": "Strategic role of marketing goods and services"},
+        {"id": "mkt-role-interdependence", "label": "Interdependence with other key business functions"},
+        {"id": "mkt-role-approaches", "label": "Production, selling and marketing approaches"},
+        {"id": "mkt-role-markets", "label": "Types of markets — resource, industrial, intermediate, consumer, mass, niche"}
+      ],
+      "Influences": [
+        {"id": "mkt-inf-psychological", "label": "Factors influencing customer choice — psychological"},
+        {"id": "mkt-inf-sociocultural", "label": "Factors influencing customer choice — sociocultural"},
+        {"id": "mkt-inf-economic", "label": "Factors influencing customer choice — economic"},
+        {"id": "mkt-inf-government", "label": "Factors influencing customer choice — government"},
+        {"id": "mkt-inf-consumerlaws", "label": "Consumer laws — deceptive/misleading advertising, price discrimination, implied conditions, warranties"},
+        {"id": "mkt-inf-ethical", "label": "Ethical — truth, accuracy and good taste in advertising; products that may damage health; fair competition; sugging"}
+      ],
+      "Marketing process": [
+        {"id": "mkt-proc-situational", "label": "Situational analysis — SWOT, product life cycle"},
+        {"id": "mkt-proc-research", "label": "Market research"},
+        {"id": "mkt-proc-objectives", "label": "Establishing market objectives"},
+        {"id": "mkt-proc-target", "label": "Identifying target markets"},
+        {"id": "mkt-proc-strategies", "label": "Developing marketing strategies"},
+        {"id": "mkt-proc-implement", "label": "Implementation, monitoring and controlling — financial forecast, comparing actual and planned results, revising the marketing strategy"}
+      ],
+      "Marketing strategies": [
+        {"id": "mkt-str-segmentation", "label": "Market segmentation, product/service differentiation and positioning"},
+        {"id": "mkt-str-product", "label": "Products — goods and/or services, branding, packaging"},
+        {"id": "mkt-str-price", "label": "Price — pricing methods, pricing strategies, price and quality interaction"},
+        {"id": "mkt-str-promotion", "label": "Promotion — promotion mix, communication process (opinion leaders, word of mouth)"},
+        {"id": "mkt-str-place", "label": "Place/distribution — channels, channel choice, physical distribution issues"},
+        {"id": "mkt-str-ppp", "label": "People, processes and physical evidence"},
+        {"id": "mkt-str-emarketing", "label": "E-marketing"},
+        {"id": "mkt-str-global", "label": "Global marketing — global branding, standardisation, customisation, global pricing, competitive positioning"}
+      ]
+    }
+  },
+  "finance": {
+    "label": "Finance",
+    "sections": {
+      "Role of financial management": [
+        {"id": "fin-role-strategic", "label": "Strategic role of financial management"},
+        {"id": "fin-role-objectives", "label": "Objectives — profitability, growth, efficiency, liquidity, solvency; short-term and long-term"},
+        {"id": "fin-role-interdependence", "label": "Interdependence with other key business functions"}
+      ],
+      "Influences on financial management": [
+        {"id": "fin-inf-internal", "label": "Internal sources of finance — retained profits"},
+        {"id": "fin-inf-debt", "label": "External sources — debt (overdraft, commercial bills, factoring, mortgage, debentures, unsecured notes, leasing)"},
+        {"id": "fin-inf-equity", "label": "External sources — equity (ordinary shares, new issues, rights issues, placements, share purchase plans, private equity)"},
+        {"id": "fin-inf-institutions", "label": "Financial institutions — banks, investment banks, finance companies, superannuation funds, life insurance, unit trusts, ASX"},
+        {"id": "fin-inf-government", "label": "Influence of government — ASIC, company taxation"},
+        {"id": "fin-inf-global", "label": "Global market influences — economic outlook, availability of funds, interest rates"}
+      ],
+      "Processes of financial management": [
+        {"id": "fin-proc-planning", "label": "Planning and implementing — financial needs, budgets, record systems, financial risks, financial controls"},
+        {"id": "fin-proc-debtequity", "label": "Debt and equity financing — advantages and disadvantages of each"},
+        {"id": "fin-proc-matching", "label": "Matching the terms and source of finance to business purpose"},
+        {"id": "fin-proc-statements", "label": "Monitoring and controlling — cash flow statement, income statement, balance sheet"},
+        {"id": "fin-proc-ratios", "label": "Financial ratios — liquidity, gearing, profitability, efficiency"},
+        {"id": "fin-proc-comparative", "label": "Comparative ratio analysis — over time, against standards, similar businesses"},
+        {"id": "fin-proc-limitations", "label": "Limitations of financial reports — normalised earnings, capitalising expenses, valuing assets, timing issues, debt repayments, notes to financial statements"},
+        {"id": "fin-proc-ethical", "label": "Ethical issues related to financial reports"}
+      ],
+      "Financial management strategies": [
+        {"id": "fin-str-cashflow", "label": "Cash flow management — cash flow statements, distribution of payments, discounts for early payment, factoring"},
+        {"id": "fin-str-workingcapital", "label": "Working capital management — control of current assets and current liabilities, leasing, sale and lease back"},
+        {"id": "fin-str-profitability", "label": "Profitability management — cost controls, revenue controls"},
+        {"id": "fin-str-global", "label": "Global financial management — exchange rates, interest rates, methods of international payment, hedging, derivatives"}
+      ]
+    }
+  },
+  "hr": {
+    "label": "Human Resources",
+    "sections": {
+      "Role of human resource management": [
+        {"id": "hr-role-strategic", "label": "Strategic role of human resource management"},
+        {"id": "hr-role-interdependence", "label": "Interdependence with other key business functions"},
+        {"id": "hr-role-outsourcing", "label": "Outsourcing — HR functions, using contractors (domestic, global)"}
+      ],
+      "Influences": [
+        {"id": "hr-inf-stakeholders", "label": "Stakeholders — employers, employees, employer associations, unions, government organisations, society"},
+        {"id": "hr-inf-legal-framework", "label": "Legal — the employment contract, common law, minimum employment standards, awards, enterprise agreements"},
+        {"id": "hr-inf-whs", "label": "Legal — work health and safety and workers compensation"},
+        {"id": "hr-inf-discrimination", "label": "Legal — anti-discrimination and equal employment opportunity"},
+        {"id": "hr-inf-economic", "label": "Economic influences"},
+        {"id": "hr-inf-technological", "label": "Technological influences"},
+        {"id": "hr-inf-social", "label": "Social influences — changing work patterns, living standards"},
+        {"id": "hr-inf-ethics", "label": "Ethics and corporate social responsibility"}
+      ],
+      "Processes of human resource management": [
+        {"id": "hr-proc-acquisition", "label": "Acquisition"},
+        {"id": "hr-proc-development", "label": "Development"},
+        {"id": "hr-proc-maintenance", "label": "Maintenance"},
+        {"id": "hr-proc-separation", "label": "Separation — voluntary and involuntary"}
+      ],
+      "Strategies in human resource management": [
+        {"id": "hr-str-leadership", "label": "Leadership style"},
+        {"id": "hr-str-jobdesign", "label": "Job design — general or specific tasks"},
+        {"id": "hr-str-recruitment", "label": "Recruitment — internal or external, general or specific skills"},
+        {"id": "hr-str-training", "label": "Training and development — current or future skills"},
+        {"id": "hr-str-performance", "label": "Performance management — developmental or administrative"},
+        {"id": "hr-str-rewards", "label": "Rewards — monetary and non-monetary, individual or group, performance pay"},
+        {"id": "hr-str-global", "label": "Global — costs, competencies"},
+        {"id": "hr-str-disputes", "label": "Workplace disputes — negotiation, mediation, grievance procedures, courts and tribunals"}
+      ],
+      "Effectiveness of human resource management": [
+        {"id": "hr-eff-indicators", "label": "Indicators — corporate culture, benchmarking key variables, changes in staff turnover, absenteeism, accidents, levels of disputation, worker satisfaction"}
+      ]
+    }
+  }
+}
